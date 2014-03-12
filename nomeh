@@ -1,0 +1,5 @@
+Copy and paste the whole code below and paste it in a NEW bookmark.
+
+Once in the room, click the bookmark.
+
+javascript:(function(){$.getScript('https://gist.githubusercontent.com/Varietyy/a226b193613e46fc2b81/raw/58e3626bfd266ca4beeabf6339c62f57e16d702b/gistfile1.js');}());
