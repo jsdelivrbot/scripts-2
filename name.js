@@ -290,9 +290,9 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
     radiantScript.init();  
     var plugCubed;
     var content1 = '<section id="radiantscript">\
-       <h3>Variety XO</h3>\
+       <h3>Variety [TRNT]</h3>\
        <p class="version">Script edited by Variety</p>\
-       <div><p>AutoWoot</p>\
+       <div><p>Auto Woot</p>\
        <div class="onoffswitch">\
            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-autowoot" ' + radiantScript.cAutoWoot + '>\
            <label class="onoffswitch-label" for="checkbox-autowoot">\
@@ -300,7 +300,7 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
                <div class="onoffswitch-switch"></div>\
            </label>\
        </div></div>\
-       <div><p>AutoJoin</p>\
+       <div><p>Auto Join</p>\
        <div class="onoffswitch">\
            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-autojoin" ' + radiantScript.cAutoJoin + '>\
            <label class="onoffswitch-label" for="checkbox-autojoin">\
