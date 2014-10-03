@@ -426,9 +426,8 @@ else {
 }
 
 function afkchat(data) {
-      setTimeout(function(){API.sendChat("<3");}, 25000); // 25 seconds
-      setTimeout(function(){API.sendChat(":blue_heart:");}, 45000); // 45 seconds
-      setTimeout(function(){API.sendChat(":purple_heart:");}, 65000); // 65 seconds
+      setTimeout(function(){API.sendChat(":purple_heart:");}, 60000); // 65 seconds
+      setTimeout(function(){API.sendChat("!props");}, 65000);
 }
  
 API.on(API.ADVANCE, afkchat);
