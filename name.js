@@ -427,7 +427,7 @@ else {
 
 function afkchat(data) {
       setTimeout(function(){API.sendChat("Turn up!");}, 30000); // 30 seconds
-      setTimeout(function(){API.sendChat("!props");}, 31000); 31 seconds
+      setTimeout(function(){API.sendChat("!props");}, 31000); // 31 seconds
 }
  
 API.on(API.ADVANCE, afkchat);
