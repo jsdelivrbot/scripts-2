@@ -382,13 +382,13 @@ font-size: 14px;
     opacity: 1;
 }
 #playlist-panel {
-    background: rgba(225, 44, 255, 1);
+    background: rgba(17, 19, 23, 0.9);
 }
 #playlist-menu {
-    background: rgba(28, 31, 37, 0.67);
+    background: rgba(128, 128, 128, 1)
 }
 #search {
-    background: rgba(50, 55, 66, 0.58);
+    background: rgba(128, 128, 128, 1)
 }
 #search-bar {
     background: rgba(17, 19, 23, 0.77);
@@ -406,7 +406,7 @@ font-size: 14px;
     background: rgba(50, 55, 66, 0.75);
 }
 #user-panel .score {
-    background: rgba(28, 31, 37, 0.59);
+    background: rgba(128, 128, 128, 1)
 }
 #dj-button.is-locked .left,#dj-button.is-full .left,#vote .crowd-response.disabled .bottom {
     background: rgba(68, 74, 89, 0.75);
