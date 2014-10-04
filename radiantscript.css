@@ -373,7 +373,7 @@ font-size: 14px;
     color: #ac76ff;
 }
 #footer {
-    background: rgba(128, 128, 128, 1)
+    background: rgba(128, 128, 128, 0.56);
 }
 #playlist-button {
     background: linear-gradient(to bottom,#FF5CDE 0,#5700FF 100%);
