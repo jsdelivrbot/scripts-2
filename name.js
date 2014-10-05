@@ -425,9 +425,8 @@ else {
     API.chatLog('Radiant Script v' + radiantScript.version + ' already loaded', true);    
 }
 
-/*
-function afkchat(data) {
-      setTimeout(function(){API.sendChat("Turn up!");}, 30000);
-}
- 
-API.on(API.ADVANCE, afkchat);
+// function afkchat(data) {
+//       setTimeout(function(){API.sendChat("Turn up!");}, 30000);
+// }
+//  
+// API.on(API.ADVANCE, afkchat);
