@@ -432,3 +432,25 @@ API.moderateDeleteChat(data.cid);
 API.sendChat(""+ data.un +" just gave props to @"+ API.getDJ().username +". Nice play!");
 }
 });
+
+API.on(API.CHAT, command);
+API.on(API.CHAT, autoskip);
+ 
+function autoskip() {
+        clearTimeout(autoSkip);
+  var b = a.media.duration;
+  autoSkip = setTimeout(API.moderateForceSkip,b*1000+5000);
+}
+ 
+function command(data) {
+    if(data.message.indexOf('!autoskip on') === 2){
+        API.on(API.CHAT_COMMAND, autoskip);
+        API.moderateDeleteChat(data.cid);
+        API.sendChat("[Autoskip ON]");
+    }
+    if(data.message.indexOf('!autoskip off') === 2){
+        API.off(API.DJ_ADVANCE, autoskip);
+        API.moderateDeleteChat(data.cid);
+        API.sendChat("[Autoskip OFF]");
+    }
+}
