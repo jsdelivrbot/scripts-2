@@ -443,12 +443,12 @@ function autoskip() {
 }
  
 function command(data) {
-    if(data.message.indexOf('!autoskip on') === 2){
+    if(data.message.indexOf('!autoskip on') === 1){
         API.on(API.CHAT_COMMAND, autoskip);
         API.moderateDeleteChat(data.cid);
         API.sendChat("[Autoskip ON]");
     }
-    if(data.message.indexOf('!autoskip off') === 2){
+    if(data.message.indexOf('!autoskip off') === 1){
         API.off(API.DJ_ADVANCE, autoskip);
         API.moderateDeleteChat(data.cid);
         API.sendChat("[Autoskip OFF]");
