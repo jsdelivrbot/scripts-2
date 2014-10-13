@@ -432,3 +432,43 @@ API.moderateDeleteChat(data.cid);
 API.sendChat(""+ data.un +" just gave props to @"+ API.getDJ().username +". Nice play!");
 }
 });
+
+(function(){
+        var mutedID = [], mutedName = [];
+        API.on(API.CHAT,function(a){
+                if (mutedID.indexOf(a.fid) > -1 || mutedName.indexOf(a.from) > -1) API.moderateDeleteChat(a.cid);
+        });
+        API.on(API.CHAT_COMMAND,function(a){
+                if (!a.indexOf('/mute @')) {
+                        var name = a.substr(7).trim(), id = getID(name);
+                        if (!id) {
+                                if (mutedName.indexOf(name) > -1) API.chatLog(name + ' is already muted by name.',true);
+                                else {
+                                        mutedName.push(name);
+                                        API.chatLog('Could not find ' + name + ' in the room: muted by name instead of ID.',true);
+                                }
+                        } else {
+                                if (mutedName.indexOf(name) > -1) mutedName.splice(mutedName.indexOf(name),1);
+                                if (mutedID.indexOf(id) > -1) API.chatLog(name + ' is already muted by ID.',true);
+                                else {
+                                        mutedID.push(id);
+                                        API.chatLog('Muted ' + name + ' by ID. (' + id + ')',true);
+                                }
+                        }
+                } else if (!a.indexOf('/unmute @')) {
+                        var name = a.substr(9).trim(), id = getID(name);
+                        if (mutedName.indexOf(name) > -1) {
+                                mutedName.splice(mutedName.indexOf(name),1);
+                                API.chatLog('Unmuted ' + name + ' by name.',true);
+                        } else if (id && mutedID.indexOf(id) > -1) {
+                                mutedID.splice(mutedID.indexOf(id),1);
+                                API.chatLog('Unmuted ' + name + ' by ID.',true);
+                        } else API.chatLog(name + ' wasn\'t muted.',true);
+                }
+        });
+        function getID(a) {
+                var b = API.getUsers();
+        for (var i = 0; i < b.length; i++) if (b[i].username == a) return b[i].id;
+        return null;
+        }
+})();
