@@ -432,10 +432,3 @@ API.moderateDeleteChat(data.cid);
 API.sendChat(""+ data.un +" just gave props to @"+ API.getDJ().username +". Nice play!");
 }
 });
-
-var autoSkip;
-API.on(API.ADVANCE,function(a){
-  clearTimeout(autoSkip);
-  var b = a.media.duration;
-  autoSkip = setTimeout(API.moderateForceSkip,b*1000+5000);
-});
