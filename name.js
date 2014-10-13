@@ -429,7 +429,7 @@ API.on(API.CHAT, function(data){
  
 if(data.message.indexOf('!props') === 0){
 API.moderateDeleteChat(data.cid);
-API.sendChat(""+ data.un +" just gave props to @"+ API.getDJ().username +". :thumbs_up:");
+API.sendChat(""+ data.un +" just gave props to @"+ API.getDJ().username +". :thumbsup:");
 }
 });
 
