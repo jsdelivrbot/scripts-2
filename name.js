@@ -425,13 +425,13 @@ else {
     API.chatLog('Radiant Script v' + radiantScript.version + ' already loaded', true);    
 }
 
-API.on(API.CHAT, function(data){
+/*API.on(API.CHAT, function(data){
  
 if(data.message.indexOf('!props') === 0){
 API.moderateDeleteChat(data.cid);
 API.sendChat(""+ data.un +" just gave props to @"+ API.getDJ().username +". :thumbsup:");
 }
-});
+});*/
 
 (function(){
         var mutedID = [], mutedName = [];
