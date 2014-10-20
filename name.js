@@ -472,11 +472,3 @@ API.sendChat(""+ data.un +" just gave props to @"+ API.getDJ().username +". :thu
         return null;
         }
 })();
-
-API.on(API.SCORE_UPDATE, voteSkip);
-funnction voteSkip(score){
-var mehSkip = 8;
-if(score.negative >= mehSkip){
-API.moderateForceSkip();
-}
-}
