@@ -316,6 +316,22 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
                <div class="onoffswitch-switch"></div>\
            </label>\
        </div></div>\
+       <div><p>User Join</p>\
+        <div class="onoffswitch">\
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-userJoin" ' + radiantScript.cuserJoin + '>\
+            <label class="onoffswitch-label" for="checkbox-userJoin">\
+                <div class="onoffswitch-inner"></div>\
+                <div class="onoffswitch-switch"></div>\
+            </label>\
+        </div></div>\
+        <div><p>User Leave</p>\
+        <div class="onoffswitch">\
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-userLeave" ' + radiantScript.cuserLeave + '>\
+            <label class="onoffswitch-label" for="checkbox-userLeave">\
+                <div class="onoffswitch-inner"></div>\
+                <div class="onoffswitch-switch"></div>\
+            </label>\
+        </div></div>\
        <div><p>Fullscreen</p>\
        <div class="onoffswitch">\
            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-fullscreen" ' + radiantScript.cfullScreen + '>\
