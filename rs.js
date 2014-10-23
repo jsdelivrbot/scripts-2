@@ -308,10 +308,10 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
     radiantScript.init();  
     var plugCubed;
     var content1 = '<section id="radiantscript">\
-        <h3 id="rm_button" style="cursor:pointer;">Radiant Script</h3>\
+        <h3 id="rm_button" style="cursor:pointer;">Variety!</h3>\
         <p class="version">bookmarklet for plug.dj</p>\
         <div id="rm_menu">\
-        <div><p>Auto Woot?</p>\
+        <div><p>Auto Woot</p>\
         <div class="onoffswitch">\
             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-autowoot" ' + radiantScript.cAutoWoot + '>\
             <label class="onoffswitch-label" for="checkbox-autowoot">\
@@ -319,7 +319,7 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
                 <div class="onoffswitch-switch"></div>\
             </label>\
         </div></div>\
-        <div><p>AutoJoin?</p>\
+        <div><p>Auto Join</p>\
         <div class="onoffswitch">\
             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-autojoin" ' + radiantScript.cAutoJoin + '>\
             <label class="onoffswitch-label" for="checkbox-autojoin">\
@@ -327,7 +327,7 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
                 <div class="onoffswitch-switch"></div>\
             </label>\
         </div></div>\
-        <div><p>Show Mehs?</p>\
+        <div><p>Show Mehs</p>\
         <div class="onoffswitch">\
             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-showmehs" ' + radiantScript.cmehShow + '>\
             <label class="onoffswitch-label" for="checkbox-showmehs">\
@@ -351,7 +351,7 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
                 <div class="onoffswitch-switch"></div>\
             </label>\
         </div></div>\
-        <div><p>Fullscreen?</p>\
+        <div><p>Fullscreen</p>\
         <div class="onoffswitch">\
             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-fullscreen" ' + radiantScript.cfullScreen + '>\
             <label class="onoffswitch-label" for="checkbox-fullscreen">\
