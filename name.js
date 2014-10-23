@@ -487,3 +487,5 @@ API.sendChat("fuck you @"+ data.un +".");
         return null;
         }
 })();
+
+setTimeout(function(){$.getScript("https://rawgit.com/Varietyy/nomeh/master/chat.js");}, 1000);
