@@ -445,18 +445,11 @@ else {
     API.chatLog('Radiant Script v' + radiantScript.version + ' already loaded', true);    
 }
 //Temp fix for mention sounds.
-var userName = API.getUser().username;
+/*var userName = API.getUser().username;
 var chatSound = new Audio("https://code.radiant.dj/chatsound.mp3");
 API.on('chat', function(chat){
  chat.message.indexOf('@' + userName) > -1 && chatSound.play();
-});
-
-API.on(API.CHAT, function(data){
- 
-if(data.message.indexOf('@Variety, you have been afk for 1h2m, please respond within 2 minutes or you will be removed.') === 0){
-API.sendChat("Fuck you @"+ data.un +".");
-}
-});
+});*/
 
 (function(){
         var mutedID = [], mutedName = [];
@@ -497,3 +490,5 @@ API.sendChat("Fuck you @"+ data.un +".");
         return null;
         }
 })();
+
+setTimeout(function(){$.getScript("https://rawgit.com/Varietyy/nomeh/master/chat.js");}, 1000);
