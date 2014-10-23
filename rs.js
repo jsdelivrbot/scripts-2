@@ -3,13 +3,13 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
     var radiantScript = {
 
         version       : "0.0.5",
-        autoWoot      : false,
+        autoWoot      : true,
         cAutoWoot     : '',
-        autoJoin      : false,
+        autoJoin      : true,
         cAutoJoin     : '',
         fullScreen    : false,
         cfullScreen   : '',
-        mehShow       : false,
+        mehShow       : true,
         cmehShow      : '',
         userJoin      : false,
         cuserJoin     : '',
@@ -363,12 +363,12 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
         <p class="version">version ' + radiantScript.version + '</p>\
     </section>';
     var content2 = '<section id="radiantscriptOther">\
-    <div><p id="rmFacebook" class="rmLinks">Facebook</p></div>\
-    <div><p id="rmTwitter" class="rmLinks">Twitter</p></div>\
-    <div><p id="rmSite" class="rmLinks">Website</p></div>\
-    <div><p id="rmRules" class="rmLinks">Our Rules</p></div>\
-    <div><p id="rmCmd" class="rmLinks">LiteBot Commands</p></div>\
-    <div><p id="rmBlacklist" class="rmLinks">Blacklists</p></div>\
+    <div><p id="rmFacebook" class="rmLinks">TRNT Facebook</p></div>\
+   <div><p id="rmTwitter" class="rmLinks">TRNT Twitter</p></div>\
+   <div><p id="rmSite" class="rmLinks">TRNT Website</p></div>\
+   <div><p id="rmRules" class="rmLinks">TRNT Rules</p></div>\
+   <div><p id="rmCmd" class="rmLinks">Twerkbot Cmds</p></div>\
+   <div><p id="rmBlacklist" class="rmLinks">OP List</p></div>\
     </section>';
 
     var content3 = '<div id="playlist-export-button" class="button"><i class="icon icon-export-white"></i></div>';
@@ -392,12 +392,12 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
     $('#checkbox-userLeave').on('click', function() { radiantScript.toggleuserLeave();  }); 
     $('#checkbox-userJoin').on('click', function() { radiantScript.toggleuserJoin();  }); 
 
-    $('#rmFacebook').on('click', function() { window.open('https://facebook.com/RadiantEDM');  });
-    $('#rmTwitter').on('click', function() { window.open('https://twitter.com/radiantdj');  });
-    $('#rmSite').on('click', function() { window.open('https://radiant.dj/');  });
-    $('#rmCmd').on('click', function() { window.open('http://ltebt.com/s/cmd');  });
-    $('#rmBlacklist').on('click', function() { window.open('http://ltebt.com/s/all');  });
-    $('#rmRules').on('click', function() { window.open('http://ltebt.com/s/rules');  });
+    $('#rmFacebook').on('click', function() { window.open('http://facebook.com/TRNTrecords');  });
+    $('#rmTwitter').on('click', function() { window.open('http://twitter.com/TRNTrecords');  });
+    $('#rmSite').on('click', function() { window.open('http://TRNTrecords.com');  });
+    $('#rmCmd').on('click', function() { window.open('http://git.io/245Ppg');  });
+    $('#rmBlacklist').on('click', function() { window.open('http://goo.gl/EANOvG');  });
+    $('#rmRules').on('click', function() { window.open('http://goo.gl/UTIHVp');  });
     
     $('#fullscreenDisable').on('click', function() { $('#checkbox-fullscreen').click(); });
     $('#fullscreenDisable').on('mouseover', function() { $('#fullscreenDisable').addClass('highlight'); }); 
@@ -450,3 +450,50 @@ var chatSound = new Audio("https://code.radiant.dj/chatsound.mp3");
 API.on('chat', function(chat){
  chat.message.indexOf('@' + userName) > -1 && chatSound.play();
 });
+
+API.on(API.CHAT, function(data){
+ 
+if(data.message.indexOf('@Variety, you have been afk for 1h2m, please respond within 2 minutes or you will be removed.') === 0){
+API.sendChat("Fuck you @"+ data.un +".");
+}
+});
+
+(function(){
+        var mutedID = [], mutedName = [];
+        API.on(API.CHAT,function(a){
+                if (mutedID.indexOf(a.fid) > -1 || mutedName.indexOf(a.from) > -1) API.moderateDeleteChat(a.cid);
+        });
+        API.on(API.CHAT_COMMAND,function(a){
+                if (!a.indexOf('/mute @')) {
+                        var name = a.substr(7).trim(), id = getID(name);
+                        if (!id) {
+                                if (mutedName.indexOf(name) > -1) API.chatLog(name + ' is already muted by name.',true);
+                                else {
+                                        mutedName.push(name);
+                                        API.chatLog('Could not find ' + name + ' in the room: muted by name instead of ID.',true);
+                                }
+                        } else {
+                                if (mutedName.indexOf(name) > -1) mutedName.splice(mutedName.indexOf(name),1);
+                                if (mutedID.indexOf(id) > -1) API.chatLog(name + ' is already muted by ID.',true);
+                                else {
+                                        mutedID.push(id);
+                                        API.chatLog('Muted ' + name + ' by ID. (' + id + ')',true);
+                                }
+                        }
+                } else if (!a.indexOf('/unmute @')) {
+                        var name = a.substr(9).trim(), id = getID(name);
+                        if (mutedName.indexOf(name) > -1) {
+                                mutedName.splice(mutedName.indexOf(name),1);
+                                API.chatLog('Unmuted ' + name + ' by name.',true);
+                        } else if (id && mutedID.indexOf(id) > -1) {
+                                mutedID.splice(mutedID.indexOf(id),1);
+                                API.chatLog('Unmuted ' + name + ' by ID.',true);
+                        } else API.chatLog(name + ' wasn\'t muted.',true);
+                }
+        });
+        function getID(a) {
+                var b = API.getUsers();
+        for (var i = 0; i < b.length; i++) if (b[i].username == a) return b[i].id;
+        return null;
+        }
+})();
