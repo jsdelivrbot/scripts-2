@@ -1,8 +1,8 @@
-/* .room-background {
-    background: url(https://code.radiant.dj/img/radiant.music.room.june2.jpg) no-repeat !important;
+.room-background {
+    background: url(http://i.imgur.com/y2fTKBl.jpg) no-repeat !important;
     width: 500% !important;
     height: 500% !important;
-} */
+}
 #radiantscript {    
     position: absolute;
     top: 64px;
