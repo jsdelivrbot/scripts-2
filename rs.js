@@ -2,7 +2,7 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
 
     var radiantScript = {
 
-        version       : "♥",
+        version       : "Fuck plug.dj",
         autoWoot      : true,
         cAutoWoot     : '',
         autoJoin      : true,
@@ -359,11 +359,11 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
         <p class="version">' + radiantScript.version + '</p>\
     </section>';
     var content2 = '<section id="radiantscriptOther">\
-    <div><p id="rmFacebook" class="rmLinks">TRNT Facebook</p></div>\
-   <div><p id="rmTwitter" class="rmLinks">TRNT Twitter</p></div>\
-   <div><p id="rmSite" class="rmLinks">TRNT Website</p></div>\
-   <div><p id="rmRules" class="rmLinks">TRNT Rules</p></div>\
-   <div><p id="rmCmd" class="rmLinks">Twerkbot Cmds</p></div>\
+    <div><p id="rmFacebook" class="rmLinks">My Facebook</p></div>\
+   <div><p id="rmTwitter" class="rmLinks">My Twitter</p></div>\
+   <div><p id="rmSite" class="rmLinks">My Pastebin</p></div>\
+   <div><p id="rmRules" class="rmLinks">My Github</p></div>\
+   <div><p id="rmCmd" class="rmLinks">Bot Commands</p></div>\
    <div><p id="rmBlacklist" class="rmLinks">OP List</p></div>\
     </section>';
 
@@ -388,12 +388,12 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     $('#checkbox-userLeave').on('click', function() { radiantScript.toggleuserLeave();  }); 
     $('#checkbox-userJoin').on('click', function() { radiantScript.toggleuserJoin();  }); 
 
-    $('#rmFacebook').on('click', function() { window.open('http://facebook.com/TRNTrecords');  });
-    $('#rmTwitter').on('click', function() { window.open('http://twitter.com/TRNTrecords');  });
-    $('#rmSite').on('click', function() { window.open('http://TRNTrecords.com');  });
+    $('#rmFacebook').on('click', function() { window.open('https://www.facebook.com/');  });
+    $('#rmTwitter').on('click', function() { window.open('https://twitter.com/VarietyO');  });
+    $('#rmSite').on('click', function() { window.open('http://pastebin.com/u/Variety');  });
     $('#rmCmd').on('click', function() { window.open('http://git.io/245Ppg');  });
     $('#rmBlacklist').on('click', function() { window.open('http://goo.gl/EANOvG');  });
-    $('#rmRules').on('click', function() { window.open('http://goo.gl/UTIHVp');  });
+    $('#rmRules').on('click', function() { window.open('https://github.com/Varietyy');  });
     
     $('#fullscreenDisable').on('click', function() { $('#checkbox-fullscreen').click(); });
     $('#fullscreenDisable').on('mouseover', function() { $('#fullscreenDisable').addClass('highlight'); }); 
