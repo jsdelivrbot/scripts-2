@@ -2,7 +2,7 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
 
     var radiantScript = {
 
-        version       : "0.0.5",
+        version       : "♥",
         autoWoot      : true,
         cAutoWoot     : '',
         autoJoin      : true,
@@ -301,15 +301,11 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     }           
 
     console.log('Loaded Radiant Script v' + radiantScript.version);       
-    radiantScript.addChatLog('Running Radiant Script v' + radiantScript.version, 'aqua');
-    radiantScript.addChatLog('Temporary Chat sounds Included!', 'aqua'); 
-    radiantScript.addChatLog('Halloween Color Theme!!', 'orange'); 
-    API.chatLog('plugCubed not included!',true);  
     radiantScript.init();  
     var plugCubed;
     var content1 = '<section id="radiantscript">\
         <h3 id="rm_button" style="cursor:pointer;">Variety!</h3>\
-        <p class="version">bookmarklet for plug.dj</p>\
+        <p class="version">Busy fucking your bitch!</p>\
         <div id="rm_menu">\
         <div><p>Auto Woot</p>\
         <div class="onoffswitch">\
@@ -360,7 +356,7 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
             </label>\
         </div></div>\
         </div>\
-        <p class="version">version ' + radiantScript.version + '</p>\
+        <p class="version">' + radiantScript.version + '</p>\
     </section>';
     var content2 = '<section id="radiantscriptOther">\
     <div><p id="rmFacebook" class="rmLinks">TRNT Facebook</p></div>\
