@@ -32,7 +32,7 @@
 #radiantscript h3 {
     font-size: 16px;    
     text-align: center;
-    color: #f46b40;
+    color: #B076FF;
 }
 #radiantscript .version {
     font-style: italic;
@@ -59,16 +59,16 @@
     font-size: 0.9em;
 }
 #DisableFullScreen .highlight {    
-    color: #f46b40;
+    color: #B076FF;
 }
 #fullscreenDisable .highlight {    
-    color: #f46b40;
+    color: #B076FF;
 }
 #fullscreenDisable {    
     cursor: pointer;
 }
 #friendfinder .highlight {    
-    color: #f46b40;
+    color: #B076FF;
 }
 #friendfinder {    
     cursor: pointer;
@@ -126,7 +126,7 @@
     cursor: pointer;
 }
 .rmLinks:hover{
-    color: #f46b40;
+    color: #2D002D;
 }
 #radiantscriptRight {    
     position: absolute;
@@ -196,7 +196,7 @@ text-align: center;
 
 #rmstatsTitle {
 font-weight: bold;
-color: #f46b40;
+color: #2D002D;
 font-size: 14px;
 }
 
@@ -370,7 +370,7 @@ font-size: 14px;
 #chat .emote .text {
     font-style: normal;
     font-weight: bold;
-    color: #f46b40;
+    color: #B076FF;
 }
 #footer {
     background: linear-gradient(to bottom,rgba(0, 0, 0, 0.25) 0,rgba(0, 0, 0, 0.75) 100%);
@@ -665,5 +665,5 @@ display: none !important;
 }
 
 #chat .from.dj, #chat .from.staff {
-    color: #F62626 !important;
+    color: #B076FF !important;
 }
