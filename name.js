@@ -320,13 +320,6 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
 
     }           
 
-    console.log('Loaded Radiant Script v' + radiantScript.version);       
-    radiantScript.addChatLog('Running Radiant Script v' + radiantScript.version, 'aqua');
-    radiantScript.addChatLog('NEW Keyboard shortcuts!', 'orange');
-    if (API.getUser().gRole > 0) {
-    	radiantScript.addChatLog('BA\'s have some special (and fast) keyboard shortcuts too!', 'orange');
-    }
-    API.chatLog('plugCubed not included!',true);  
     radiantScript.init();  
     var plugCubed;
     var content1 = '<section id="radiantscript">\
