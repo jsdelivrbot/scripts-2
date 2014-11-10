@@ -1,5 +1,5 @@
-.room-background {
-    background: url(http://i.imgur.com/F0mEp8h.png) no-repeat !important;
+/*.room-background {
+    background: url(http://i.imgur.com/EFXFnql.png) no-repeat !important;
     width: 500% !important;
     height: 500% !important;
 }
@@ -324,18 +324,29 @@ font-size: 14px;
 #settings {
     background: rgba(10, 10, 10, 0.89) !important;
 }
+#user-lists .list .user:hover {
+    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(255, 0, 194, 0.27) 100%) !important;
+}
+#waitlist .list .user {
+    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(255, 0, 194, 0.13) 100%) !important;
+}
+.app-right .friends {
+    background: none !important;
+}
 #settings .header {
     background: rgba(28, 31, 37, 0.78) !important;
 }
-#room .app-right {
-    background: linear-gradient(to right,rgba(0, 0, 0, 0.70) 0,rgba(0, 0, 0, 1) 100%);
+@media (max-width: 1600px) {
+    #room .app-right {
+        background: linear-gradient(to right,rgba(0, 0, 0, 0.70) 0,rgba(0, 0, 0, 1) 100%);
+    }
 }
 #dj-button {
     background: rgba(40, 44, 53, 0.75) !important;
 }
 #dj-button .left {
     background: linear-gradient(to bottom,rgba(0, 181, 230, 0.75) 0,rgba(0, 156, 221, 0.75) 100%);
-}
+}*/
 #chat .message:nth-child(2n+1),#chat .mention:nth-child(2n+1),#chat .skip:nth-child(2n+1),#chat .moderation:nth-child(2n+1),#chat .emote:nth-child(2n+1),#chat .update:nth-child(2n+1),#chat .welcome:nth-child(2n+1) {
     background-color: rgba(17, 19, 23, 0.32);
     -webkit-animation:fadein 0.25s;
@@ -352,12 +363,12 @@ font-size: 14px;
     animation:fadein 0.25s;
 }
 #chat .mention {
-    background-color: rgba(129, 118, 255, 0.22) !important;
+    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(0, 255, 192, 203) 100%) !important;
     font-weight: 700;
     padding-left: 25px;
     border-left: #7681FF 3px solid;
 }
-#chat .emote .from {
+/*#chat .emote .from {
      color: #ac76ff !important;
 }
 #chat .emote {
@@ -373,7 +384,7 @@ font-size: 14px;
     color: #ac76ff;
 }
 #footer {
-    background: rgba(102, 102, 102, 0.75)
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.25) 0,rgba(0, 0, 0, 0.75) 100%);
 }
 #playlist-button {
     background: linear-gradient(to bottom,#FF5CDE 0,#5700FF 100%);
@@ -406,7 +417,7 @@ font-size: 14px;
     background: rgba(50, 55, 66, 0.75);
 }
 #user-panel .score {
-    background: rgba(128, 128, 128, 1)
+    background: rgba(28, 31, 37, 0.59);
 }
 #dj-button.is-locked .left,#dj-button.is-full .left,#vote .crowd-response.disabled .bottom {
     background: rgba(68, 74, 89, 0.75);
@@ -539,6 +550,13 @@ display: none !important;
    -o-animation:fadein 0.5s;
    animation:fadein 0.5s;
 }
+.friends .list {
+   -webkit-animation:fadein 0.5s;
+   -moz-animation:fadein 0.5s;
+   -ms-animation:fadein 0.5s;
+   -o-animation:fadein 0.5s;
+   animation:fadein 0.5s;
+}
 @keyframes fadein {
    from {opacity:0;}
    to {opacity:1;}
@@ -662,4 +680,11 @@ display: none !important;
     top: 15px;
     right: 10px;
     opacity: .5;
+}
+#chat .from.staff {
+    color: #ac76ff !important;
+}
+
+#chat .from.dj {
+    color: #FFC0CB !important;
 }
