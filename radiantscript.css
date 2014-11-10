@@ -363,7 +363,7 @@ font-size: 14px;
     animation:fadein 0.25s;
 }
 #chat .mention {
-    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(255, 0, 194, 0.27) 100%) !important;
+    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(0, 255, 0, 194) 100%) !important;
     font-weight: 700;
     padding-left: 25px;
     border-left: #7681FF 3px solid;
