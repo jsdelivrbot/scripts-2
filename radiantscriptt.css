@@ -212,12 +212,12 @@ font-size: 14px;
     font-weight: 700;
 }
 #chat .orange {
-    border-left: #f46b40 3px solid;   
-    color: #f46b40;
+    border-left: #0268AC 3px solid;   
+    color: #0268AC;
     font-weight: 700;
 }
 .orange-bg {
-    background: rgba(244, 107, 64, 0.29) !important;
+    background: rgba(2, 104, 172, 1) !important;
 }
 .blue-bg {
     background: rgba(64, 158, 244, 0.29) !important
