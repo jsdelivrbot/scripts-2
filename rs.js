@@ -394,6 +394,29 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     $('#rmCmd').on('click', function() { window.open('http://git.io/245Ppg');  });
     $('#rmBlacklist').on('click', function() { window.open('http://goo.gl/EANOvG');  });
     $('#rmRules').on('click', function() { window.open('https://github.com/Varietyy');  });
+     $('#keyshortcuts').on('click', function() { 
+    	radiantScript.addChatLog("<u>Keyboard shortcuts:</u>\
+    		<br>W = Woot\
+            <br>M = Meh<br>G = Grab to current playlist \
+    		<br>D = Dashboard\
+            <br>C = Chat View\
+            <br>U = User View\
+    		<br>F = Friend View\
+            <br>L = Waitlist View\
+    		<br>P = Show Playlists\
+    		<br>H = Show History\
+    		<br>[SPACE] = Mute Sound\
+    		<br>+ = Volume Up +5\
+    		<br>- = Volume Down -5\
+    		<br>T = Type in Chat\
+    		<br>ESC (or TAB) = Get out of Chat", "aqua");
+    	if (API.getUser().gRole > 0) { 
+    		radiantScript.addChatLog("<u>BA Shortcuts:</u>\
+    		<br>Z = Ban selected user\
+    		<br>X = Mute selected user\
+    		<br>V = Remove selected user from waitlist", "aqua");
+    	}
+    });
     
     $('#fullscreenDisable').on('click', function() { $('#checkbox-fullscreen').click(); });
     $('#fullscreenDisable').on('mouseover', function() { $('#fullscreenDisable').addClass('highlight'); }); 
@@ -401,6 +424,97 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     $("#rm_button").click(function(){
     	$("#rm_menu").slideToggle();
     	$("#radiantscriptOther").slideToggle();
+	});
+	$(document).keypress(function(esc) {
+		if ($(':focus').is('input') == true) {
+			switch (esc.which) {
+				case 27: // esc
+					$('#chat-input-field').blur();
+					break;
+			}
+	    }
+	});
+	$(document).keypress(function(key) {
+		if ($(':focus').is('input') == true)
+			return;
+		if ($('#room-info').css('display') == 'block')
+			return;
+		switch (key.which) {
+			case 32: // Spacebar
+				$('#volume > .button').click();
+				break;
+			case 103: // g
+				if ($('#grab.selected').length < 1) {
+					$('#grab').click();
+					$('.grab > .menu > ul > li > .icon-check-purple').parent().mousedown();
+				}
+				break;
+			case 119: // w
+				$('#woot').click();
+				break;
+			case 109: // m
+				$('#meh').click();
+				break;
+			case 112: // p
+				$('#playlist-button').click();
+				break;
+			case 100: // d
+				if($('#dashboard').css('display') === 'block') {
+					$('#footer-user > .back').click();
+				}
+				else $('.item.community.clickable').mousedown();
+				break;
+			case 117: // u
+				$('#users-button').click();
+				break;
+			case 108: // l
+				$('#waitlist-button').click();
+				break;
+			case 99: // c
+				$('#chat-button').click();
+				break;
+			case 102: // f
+				$('#friends-button').click();
+				break;
+			case 104: // h
+				$('#history-button').click();
+				break;
+			case 116: // t
+				$('#chat-input-field').focus();
+				break;
+			case 43: // +
+				API.setVolume(API.getVolume()+5);
+				break;
+			case 45: // +
+				API.setVolume(API.getVolume()-5);
+				break;
+		    //special functions
+			case 122: // z
+				if (API.getUser().gRole > 0) { 
+					if (isNaN(API.selectedUserID)) return API.chatLog("Please select a user (Click on their username in chat or in userlist)");
+					var data = API.getUser(API.selectedUserID);
+					API.chatLog("Banning User: "+data.username);
+					API.moderateBanUser(data.id, 1, API.BAN.DAY);
+				}
+				break;
+			case 120: // x
+				if (API.getUser().gRole > 0) { 
+					if (isNaN(API.selectedUserID)) return API.chatLog("Please select a user (Click on their username in chat or in userlist)");
+					var data = API.getUser(API.selectedUserID);
+					API.chatLog("Muting User: "+data.username);
+					API.moderateMuteUser(data.id, 3, API.MUTE.SHORT);
+				}
+				break;
+			case 118: // v
+				if (API.getUser().gRole > 0) { 
+					if (isNaN(API.selectedUserID)) return API.chatLog("Please select a user (Click on their username in chat or in userlist)");
+					var data = API.getUser(API.selectedUserID);
+					API.chatLog("Removing User: "+data.username+" from waitlist");
+					API.moderateRemoveDJ(data.id);
+				}
+				break;
+			default:
+		}
 	});
     $(document).on('click', '#chat-messages .from, #user-lists .user', function(e){
         var name = $(this).text().replace(/^\s*|\s*$/g, ''),
@@ -440,12 +554,13 @@ else {
     console.log('Radiant Script v' + radiantScript.version + ' already loaded');
     API.chatLog('Radiant Script v' + radiantScript.version + ' already loaded', true);    
 }
-//Temp fix for mention sounds.
-/*var userName = API.getUser().username;
-var chatSound = new Audio("https://code.radiant.dj/chatsound.mp3");
+var userName = API.getUser().username;
+var newSound = new Audio("https://code.radiant.dj/chatsound.mp3");
 API.on('chat', function(chat){
- chat.message.indexOf('@' + userName) > -1 && chatSound.play();
-});*/
+	chat.message.indexOf('@everyone') > -1 && API.getUser(chat.uid).role > 1 && newSound.play();
+    if (!radiantScript.chatSound) return;
+    chat.message.indexOf('@' + userName) > -1 && newSound.play();
+});
 
 (function(){
         var mutedID = [], mutedName = [];
