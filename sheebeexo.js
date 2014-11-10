@@ -1,4 +1,6 @@
 $(document).ready(function(){
+if (API.enabled && $("#radiantscriptt-css").length <= 0) {
+$('body').prepend('<link rel="stylesheet" type="text/css" id="radiantscriptt-css" href="https://rawgit.com/Varietyy/nomeh/master/radiantscriptt.css" />');
  
 //When script loads
 API.chatLog("sheebeexo's ChatScript! Commands: /on, /off, /chat", alert)
