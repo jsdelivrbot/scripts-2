@@ -1,5 +1,5 @@
 .room-background {
-    background: url(http://i.imgur.com/EFXFnql.png) no-repeat !important;
+    background: url(https://code.radiant.dj/img/radiant.music.nov1.jpg) no-repeat !important;
     width: 500% !important;
     height: 500% !important;
 }
@@ -32,7 +32,7 @@
 #radiantscript h3 {
     font-size: 16px;    
     text-align: center;
-    color: #B076FF;
+    color: #00b5e6;
 }
 #radiantscript .version {
     font-style: italic;
@@ -59,16 +59,16 @@
     font-size: 0.9em;
 }
 #DisableFullScreen .highlight {    
-    color: #B076FF;
+    color: #00b5e6;
 }
 #fullscreenDisable .highlight {    
-    color: #B076FF;
+    color: #00b5e6;
 }
 #fullscreenDisable {    
     cursor: pointer;
 }
 #friendfinder .highlight {    
-    color: #B076FF;
+    color: #00b5e6;
 }
 #friendfinder {    
     cursor: pointer;
@@ -126,7 +126,7 @@
     cursor: pointer;
 }
 .rmLinks:hover{
-    color: #2D002D;
+    color: #00b5e6;
 }
 #radiantscriptRight {    
     position: absolute;
@@ -156,7 +156,7 @@
 #radiantscriptRight h3 {
     font-size: 16px;    
     text-align: center;
-    color: #2D002D;
+    color: #00b5e6;
 }
 #radiantscriptRight .version {
     font-style: italic;
@@ -196,7 +196,7 @@ text-align: center;
 
 #rmstatsTitle {
 font-weight: bold;
-color: #2D002D;
+color: #00b5e6;
 font-size: 14px;
 }
 
@@ -212,12 +212,12 @@ font-size: 14px;
     font-weight: 700;
 }
 #chat .orange {
-    border-left: #0268AC 3px solid;   
-    color: #0268AC;
+    border-left: #f46b40 3px solid;   
+    color: #f46b40;
     font-weight: 700;
 }
 .orange-bg {
-    background: rgba(2, 104, 172, 1) !important;
+    background: rgba(244, 107, 64, 0.29) !important;
 }
 .blue-bg {
     background: rgba(64, 158, 244, 0.29) !important
@@ -324,11 +324,22 @@ font-size: 14px;
 #settings {
     background: rgba(10, 10, 10, 0.89) !important;
 }
+#user-lists .list .user:hover {
+    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(255, 0, 194, 0.27) 100%) !important;
+}
+#waitlist .list .user {
+    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(255, 0, 194, 0.13) 100%) !important;
+}
+.app-right .friends {
+    background: none !important;
+}
 #settings .header {
     background: rgba(28, 31, 37, 0.78) !important;
 }
-#room .app-right {
-    background: linear-gradient(to right,rgba(0, 0, 0, 0.70) 0,rgba(0, 0, 0, 1) 100%);
+@media (max-width: 1600px) {
+    #room .app-right {
+        background: linear-gradient(to right,rgba(0, 0, 0, 0.70) 0,rgba(0, 0, 0, 1) 100%);
+    }
 }
 #dj-button {
     background: rgba(40, 44, 53, 0.75) !important;
@@ -352,17 +363,17 @@ font-size: 14px;
     animation:fadein 0.25s;
 }
 #chat .mention {
-    background-color: rgba(244, 107, 64, 0.17) !important;
+    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(255, 0, 194, 0.27) 100%) !important;
     font-weight: 700;
     padding-left: 25px;
-    border-left: #B076FF 3px solid;
+    border-left: #7681FF 3px solid;
 }
 #chat .emote .from {
-     color: #B076FF !important;
+     color: #ac76ff !important;
 }
 #chat .emote {
-    border-left: #B076FF 3px solid !important;
-    background-color: rgba(244, 107, 64, 0.17) !important;
+    border-left: rgba(174, 69, 189, 1) 3px solid !important;
+    background-color: rgba(190, 28, 213, 0.22) !important;
 }
 #chat-messages .emote .icon {
     left: 4px;
@@ -370,7 +381,7 @@ font-size: 14px;
 #chat .emote .text {
     font-style: normal;
     font-weight: bold;
-    color: #B076FF;
+    color: #ac76ff;
 }
 #footer {
     background: linear-gradient(to bottom,rgba(0, 0, 0, 0.25) 0,rgba(0, 0, 0, 0.75) 100%);
@@ -539,6 +550,13 @@ display: none !important;
    -o-animation:fadein 0.5s;
    animation:fadein 0.5s;
 }
+.friends .list {
+   -webkit-animation:fadein 0.5s;
+   -moz-animation:fadein 0.5s;
+   -ms-animation:fadein 0.5s;
+   -o-animation:fadein 0.5s;
+   animation:fadein 0.5s;
+}
 @keyframes fadein {
    from {opacity:0;}
    to {opacity:1;}
@@ -587,7 +605,7 @@ display: none !important;
 #radiantscriptOther h3 {
     font-size: 16px;    
     text-align: center;
-    color: #B076FF;
+    color: #00b5e6;
 }
 #radiantscriptOther .version {
     font-style: italic;
@@ -663,7 +681,10 @@ display: none !important;
     right: 10px;
     opacity: .5;
 }
+#chat .from.staff {
+    color: #ac76ff !important;
+}
 
-#chat .from.dj, #chat .from.staff {
-    color: #4D4DFF !important;
+#chat .from.dj {
+    color: #ac76ff !important;
 }
