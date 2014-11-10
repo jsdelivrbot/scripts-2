@@ -1,4 +1,4 @@
-if (API.enabled && $("#radiantscriptt-css").length <= 0) {
+if (API.enabled && $("#radiantscript-css").length <= 0) {
 
     var radiantScript = {
 
@@ -408,7 +408,7 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     var content4 = '<section id="DisableFullScreen" class="disabled1"><div id="fullscreenDisable">Disable Fullscreen</div></section>';
 
 
-    $('body').prepend('<link rel="stylesheet" type="text/css" id="radiantscriptt-css" href="https://rawgit.com/Varietyy/nomeh/master/radiantscriptt.css" />');  
+    $('body').prepend('<link rel="stylesheet" type="text/css" id="radiantscript-css" href="https://rawgit.com/Varietyy/nomeh/master/radiantscript.css" />');  
     $('#room').append(content1);
     $('#room').append(content2);
     $('#room').append(content3);
