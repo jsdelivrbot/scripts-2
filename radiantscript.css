@@ -1,4 +1,4 @@
-/*.room-background {
+.room-background {
     background: url(http://i.imgur.com/EFXFnql.png) no-repeat !important;
     width: 500% !important;
     height: 500% !important;
@@ -346,7 +346,7 @@ font-size: 14px;
 }
 #dj-button .left {
     background: linear-gradient(to bottom,rgba(0, 181, 230, 0.75) 0,rgba(0, 156, 221, 0.75) 100%);
-}*/
+}
 #chat .message:nth-child(2n+1),#chat .mention:nth-child(2n+1),#chat .skip:nth-child(2n+1),#chat .moderation:nth-child(2n+1),#chat .emote:nth-child(2n+1),#chat .update:nth-child(2n+1),#chat .welcome:nth-child(2n+1) {
     background-color: rgba(17, 19, 23, 0.32);
     -webkit-animation:fadein 0.25s;
@@ -363,12 +363,12 @@ font-size: 14px;
     animation:fadein 0.25s;
 }
 #chat .mention {
-    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(0, 255, 192, 203) 100%) !important;
+    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(255, 0, 194, 0.27) 100%) !important;
     font-weight: 700;
     padding-left: 25px;
     border-left: #7681FF 3px solid;
 }
-/*#chat .emote .from {
+#chat .emote .from {
      color: #ac76ff !important;
 }
 #chat .emote {
@@ -686,5 +686,5 @@ display: none !important;
 }
 
 #chat .from.dj {
-    color: #FFC0CB !important;
+    color: #ac76ff !important;
 }
