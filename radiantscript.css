@@ -1,8 +1,8 @@
-/*.room-background {
-    background: url(http://i.imgur.com/EFXFnql.png) no-repeat !important;
+.room-background {
+    background: url(http://www.wallpapersdesign.net/wallpapers/2013/11/U-Necklace-For-Usher-900x1600.jpg) no-repeat !important;
     width: 500% !important;
     height: 500% !important;
-}*/
+}
 #radiantscript {    
     position: absolute;
     top: 64px;
