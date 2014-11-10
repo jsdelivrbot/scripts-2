@@ -1,6 +1,6 @@
 if (API.enabled && $("#radiantscriptt-css").length <= 0) {
 
-/*    var radiantScript = {
+    var radiantScript = {
 
         version       : "Fuck plug.dj",
         autoWoot      : true,
@@ -329,87 +329,14 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     API.chatLog('plugCubed not included!',true);  
     radiantScript.init();  
     var plugCubed;
-    var content1 = '<section id="radiantscript">\
-        <h3 id="rm_button" style="cursor:pointer;">Variety!</h3>\
-        <p class="version">Busy Fucking your bitch!</p>\
-        <div id="rm_menu">\
-        <div><p>Auto Woot</p>\
-        <div class="onoffswitch">\
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-autowoot" ' + radiantScript.cAutoWoot + '>\
-            <label class="onoffswitch-label" for="checkbox-autowoot">\
-                <div class="onoffswitch-inner"></div>\
-                <div class="onoffswitch-switch"></div>\
-            </label>\
-        </div></div>\
-        <div><p>Auto Join</p>\
-        <div class="onoffswitch">\
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-autojoin" ' + radiantScript.cAutoJoin + '>\
-            <label class="onoffswitch-label" for="checkbox-autojoin">\
-                <div class="onoffswitch-inner"></div>\
-                <div class="onoffswitch-switch"></div>\
-            </label>\
-        </div></div>\
-        <div><p>Show Mehs</p>\
-        <div class="onoffswitch">\
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-showmehs" ' + radiantScript.cmehShow + '>\
-            <label class="onoffswitch-label" for="checkbox-showmehs">\
-                <div class="onoffswitch-inner"></div>\
-                <div class="onoffswitch-switch"></div>\
-            </label>\
-        </div></div>\
-        <div><p>User Join</p>\
-        <div class="onoffswitch">\
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-userJoin" ' + radiantScript.cuserJoin + '>\
-            <label class="onoffswitch-label" for="checkbox-userJoin">\
-                <div class="onoffswitch-inner"></div>\
-                <div class="onoffswitch-switch"></div>\
-            </label>\
-        </div></div>\
-        <div><p>User Leave</p>\
-        <div class="onoffswitch">\
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-userLeave" ' + radiantScript.cuserLeave + '>\
-            <label class="onoffswitch-label" for="checkbox-userLeave">\
-                <div class="onoffswitch-inner"></div>\
-                <div class="onoffswitch-switch"></div>\
-            </label>\
-        </div></div>\
-        <div><p>Custom Sound</p>\
-        <div class="onoffswitch">\
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-chatSound" ' + radiantScript.cchatSound + '>\
-            <label class="onoffswitch-label" for="checkbox-chatSound">\
-                <div class="onoffswitch-inner"></div>\
-                <div class="onoffswitch-switch"></div>\
-            </label>\
-        </div></div>\
-        <div><p>Fullscreen</p>\
-        <div class="onoffswitch">\
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-fullscreen" ' + radiantScript.cfullScreen + '>\
-            <label class="onoffswitch-label" for="checkbox-fullscreen">\
-                <div class="onoffswitch-inner"></div>\
-                <div class="onoffswitch-switch"></div>\
-            </label>\
-        </div></div>\
-        </div>\
-        <p class="version">' + radiantScript.version + '</p>\
-    </section>';
-    var content2 = '<section id="radiantscriptOther">\
-    <div><p id="rmFacebook" class="rmLinks">My Facebook</p></div>\
-   <div><p id="rmTwitter" class="rmLinks">My Twitter</p></div>\
-   <div><p id="rmSite" class="rmLinks">My Pastebin</p></div>\
-   <div><p id="rmRules" class="rmLinks">My Github</p></div>\
-   <div><p id="rmCmd" class="rmLinks">Bot Commands</p></div>\
-   <div><p id="rmBlacklist" class="rmLinks">OP List</p></div>\
-    <div><p>&nbsp;</p></div>\
-    <div><p id="keyshortcuts" class="rmLinks">Key Shortcuts!</p></div>\
-    </section>';
+    var content1 = null,
+    var content2 = null,
+    var content3 = null,
+    var content4 = null,
 
-    var content3 = '<div id="playlist-export-button" class="button"><i class="icon icon-export-white"></i></div>';
 
-    var content4 = '<section id="DisableFullScreen" class="disabled1"><div id="fullscreenDisable">Disable Fullscreen</div></section>';
-
-*/
     $('body').prepend('<link rel="stylesheet" type="text/css" id="radiantscriptt-css" href="https://rawgit.com/Varietyy/nomeh/master/radiantscriptt.css" />');  
-/*    $('#room').append(content1);
+    $('#room').append(content1);
     $('#room').append(content2);
     $('#room').append(content3);
     $('#room').append(content4);
@@ -423,37 +350,7 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     $('#checkbox-showmehs').on('click', function() { radiantScript.toggleMehShow();  }); 
     $('#checkbox-userLeave').on('click', function() { radiantScript.toggleuserLeave();  }); 
     $('#checkbox-userJoin').on('click', function() { radiantScript.toggleuserJoin();  }); 
-    $('#checkbox-chatSound').on('click', function() { radiantScript.toggleChatSound();  }); 
-
-    $('#rmFacebook').on('click', function() { window.open('https://www.facebook.com/');  });
-    $('#rmTwitter').on('click', function() { window.open('https://twitter.com/VarietyO');  });
-    $('#rmSite').on('click', function() { window.open('http://pastebin.com/u/Variety');  });
-    $('#rmCmd').on('click', function() { window.open('http://git.io/245Ppg');  });
-    $('#rmBlacklist').on('click', function() { window.open('http://goo.gl/EANOvG');  });
-    $('#rmRules').on('click', function() { window.open('https://github.com/Varietyy');  });
-    $('#keyshortcuts').on('click', function() { 
-    	radiantScript.addChatLog("<u>Keyboard shortcuts:</u>\
-    		<br>W = Woot\
-            <br>M = Meh<br>G = Grab to current playlist \
-    		<br>D = Dashboard\
-            <br>C = Chat View\
-            <br>U = User View\
-    		<br>F = Friend View\
-            <br>L = Waitlist View\
-    		<br>P = Show Playlists\
-    		<br>H = Show History\
-    		<br>[SPACE] = Mute Sound\
-    		<br>+ = Volume Up +5\
-    		<br>- = Volume Down -5\
-    		<br>T = Type in Chat\
-    		<br>ESC (or TAB) = Get out of Chat", "aqua");
-    	if (API.getUser().gRole > 0) { 
-    		radiantScript.addChatLog("<u>BA Shortcuts:</u>\
-    		<br>Z = Ban selected user\
-    		<br>X = Mute selected user\
-    		<br>V = Remove selected user from waitlist", "aqua");
-    	}
-    });
+    $('#checkbox-chatSound').on('click', function() { radiantScript.toggleChatSound();  });
     
     $('#fullscreenDisable').on('click', function() { $('#checkbox-fullscreen').click(); });
     $('#fullscreenDisable').on('mouseover', function() { $('#fullscreenDisable').addClass('highlight'); }); 
@@ -471,88 +368,7 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
 			}
 	    }
 	});
-	$(document).keypress(function(key) {
-		if ($(':focus').is('input') == true)
-			return;
-		if ($('#room-info').css('display') == 'block')
-			return;
-		switch (key.which) {
-			case 32: // Spacebar
-				$('#volume > .button').click();
-				break;
-			case 103: // g
-				if ($('#grab.selected').length < 1) {
-					$('#grab').click();
-					$('.grab > .menu > ul > li > .icon-check-purple').parent().mousedown();
-				}
-				break;
-			case 119: // w
-				$('#woot').click();
-				break;
-			case 109: // m
-				$('#meh').click();
-				break;
-			case 112: // p
-				$('#playlist-button').click();
-				break;
-			case 100: // d
-				if($('#dashboard').css('display') === 'block') {
-					$('#footer-user > .back').click();
-				}
-				else $('.item.community.clickable').mousedown();
-				break;
-			case 117: // u
-				$('#users-button').click();
-				break;
-			case 108: // l
-				$('#waitlist-button').click();
-				break;
-			case 99: // c
-				$('#chat-button').click();
-				break;
-			case 102: // f
-				$('#friends-button').click();
-				break;
-			case 104: // h
-				$('#history-button').click();
-				break;
-			case 116: // t
-				$('#chat-input-field').focus();
-				break;
-			case 43: // +
-				API.setVolume(API.getVolume()+5);
-				break;
-			case 45: // +
-				API.setVolume(API.getVolume()-5);
-				break;
-		    //special functions
-			case 122: // z
-				if (API.getUser().gRole > 0) { 
-					if (isNaN(API.selectedUserID)) return API.chatLog("Please select a user (Click on their username in chat or in userlist)");
-					var data = API.getUser(API.selectedUserID);
-					API.chatLog("Banning User: "+data.username);
-					API.moderateBanUser(data.id, 1, API.BAN.DAY);
-				}
-				break;
-			case 120: // x
-				if (API.getUser().gRole > 0) { 
-					if (isNaN(API.selectedUserID)) return API.chatLog("Please select a user (Click on their username in chat or in userlist)");
-					var data = API.getUser(API.selectedUserID);
-					API.chatLog("Muting User: "+data.username);
-					API.moderateMuteUser(data.id, 3, API.MUTE.SHORT);
-				}
-				break;
-			case 118: // v
-				if (API.getUser().gRole > 0) { 
-					if (isNaN(API.selectedUserID)) return API.chatLog("Please select a user (Click on their username in chat or in userlist)");
-					var data = API.getUser(API.selectedUserID);
-					API.chatLog("Removing User: "+data.username+" from waitlist");
-					API.moderateRemoveDJ(data.id);
-				}
-				break;
-			default:
-		}
-	});
+	
     $(document).on('click', '#chat-messages .from, #user-lists .user', function(e){
         var name = $(this).text().replace(/^\s*|\s*$/g, ''),
             users = API.getUsers(),
@@ -597,4 +413,4 @@ API.on('chat', function(chat){
 	chat.message.indexOf('@everyone') > -1 && API.getUser(chat.uid).role > 1 && newSound.play();
     if (!radiantScript.chatSound) return;
     chat.message.indexOf('@' + userName) > -1 && newSound.play();
-});*/
+});
