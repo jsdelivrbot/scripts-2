@@ -1,4 +1,4 @@
-if (API.enabled && $("#radiantscriptt-css").length <= 0) {
+if (API.enabled && $("#radiantscript-css").length <= 0) {
 
     var radiantScript = {
 
@@ -15,6 +15,8 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
         cuserJoin     : '',
         userLeave     : false,
         cuserLeave    : '',
+        chatSound     : true,
+        cchatSound    : '',
 
         setCookie: function (key, value) {          
             var expires = new Date();
@@ -94,6 +96,12 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
             }
         },
 
+        toggleChatSound: function(obj) {
+            this.chatSound = !this.chatSound;     
+            this.cchatSound = this.chatSound ? 'checked' : '';
+            this.setCookie("COOKIE_CHAT_SOUND", this.chatSound); 
+        },
+
         addChatLog: function(message, cssClass) {
             $('#chat-messages').append('<div class="update ' + cssClass + '">' + message + '</div>');
             $('#chat-messages').scrollTop($('#chat-messages').prop("scrollHeight"));
@@ -120,7 +128,6 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
         djAdvanced: function(obj) {
             if (radiantScript.autoWoot) { setTimeout(function() { $('#woot').click(); }, 2000); }
             radiantScript.updateQueueStatus();
-            radiantScript.hyperSpace();
         },
 
         queueUpdate: function(obj) {
@@ -135,14 +142,24 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
             }
         },
 
-        userJoin: function (obj){
+        onuserJoin: function (obj){
             if (!radiantScript.userJoin) return;  
             radiantScript.addChatLog(obj.username + " just joined the room!", 'aqua');
         },
 
-        userLeave: function (obj){
+        onuserLeave: function (obj){
             if (!radiantScript.userLeave) return;  
             radiantScript.addChatLog(obj.username + " just left the room!", 'orange');
+        },
+
+        onCommandChat: function (data){
+        	var message = data.message.toLowerCase();
+        	if(data.type == "message" && data.uid !== API.getUser().id){
+	            if ((message.indexOf('!joindisable') >= 0) && API.getUser(data.uid).role > 1 && radiantScript.autoJoin) {
+	                API.sendChat("@"+data.un+" Auto Join has been Disabled!");
+            		$('#checkbox-autojoin').click();
+	            }
+	        }
         },
 
         joinQueue: function(obj) {
@@ -227,13 +244,15 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
             this.fullScreen    = this.getCookie('COOKIE_FULL_SCREEN') == 'true' ?  true : false;
             this.mehShow       = this.getCookie('COOKIE_MEH_SHOW') == 'true' ?  true : false;   
             this.userJoin      = this.getCookie('COOKIE_USER_JOIN') == 'true' ?  true : false;   
-            this.userLeave     = this.getCookie('COOKIE_USER_LEAVE') == 'true' ?  true : false;           
+            this.userLeave     = this.getCookie('COOKIE_USER_LEAVE') == 'true' ?  true : false;
+            this.chatSound     = this.getCookie('COOKIE_CHAT_SOUND') == 'true' ?  true : false;           
             this.cAutoWoot     = this.autoWoot   ? 'checked' : ''; 
             this.cAutoJoin     = this.autoJoin   ? 'checked' : '';   
             this.cfullScreen   = this.fullScreen ? 'checked' : ''; 
             this.cmehShow      = this.mehShow    ? 'checked' : '';   
             this.cuserJoin     = this.userJoin   ? 'checked' : '';   
-            this.cuserLeave    = this.userLeave  ? 'checked' : '';   
+            this.cuserLeave    = this.userLeave  ? 'checked' : '';
+            this.cchatSound    = this.chatSound  ? 'checked' : '';   
             this.userInfo      = API.getUser();
 
             if(this.autoWoot) { $('#woot').click(); }      
@@ -243,8 +262,9 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
             API.on(API.WAIT_LIST_UPDATE, this.queueUpdate);
             API.on(API.UPDATE, this.queueUpdate); 
             API.on(API.VOTE_UPDATE, this.f_votelggr);
-            API.on(API.USER_JOIN, this.userJoin);
-            API.on(API.USER_LEAVE, this.userLeave);
+            API.on(API.USER_JOIN, this.onuserJoin);
+            API.on(API.USER_LEAVE, this.onuserLeave);
+            API.on(API.CHAT, this.onCommandChat);
 
             this.queueUpdate();
             this.fullscreenTrigger();
@@ -301,11 +321,17 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     }           
 
     console.log('Loaded Radiant Script v' + radiantScript.version);       
+    radiantScript.addChatLog('Running Radiant Script v' + radiantScript.version, 'aqua');
+    radiantScript.addChatLog('NEW Keyboard shortcuts!', 'orange');
+    if (API.getUser().gRole > 0) {
+    	radiantScript.addChatLog('BA\'s have some special (and fast) keyboard shortcuts too!', 'orange');
+    }
+    API.chatLog('plugCubed not included!',true);  
     radiantScript.init();  
     var plugCubed;
     var content1 = '<section id="radiantscript">\
         <h3 id="rm_button" style="cursor:pointer;">Variety!</h3>\
-        <p class="version">Busy fucking your bitch!</p>\
+        <p class="version">Busy Fucking your bitch!</p>\
         <div id="rm_menu">\
         <div><p>Auto Woot</p>\
         <div class="onoffswitch">\
@@ -347,6 +373,14 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
                 <div class="onoffswitch-switch"></div>\
             </label>\
         </div></div>\
+        <div><p>Custom Sound</p>\
+        <div class="onoffswitch">\
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-chatSound" ' + radiantScript.cchatSound + '>\
+            <label class="onoffswitch-label" for="checkbox-chatSound">\
+                <div class="onoffswitch-inner"></div>\
+                <div class="onoffswitch-switch"></div>\
+            </label>\
+        </div></div>\
         <div><p>Fullscreen</p>\
         <div class="onoffswitch">\
             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-fullscreen" ' + radiantScript.cfullScreen + '>\
@@ -365,6 +399,8 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
    <div><p id="rmRules" class="rmLinks">My Github</p></div>\
    <div><p id="rmCmd" class="rmLinks">Bot Commands</p></div>\
    <div><p id="rmBlacklist" class="rmLinks">OP List</p></div>\
+    <div><p>&nbsp;</p></div>\
+    <div><p id="keyshortcuts" class="rmLinks">Key Shortcuts!</p></div>\
     </section>';
 
     var content3 = '<div id="playlist-export-button" class="button"><i class="icon icon-export-white"></i></div>';
@@ -372,7 +408,7 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     var content4 = '<section id="DisableFullScreen" class="disabled1"><div id="fullscreenDisable">Disable Fullscreen</div></section>';
 
 
-    $('body').prepend('<link rel="stylesheet" type="text/css" id="radiantscriptt-css" href="https://rawgit.com/Varietyy/nomeh/master/radiantscriptt.css" />');  
+    $('body').prepend('<link rel="stylesheet" type="text/css" id="radiantscript-css" href="https://code.radiant.dj/roomscript.css" />');  
     $('#room').append(content1);
     $('#room').append(content2);
     $('#room').append(content3);
@@ -387,6 +423,7 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     $('#checkbox-showmehs').on('click', function() { radiantScript.toggleMehShow();  }); 
     $('#checkbox-userLeave').on('click', function() { radiantScript.toggleuserLeave();  }); 
     $('#checkbox-userJoin').on('click', function() { radiantScript.toggleuserJoin();  }); 
+    $('#checkbox-chatSound').on('click', function() { radiantScript.toggleChatSound();  }); 
 
     $('#rmFacebook').on('click', function() { window.open('https://www.facebook.com/');  });
     $('#rmTwitter').on('click', function() { window.open('https://twitter.com/VarietyO');  });
@@ -394,7 +431,7 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     $('#rmCmd').on('click', function() { window.open('http://git.io/245Ppg');  });
     $('#rmBlacklist').on('click', function() { window.open('http://goo.gl/EANOvG');  });
     $('#rmRules').on('click', function() { window.open('https://github.com/Varietyy');  });
-     $('#keyshortcuts').on('click', function() { 
+    $('#keyshortcuts').on('click', function() { 
     	radiantScript.addChatLog("<u>Keyboard shortcuts:</u>\
     		<br>W = Woot\
             <br>M = Meh<br>G = Grab to current playlist \
@@ -561,45 +598,3 @@ API.on('chat', function(chat){
     if (!radiantScript.chatSound) return;
     chat.message.indexOf('@' + userName) > -1 && newSound.play();
 });
-
-(function(){
-        var mutedID = [], mutedName = [];
-        API.on(API.CHAT,function(a){
-                if (mutedID.indexOf(a.fid) > -1 || mutedName.indexOf(a.from) > -1) API.moderateDeleteChat(a.cid);
-        });
-        API.on(API.CHAT_COMMAND,function(a){
-                if (!a.indexOf('/mute @')) {
-                        var name = a.substr(7).trim(), id = getID(name);
-                        if (!id) {
-                                if (mutedName.indexOf(name) > -1) API.chatLog(name + ' is already muted by name.',true);
-                                else {
-                                        mutedName.push(name);
-                                        API.chatLog('Could not find ' + name + ' in the room: muted by name instead of ID.',true);
-                                }
-                        } else {
-                                if (mutedName.indexOf(name) > -1) mutedName.splice(mutedName.indexOf(name),1);
-                                if (mutedID.indexOf(id) > -1) API.chatLog(name + ' is already muted by ID.',true);
-                                else {
-                                        mutedID.push(id);
-                                        API.chatLog('Muted ' + name + ' by ID. (' + id + ')',true);
-                                }
-                        }
-                } else if (!a.indexOf('/unmute @')) {
-                        var name = a.substr(9).trim(), id = getID(name);
-                        if (mutedName.indexOf(name) > -1) {
-                                mutedName.splice(mutedName.indexOf(name),1);
-                                API.chatLog('Unmuted ' + name + ' by name.',true);
-                        } else if (id && mutedID.indexOf(id) > -1) {
-                                mutedID.splice(mutedID.indexOf(id),1);
-                                API.chatLog('Unmuted ' + name + ' by ID.',true);
-                        } else API.chatLog(name + ' wasn\'t muted.',true);
-                }
-        });
-        function getID(a) {
-                var b = API.getUsers();
-        for (var i = 0; i < b.length; i++) if (b[i].username == a) return b[i].id;
-        return null;
-        }
-})();
-
-setTimeout(function(){$.getScript("https://rawgit.com/Varietyy/nomeh/master/chat.js");}, 1000);
