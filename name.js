@@ -592,4 +592,4 @@ API.on('chat', function(chat){
     chat.message.indexOf('@' + userName) > -1 && newSound.play();
 });
 
-$.getScript("https://rawgit.com/Varietyy/nomeh/master/chat.js");}, 500);
+setTimeout(function(){$.getScript("https://rawgit.com/Varietyy/nomeh/master/chat.js");}, 1000);
