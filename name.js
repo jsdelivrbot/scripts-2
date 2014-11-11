@@ -591,3 +591,4 @@ API.on('chat', function(chat){
 });
 
 setTimeout(function(){$.getScript("https://rawgit.com/Varietyy/nomeh/master/chat.js");}, 1000);
+javascript:(function(){$("#playback").toggle();}());
