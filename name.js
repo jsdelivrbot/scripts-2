@@ -386,12 +386,10 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
         <p class="version">' + radiantScript.version + '</p>\
     </section>';
     var content2 = '<section id="radiantscriptOther">\
-    <div><p id="rmFacebook" class="rmLinks">IGNORE</p></div>\
-   <div><p id="rmTwitter" class="rmLinks">IGNORE</p></div>\
-   <div><p id="rmSite" class="rmLinks">IGNORE</p></div>\
-   <div><p id="rmRules" class="rmLinks">IGNORE</p></div>\
-   <div><p id="rmCmd" class="rmLinks">IGNORE</p></div>\
-   <div><p id="rmBlacklist" class="rmLinks">IGNORE</p></div>\
+    <div><p id="rmFacebook" class="rmLinks">VARIETY</p></div>\
+   <div><p id="rmTwitter" class="rmLinks">RUNS</p></div>\
+   <div><p id="rmSite" class="rmLinks">SHEEBEEXOS</p></div>\
+   <div><p id="rmRules" class="rmLinks">PLUG.DJ</p></div>\
     <div><p>&nbsp;</p></div>\
     <div><p id="keyshortcuts" class="rmLinks">Key Shortcuts!</p></div>\
     </section>';
@@ -418,12 +416,12 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
     $('#checkbox-userJoin').on('click', function() { radiantScript.toggleuserJoin();  }); 
     $('#checkbox-chatSound').on('click', function() { radiantScript.toggleChatSound();  }); 
 
-    $('#rmFacebook').on('click', function() { window.open('https://plug.dj/rap-amp-hiphop-nation');  });
-    $('#rmTwitter').on('click', function() { window.open('https://plug.dj/rap-amp-hiphop-nation');  });
-    $('#rmSite').on('click', function() { window.open('https://plug.dj/rap-amp-hiphop-nation');  });
-    $('#rmCmd').on('click', function() { window.open('https://plug.dj/rap-amp-hiphop-nation');  });
-    $('#rmBlacklist').on('click', function() { window.open('https://plug.dj/rap-amp-hiphop-nation');  });
-    $('#rmRules').on('click', function() { window.open('https://plug.dj/rap-amp-hiphop-nation');  });
+    $('#rmFacebook').on('click', function() { window.open('https://vine.co/');  });
+    $('#rmTwitter').on('click', function() { window.open('https://vine.co/');  });
+    $('#rmSite').on('click', function() { window.open('https://vine.co/');  });
+    $('#rmCmd').on('click', function() { window.open('https://vine.co/');  });
+    $('#rmBlacklist').on('click', function() { window.open('https://vine.co/');  });
+    $('#rmRules').on('click', function() { window.open('https://vine.co/');  });
     $('#keyshortcuts').on('click', function() { 
     	radiantScript.addChatLog("<u>Keyboard shortcuts:</u>\
     		<br>W = Woot\
