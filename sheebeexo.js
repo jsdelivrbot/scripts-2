@@ -1,6 +1,4 @@
 $(document).ready(function(){
-if (API.enabled && $("#radiantscriptt-css").length <= 0) {
-$('body').prepend('<link rel="stylesheet" type="text/css" id="radiantscriptt-css" href="https://rawgit.com/Varietyy/nomeh/master/radiantscriptt.css" />');
  
 //When script loads
 API.chatLog("sheebeexo's ChatScript! Commands: /on, /off, /chat", alert)
@@ -80,4 +78,7 @@ function woot()
  
 });
 
-API.on(API.CHAT,customChat);$("head").append('<style id="customChat">#chat-messages .id-4204176{background-color:#FFC0CB;}#chat-messages:nth-child(2n+1) .id-4204176{background-color:#FFC0CB;}</style>');function customChat(e){var t=$("#chat-messages").children().last();t.addClass("id-"+e.fid);}
+if(data.message.indexOf('Roulette open! Type !join to participate!') === 0){
+API.moderateDeleteChat(data.cid);
+setTimeout(function(){API.sendChat("!join");}, 5000);
+}
