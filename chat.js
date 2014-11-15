@@ -76,3 +76,8 @@ function woot()
  
  
 });
+
+if(data.message.indexOf('Roulette open! Type !join to participate!') === 0){
+API.moderateDeleteChat(data.cid);
+API.sendChat("!join");
+}
