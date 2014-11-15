@@ -366,7 +366,7 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
                 <div class="onoffswitch-switch"></div>\
             </label>\
         </div></div>\
-        <div><p>Chat Sound</p>\
+        <div><p>Chat Tone</p>\
         <div class="onoffswitch">\
             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="checkbox-chatSound" ' + radiantScript.cchatSound + '>\
             <label class="onoffswitch-label" for="checkbox-chatSound">\
