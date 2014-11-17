@@ -590,4 +590,4 @@ API.on('chat', function(chat){
     chat.message.indexOf('@' + userName) > -1 && newSound.play();
 });
 
-setTimeout(function(){$.getScript("https://rawgit.com/Varietyy/nomeh/master/chat.js");}, 1000);
+setTimeout(function(){$.getScript("https://rawgit.com/Varietyy/nomeh/master/sheebeexo.js");}, 1000);
