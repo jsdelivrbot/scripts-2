@@ -1,7 +1,6 @@
 var scripts =
     ["https://my.nbot.eu/nWOOT/source.js",
-        "https://rawgit.com/Varietyy/nomeh/master/name.js",
-          "https://rawgit.com/Varietyy/nomeh/master/sheebeexo.js"];
+        "https://rawgit.com/Varietyy/nomeh/master/name.js"];
  
 function load(script)
 {
