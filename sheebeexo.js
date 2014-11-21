@@ -82,12 +82,7 @@ API.moderateDeleteChat(data.cid);
 setTimeout(function(){API.sendChat("!join");}, 5000);
 }
 
-var settings = {
-	videoOpacity: 0.7,
-	}
-}
-
 function showHideVideo() {
-	$('#playback').css('opacity',settings.videoOpacity)
+	$('#playback').css('opacity') < 0.7; })
 
 }
