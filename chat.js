@@ -1,7 +1,7 @@
 $(document).ready(function(){
  
 //When script loads
-API.chatLog("ChatScript ON", alert)
+API.chatLog("Variety's ChatScript! Commands: /on, /off, /chat", alert)
 $('#button-vote-positive').click();
  
 //global var
