@@ -725,6 +725,12 @@ display: none !important;
     opacity: 1;
 }
 
-#app-menu.open {
-    background: rgba(20, 20, 20, 0.85098) url(https://i.imgur.com/tJ6bT3m.png) center bottom no-repeat !important;
+.user-content.profile .meta {
+    background: rgba(0,0,0,0.2);
+    margin: 0;
+    padding: 12px 5px 0 5px;
+    right: 40px !important;
+    left: 0;
+    position: relative !important;
+    width: auto;
 }
