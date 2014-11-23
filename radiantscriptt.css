@@ -688,3 +688,39 @@ display: none !important;
 #chat .from.dj {
     color: #ac76ff !important;
 }
+
+.progress {
+    background: linear-gradient(to bottom, rgb(0, 196, 255) 0, rgb(0, 136, 196) 100%) !important;
+}
+ 
+.progress:after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-image:
+       -webkit-gradient(linear, 0 0, 100% 100%,
+          color-stop(.25, rgba(255, 255, 255, .2)),
+          color-stop(.25, transparent), color-stop(.5, transparent),
+          color-stop(.5, rgba(255, 255, 255, .2)),
+          color-stop(.75, rgba(255, 255, 255, .2)),
+          color-stop(.75, transparent), to(transparent)
+       );
+    z-index: 0;
+    background-size: 50px 50px;
+    -webkit-animation: move 4s linear infinite;
+}
+ 
+@-webkit-keyframes move {
+    0% {
+       background-position: 0 0;
+    }
+    100% {
+       background-position: 50px 50px;
+    }
+}
+.experience .level {
+    opacity: .5;
+}
+.experience .level.earned {
+    opacity: 1;
+}
