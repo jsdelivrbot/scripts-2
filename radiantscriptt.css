@@ -298,7 +298,7 @@ font-size: 14px;
     background: linear-gradient(to right,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 1) 100%) !important;
 }
 #footer {
-    background: linear-gradient(to bottom,rgba(0, 140, 255, 1) 0,rgba(0, 0, 0, 0.75) 100%);
+    background: linear-gradient(to bottom,rgba(255, 0, 0, 1) 0,rgba(0, 0, 0, 0.75) 100%);
 }
 #playlist-button {
     background: linear-gradient(to bottom,#FF5CDE 0,#5700FF 100%);
@@ -690,7 +690,7 @@ display: none !important;
 }
 
 .progress {
-    background: linear-gradient(to bottom, rgb(229, 0, 174) 0, rgb(207, 100, 252) 100%) !important;
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0, rgb(255, 0, 0) 100%) !important;
 }
  
 .progress:after {
@@ -699,10 +699,10 @@ display: none !important;
     top: 0; left: 0; bottom: 0; right: 0;
     background-image:
        -webkit-gradient(linear, 0 0, 100% 100%,
-          color-stop(.25, rgba(229, 0, 174, 1)),
+          color-stop(.25, rgba(0, 0, 0, 1)),
           color-stop(.25, transparent), color-stop(.5, transparent),
-          color-stop(.5, rgba(229, 0, 174, 1)),
-          color-stop(.75, rgba(229, 0, 174, 1)),
+          color-stop(.5, rgba(0, 0, 0, 1)),
+          color-stop(.75, rgba(0, 0, 0, 1)),
           color-stop(.75, transparent), to(transparent)
        );
     z-index: 0;
