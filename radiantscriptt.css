@@ -690,7 +690,7 @@ display: none !important;
 }
 
 .progress {
-    background: linear-gradient(to bottom, rgb(229, 0, 174) 0, rgb(0, 136, 196) 100%) !important;
+    background: linear-gradient(to bottom, rgb(229, 0, 174) 0, rgb(207, 100, 252) 100%) !important;
 }
  
 .progress:after {
