@@ -724,3 +724,7 @@ display: none !important;
 .experience .level.earned {
     opacity: 1;
 }
+
+#app-menu.open {
+    background: rgba(20, 20, 20, 0.85098) url(https://i.imgur.com/tJ6bT3m.png) center bottom no-repeat !important;
+}
