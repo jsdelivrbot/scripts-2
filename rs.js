@@ -325,7 +325,7 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     var plugCubed;
     var content1 = '<section id="radiantscript">\
         <h3 id="rm_button" style="cursor:pointer;">Variety!</h3>\
-        <p class="version">Busy Fucking your bitch!</p>\
+        <p class="version">Busy fucking your bitch!</p>\
         <div id="rm_menu">\
         <div><p>Auto Woot</p>\
         <div class="onoffswitch">\
@@ -385,16 +385,6 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
         </div></div>\
         </div>\
         <p class="version">' + radiantScript.version + '</p>\
-    </section>';
-    var content2 = '<section id="radiantscriptOther">\
-    <div><p id="rmFacebook" class="rmLinks">My Facebook</p></div>\
-   <div><p id="rmTwitter" class="rmLinks">My Twitter</p></div>\
-   <div><p id="rmSite" class="rmLinks">My Pastebin</p></div>\
-   <div><p id="rmRules" class="rmLinks">My Github</p></div>\
-   <div><p id="rmCmd" class="rmLinks">Bot Commands</p></div>\
-   <div><p id="rmBlacklist" class="rmLinks">OP List</p></div>\
-    <div><p>&nbsp;</p></div>\
-    <div><p id="keyshortcuts" class="rmLinks">Key Shortcuts!</p></div>\
     </section>';
 
     var content3 = '<div id="playlist-export-button" class="button"><i class="icon icon-export-white"></i></div>';
