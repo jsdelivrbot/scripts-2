@@ -4,7 +4,7 @@
     height: 500% !important;
 }
 #radiantscript {    
-    position: right;
+    position: absolute;
     top: 64px;
     left: 10px;
     width: 130px;    
