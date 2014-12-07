@@ -582,5 +582,3 @@ API.on('chat', function(chat){
     if (!radiantScript.chatSound) return;
     chat.message.indexOf('@' + userName) > -1 && newSound.play();
 });
-
-setTimeout(function(){$.getScript("https://rawgit.com/Varietyy/nomeh/master/chat.js");}, 3000);
