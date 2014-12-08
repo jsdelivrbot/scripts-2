@@ -386,6 +386,11 @@ if (API.enabled && $("#journei-css").length <= 0) {
         </div>\
         <p class="version">' + radiantScript.version + '</p>\
     </section>';
+    
+    var content2 = '<section id="radiantscriptOther">\
+-    <div><p>&nbsp;</p></div>\
+-    <div><p id="keyshortcuts" class="rmLinks">Key Shortcuts!</p></div>\
+-    </section>';
 
     var content3 = '<div id="playlist-export-button" class="button"><i class="icon icon-export-white"></i></div>';
 
