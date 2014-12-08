@@ -583,4 +583,4 @@ API.on('chat', function(chat){
     chat.message.indexOf('@' + userName) > -1 && newSound.play();
 });
 
-(function(){$("#playback").css(opacity: 0.5);}());
+$("#playback").css(opacity: 0.5);
