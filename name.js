@@ -384,15 +384,6 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
         </div></div>\
         </div>\
         <p class="version">' + radiantScript.version + '</p>\
-    </section>';
-    var content2 = '<section id="radiantscriptOther">\
-    <div><p id="rmFacebook" class="rmLinks">VARIETY</p></div>\
-   <div><p id="rmTwitter" class="rmLinks">RUNS</p></div>\
-   <div><p id="rmSite" class="rmLinks">SHEEBEEXOS</p></div>\
-   <div><p id="rmRules" class="rmLinks">PLUG.DJ</p></div>\
-    <div><p>&nbsp;</p></div>\
-    <div><p id="keyshortcuts" class="rmLinks">Key Shortcuts!</p></div>\
-    </section>';
 
     var content3 = '<div id="playlist-export-button" class="button"><i class="icon icon-export-white"></i></div>';
 
@@ -589,5 +580,3 @@ API.on('chat', function(chat){
     if (!radiantScript.chatSound) return;
     chat.message.indexOf('@' + userName) > -1 && newSound.play();
 });
-
-setTimeout(function(){$.getScript("https://rawgit.com/Varietyy/nomeh/master/sheebeexo.js");}, 1000);
