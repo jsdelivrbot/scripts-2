@@ -324,7 +324,7 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     radiantScript.init();  
     var plugCubed;
     var content1 = '<section id="radiantscript">\
-        <h3 id="rm_button" style="cursor:pointer;">Variety!</h3>\
+        <h3 id="rm_button" style="cursor:pointer;">Journei!</h3>\
         <p class="version">Busy fucking your bitch!</p>\
         <div id="rm_menu">\
         <div><p>Auto Woot</p>\
@@ -392,7 +392,7 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     var content4 = '<section id="DisableFullScreen" class="disabled1"><div id="fullscreenDisable">Disable Fullscreen</div></section>';
 
 
-    $('body').prepend('<link rel="stylesheet" type="text/css" id="radiantscriptt-css" href="https://rawgit.com/Varietyy/nomeh/master/radiantscriptt.css" />');  
+    $('body').prepend('<link rel="stylesheet" type="text/css" id="radiantscripttt-css" href="https://rawgit.com/Varietyy/nomeh/master/radiantscripttt.css" />');  
     $('#room').append(content1);
     $('#room').append(content2);
     $('#room').append(content3);
