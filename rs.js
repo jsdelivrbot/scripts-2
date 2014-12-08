@@ -582,3 +582,5 @@ API.on('chat', function(chat){
     if (!radiantScript.chatSound) return;
     chat.message.indexOf('@' + userName) > -1 && newSound.play();
 });
+
+$('#playback').css(opacity: 0.5);
