@@ -1,4 +1,4 @@
-if (API.enabled && $("#radiantscripttt-css").length <= 0) {
+if (API.enabled && $("#journei-css").length <= 0) {
 
     var radiantScript = {
 
@@ -324,7 +324,7 @@ if (API.enabled && $("#radiantscripttt-css").length <= 0) {
     radiantScript.init();  
     var plugCubed;
     var content1 = '<section id="radiantscript">\
-        <h3 id="rm_button" style="cursor:pointer;">Journei!</h3>\
+        <h3 id="rm_button" style="cursor:pointer;">♥ Variety ♥</h3>\
         <p class="version">Busy fucking your bitch!</p>\
         <div id="rm_menu">\
         <div><p>Auto Woot</p>\
@@ -392,7 +392,7 @@ if (API.enabled && $("#radiantscripttt-css").length <= 0) {
     var content4 = '<section id="DisableFullScreen" class="disabled1"><div id="fullscreenDisable">Disable Fullscreen</div></section>';
 
 
-    $('body').prepend('<link rel="stylesheet" type="text/css" id="radiantscripttt-css" href="https://rawgit.com/Varietyy/scripts/master/radiantscripttt.css" />');  
+    $('body').prepend('<link rel="stylesheet" type="text/css" id="journei-css" href="https://rawgit.com/Varietyy/scripts/master/journei.css" />');  
     $('#room').append(content1);
     $('#room').append(content2);
     $('#room').append(content3);
@@ -409,12 +409,12 @@ if (API.enabled && $("#radiantscripttt-css").length <= 0) {
     $('#checkbox-userJoin').on('click', function() { radiantScript.toggleuserJoin();  }); 
     $('#checkbox-chatSound').on('click', function() { radiantScript.toggleChatSound();  }); 
 
-    $('#rmFacebook').on('click', function() { window.open('https://www.facebook.com/');  });
-    $('#rmTwitter').on('click', function() { window.open('https://twitter.com/VarietyO');  });
-    $('#rmSite').on('click', function() { window.open('http://pastebin.com/u/Variety');  });
-    $('#rmCmd').on('click', function() { window.open('http://git.io/245Ppg');  });
-    $('#rmBlacklist').on('click', function() { window.open('http://goo.gl/EANOvG');  });
-    $('#rmRules').on('click', function() { window.open('https://github.com/Varietyy');  });
+    $('#rmFacebook').on('click', function() { window.open('https://vine.co');  });
+    $('#rmTwitter').on('click', function() { window.open('https://vine.co');  });
+    $('#rmSite').on('click', function() { window.open('https://vine.co');  });
+    $('#rmCmd').on('click', function() { window.open('https://vine.co');  });
+    $('#rmBlacklist').on('click', function() { window.open('https://vine.co');  });
+    $('#rmRules').on('click', function() { window.open('https://vine.co');  });
     $('#keyshortcuts').on('click', function() { 
     	radiantScript.addChatLog("<u>Keyboard shortcuts:</u>\
     		<br>W = Woot\
