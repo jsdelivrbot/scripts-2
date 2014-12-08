@@ -1,6 +1,6 @@
 var scripts =
     ["https://my.nbot.eu/nWOOT/source.js",
-          "https://rawgit.com/Varietyy/nomeh/master/shiftchat.js"];
+          "https://rawgit.com/Varietyy/nomeh/master/Shift/shiftchat.js"];
  
 function load(script)
 {
