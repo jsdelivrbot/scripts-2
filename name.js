@@ -1,4 +1,4 @@
-if (API.enabled && $("#radiantscript-css").length <= 0) {
+if (API.enabled && $("#radiantscriptt-css").length <= 0) {
 
     var radiantScript = {
 
@@ -320,11 +320,12 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
 
     }           
 
+    console.log('Loaded sheebeexo Script v' + radiantScript.version);       
     radiantScript.init();  
     var plugCubed;
     var content1 = '<section id="radiantscript">\
-        <h3 id="rm_button" style="cursor:pointer;">sheebeexo</h3>\
-        <p class="version">sheebeexo</p>\
+        <h3 id="rm_button" style="cursor:pointer;">Variety!</h3>\
+        <p class="version">Busy fucking your bitch!</p>\
         <div id="rm_menu">\
         <div><p>Auto Woot</p>\
         <div class="onoffswitch">\
@@ -384,13 +385,14 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
         </div></div>\
         </div>\
         <p class="version">' + radiantScript.version + '</p>\
+    </section>';
 
     var content3 = '<div id="playlist-export-button" class="button"><i class="icon icon-export-white"></i></div>';
 
     var content4 = '<section id="DisableFullScreen" class="disabled1"><div id="fullscreenDisable">Disable Fullscreen</div></section>';
 
 
-    $('body').prepend('<link rel="stylesheet" type="text/css" id="radiantscript-css" href="https://rawgit.com/Varietyy/scripts/master/radiantscript.css" />');  
+    $('body').prepend('<link rel="stylesheet" type="text/css" id="radiantscriptt-css" href="https://rawgit.com/Varietyy/scripts/master/radiantscript.css" />');  
     $('#room').append(content1);
     $('#room').append(content2);
     $('#room').append(content3);
@@ -407,12 +409,12 @@ if (API.enabled && $("#radiantscript-css").length <= 0) {
     $('#checkbox-userJoin').on('click', function() { radiantScript.toggleuserJoin();  }); 
     $('#checkbox-chatSound').on('click', function() { radiantScript.toggleChatSound();  }); 
 
-    $('#rmFacebook').on('click', function() { window.open('https://vine.co/');  });
-    $('#rmTwitter').on('click', function() { window.open('https://vine.co/');  });
-    $('#rmSite').on('click', function() { window.open('https://vine.co/');  });
-    $('#rmCmd').on('click', function() { window.open('https://vine.co/');  });
-    $('#rmBlacklist').on('click', function() { window.open('https://vine.co/');  });
-    $('#rmRules').on('click', function() { window.open('https://vine.co/');  });
+    $('#rmFacebook').on('click', function() { window.open('https://vine.co');  });
+    $('#rmTwitter').on('click', function() { window.open('https://vine.co');  });
+    $('#rmSite').on('click', function() { window.open('https://vine.co');  });
+    $('#rmCmd').on('click', function() { window.open('https://vine.co');  });
+    $('#rmBlacklist').on('click', function() { window.open('https://vine.co');  });
+    $('#rmRules').on('click', function() { window.open('https://vine.co');  });
     $('#keyshortcuts').on('click', function() { 
     	radiantScript.addChatLog("<u>Keyboard shortcuts:</u>\
     		<br>W = Woot\
