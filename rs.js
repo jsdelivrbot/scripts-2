@@ -106,6 +106,10 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
             $('#chat-messages').append('<div class="update ' + cssClass + '">' + message + '</div>');
             $('#chat-messages').scrollTop($('#chat-messages').prop("scrollHeight"));
         },
+        
+        function() {
+            $("#playback").css(opacity: 0.5);
+        },
 
         updateQueueStatus: function() {            
             if(API.getWaitListPosition() == '0') {
