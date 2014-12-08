@@ -1,7 +1,7 @@
 var scripts =
     ["https://my.nbot.eu/nWOOT/source.js",
-      "https://rawgit.com/Varietyy/nomeh/master/Variety/rs.js",
-        "https://rawgit.com/Varietyy/nomeh/master/Variety/chat.js"];
+      "https://rawgit.com/Varietyy/Scripts/master/Variety/rs.js",
+        "https://rawgit.com/Varietyy/Scripts/master/Variety/chat.js"];
  
 function load(script)
 {
