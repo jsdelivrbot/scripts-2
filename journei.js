@@ -324,7 +324,7 @@ if (API.enabled && $("#journei-css").length <= 0) {
     radiantScript.init();  
     var plugCubed;
     var content1 = '<section id="radiantscript">\
-        <h3 id="rm_button" style="cursor:pointer;">♥ Variety ♥</h3>\
+        <h3 id="rm_button" style="cursor:pointer;">Variety ♥</h3>\
         <p class="version">Busy fucking your bitch!</p>\
         <div id="rm_menu">\
         <div><p>Auto Woot</p>\
