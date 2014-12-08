@@ -690,7 +690,7 @@ display: none !important;
 }
 
 .progress {
-    background: linear-gradient(to bottom, rgb(0, 0, 0) 0, rgb(255, 0, 0) 100%) !important;
+    background: linear-gradient(to bottom, rgb(120, 213, 227) 0, rgb(255, 0, 0) 100%) !important;
 }
  
 .progress:after {
@@ -699,10 +699,10 @@ display: none !important;
     top: 0; left: 0; bottom: 0; right: 0;
     background-image:
        -webkit-gradient(linear, 0 0, 100% 100%,
-          color-stop(.25, rgba(0, 0, 0, 1)),
+          color-stop(.25, rgba(120, 213, 227, 1)),
           color-stop(.25, transparent), color-stop(.5, transparent),
-          color-stop(.5, rgba(0, 0, 0, 1)),
-          color-stop(.75, rgba(0, 0, 0, 1)),
+          color-stop(.5, rgba(120, 213, 227, 1)),
+          color-stop(.75, rgba(120, 213, 227, 1)),
           color-stop(.75, transparent), to(transparent)
        );
     z-index: 0;
