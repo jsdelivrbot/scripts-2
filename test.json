@@ -1,12 +1,15 @@
 {
-     "css": {
-        "import": [
+"css": {
+     "import": [
         	"https://rawgit.com/Varietyy/scripts/master/test.css"
         ]
     },
-    "rules": {
-        "allowAutorespond": "false",
-        "allowAutowoot": "true",
-        "allowAutojoin": "true"
-    }
-}
+        "rule": {
+            "#chat": {
+                "background": "rgba(10, 10, 10, 0.75)"
+            },
+            "#meh": {
+                "display": "none"
+            },
+        }
+     }
