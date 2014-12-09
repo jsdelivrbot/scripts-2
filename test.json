@@ -1,0 +1,73 @@
+{
+    "author": "Nobody",
+    "colors": {
+        "chat": {
+            "ambassador": "#9a50ff",
+            "bouncer": "#66cdd6",
+            "cohost": "#ab00ff",
+            "residentdj": "#0084ff",
+            "host": "#4cff00",
+            "manager": "#92ffff"
+        }
+    },
+    "css": {
+        "rule": {
+            "#chat": {
+                "background": "rgba(10, 10, 10, 0.75)"
+            },
+            "#chat.message.fromID-3741010 .clickable": {
+                "color": " #00FFFF"
+            },
+            "#meh": {
+                "display": "none"
+            },
+            "#playlist-menu": {
+                "background-color ": "rgba(0, 0, 0, 0.5)"
+            },
+            "#playlist-menu .menu .row.selected": {
+                "background": "rgba(44, 0, 119, 0.46)",
+                "border-left": "rgb(148, 45, 197) 4px solid",
+                "border-radius": "10px",
+                "border-right": "rgb(148, 45, 197) 4px solid",
+                "width": "initial",
+                "-webkit-transition": "100ms linear 50ms",
+                "transition": "100ms linear 50ms"
+            },
+            "#user-lists .list": {
+                "-webkit-animation": "fadein 0.5s",
+                "-moz-animation": "fadein 0.5s",
+                "animation": "fadein 0.5s"
+            },
+            "#user-lists .list .user:hover": {
+                "background-color": "rgba(173, 0, 255, 0.35)",
+                "border-left": "rgb(175, 74, 201) 4px solid",
+                "border-right": "rgb(153, 65, 202) 4px solid",
+                "border-radius": "10px",
+                "width": "initial",
+                "-webkit-transition": "100ms linear 50ms",
+                "transition": "100ms linear 50ms"
+            },
+            "#user-rollover .actions .action:hover": {
+                "background": "linear-gradient(to right, rgba(0, 0, 0, 0.06) , rgba(179, 9, 245, 0.85), rgba(0, 0, 204, 0.01))",
+                "-webkit-animation": "fadein 0.25s",
+                "-moz-animation": "fadein 0.25s",
+                "animation": "fadein 0.25s"
+            },
+            "#user-rollover": {
+                "-webkit-animation": "fadein 0.5s",
+                "-moz-animation": "fadein 0.5s",
+                "animation": "fadein 0.5s"
+            },
+            "#waitlist .list": {
+                "-webkit-animation": "fadein 0.5s",
+                "-moz-animation": "fadein 0.5s",
+                "animation": "fadein 0.5s"
+            }
+        }
+    },
+    "images": {
+        "icons": {
+            "cohost": "https://scripts.thedark1337.com/TFLEnhanced/icons/cohost.png",
+            "host": "https://scripts.thedark1337.com/TFLEnhanced/icons/host.png",
+    }
+}
