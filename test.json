@@ -1,10 +1,14 @@
 {
      "css": {
-        "import": [
-        	"https://rawgit.com/Varietyy/scripts/master/test.css"
-        ]
-        "#meh": {
+        "rule": {
+            "#chat": {
+                "background": "rgba(10, 10, 10, 0.75)"
+            },
+            "#meh": {
                 "display": "none"
+            };
+            }
+        }
     },
     "rules": {
         "allowAutorespond": "false",
