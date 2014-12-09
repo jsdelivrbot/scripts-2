@@ -153,9 +153,9 @@ background: #90ad2f;
 #grab .bottom, #grab.selected {
 background: #aa74ff;
 }
-#meh .bottom, #meh.selected {
+"#meh": {
 "display": "none"
-}
+},
 .row:hover {
     background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(255, 0, 194, 0.27) 100%) !important;
 }
