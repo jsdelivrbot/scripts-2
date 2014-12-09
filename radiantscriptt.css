@@ -774,3 +774,43 @@ display: none !important;
             "manager": "http://i.imgur.com/ah4bqht.png"
         }
     }
+    
+    #dj-button.is-locked .left,#dj-button.is-full .left,#vote .crowd-response.disabled .bottom {
+    background: #222224;
+}
+#dj-button.is-quit .left, #dj-button.is-leave .left, #dj-button.is-wait .left, #dj-button.is-locked .left, #dj-button.is-full .left {
+background: #121214;
+border-radius: 8px;
+border-left-width: 4px;
+}
+#dj-button.is-quit .left {
+border-left: 3px solid #f46b40;
+}
+#dj-button.is-leave .left {
+border-left: 3px solid #f46b40;
+}
+#dj-button.is-wait .left {
+border-left: 3px solid #00b5e6;
+}
+#dj-button.is-locked .left {
+border-left: 3px solid #734ba9;
+}
+#dj-button.is-full .left {
+border-left: 3px solid #CCCCCC;
+}
+#dj-button {
+background: #222224;
+border-radius: 8px;
+}
+#vote .crowd-response {
+background: #222224;
+}
+#woot .bottom, #woot.selected {
+background: #90ad2f;
+}
+#grab .bottom, #grab.selected {
+background: #aa74ff;
+}
+#meh .bottom, #meh.selected {
+background: #c42e3b;
+}
