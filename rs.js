@@ -388,9 +388,9 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     </section>';
     
     var content2 = '<section id="radiantscriptOther">\
--    <div><p>&nbsp;</p></div>\
--    <div><p id="keyshortcuts" class="rmLinks">Key Shortcuts!</p></div>\
--    </section>';
+    <div><p>&nbsp;</p></div>\
+    <div><p id="keyshortcuts" class="rmLinks">Key Shortcuts!</p></div>\
+    </section>';
 
     var content3 = '<div id="playlist-export-button" class="button"><i class="icon icon-export-white"></i></div>';
 
