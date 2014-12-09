@@ -1,0 +1,12 @@
+{
+     "css": {
+        "import": [
+        	"https://rawgit.com/Varietyy/scripts/master/test.css"
+        ]
+    },
+    "rules": {
+        "allowAutorespond": "false",
+        "allowAutowoot": "true",
+        "allowAutojoin": "true"
+    }
+}
