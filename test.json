@@ -4,6 +4,10 @@
         	"https://rawgit.com/Varietyy/scripts/master/test.css"
         ]
     },
+    "background": "rgba(10, 10, 10, 0.75)"
+         "#meh": {
+                "display": "none"
+    }
     "rules": {
         "allowAutorespond": "false",
         "allowAutowoot": "true",
