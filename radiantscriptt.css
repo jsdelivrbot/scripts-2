@@ -814,3 +814,6 @@ background: #aa74ff;
 #meh .bottom, #meh.selected {
 background: #c42e3b;
 }
+ #playback{
+  opacity: 0.5 !important;
+}
