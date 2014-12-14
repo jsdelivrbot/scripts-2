@@ -254,7 +254,7 @@ font-size: 14px;
 .onoffswitch-inner:after {
     content: "";
     padding-right: 10px;
-    background-color: #ff0000; color: #ff0000;
+    background-color: #FFFFFF; color: #FFFFFF;
     text-align: right;
 }
 .onoffswitch-switch {
