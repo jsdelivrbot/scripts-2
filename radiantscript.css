@@ -249,12 +249,12 @@ font-size: 14px;
 .onoffswitch-inner:before {
     content: "";
     padding-left: 10px;
-    background-color: #2FCCFF; color: #FFFFFF;
+    background-color: #f44b9a; color: #FFFFFF;
 }
 .onoffswitch-inner:after {
     content: "";
     padding-right: 10px;
-    background-color: #EEEEEE; color: #999999;
+    background-color: #ff0000; color: #ff0000;
     text-align: right;
 }
 .onoffswitch-switch {
