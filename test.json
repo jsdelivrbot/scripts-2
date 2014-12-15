@@ -2,7 +2,7 @@
     "colors": {
         "background": "",
         "chat": {
-            "admin": "de0000",
+            "admin": "",
             "ambassador": "",
             "bouncer" : "40e300",
             "cohost": "de0000",
@@ -156,7 +156,7 @@
         "icons": {
             "residentdj" : "http://i.imgur.com/fxzZfT3.png",
             "manager": "http://i.imgur.com/ip1USAm.png",
-            "cohost": "http://i.imgur.com/1IFhNIV.png",
+            "cohost": "http://i.imgur.com/1wa9Sw2.png",
             "bouncer": "http://i.imgur.com/oCUpdWo.png",
             "host": "http://i.imgur.com/1wa9Sw2.png"
         }
