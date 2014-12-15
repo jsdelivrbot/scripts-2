@@ -2,13 +2,13 @@
     "colors": {
         "background": "",
         "chat": {
-            "admin": "FF00CC",
+            "admin": "de0000",
             "ambassador": "",
-            "bouncer" : "79beb0",
-            "cohost": "ff9ee2",
-            "residentdj": "ffcd40",
-            "host": "ff9ee2",
-            "manager": "42A5DC"
+            "bouncer" : "40e300",
+            "cohost": "de0000",
+            "residentdj": "e0e300",
+            "host": "de0000",
+            "manager": "3bbcff"
         },
         "footer": "",
         "header": ""
@@ -154,11 +154,11 @@
         "booth": "http://i.imgur.com/FmLscNm.png",
         "playback": "",
         "icons": {
-            "residentdj" : "",
-            "manager": "",
-            "cohost": "http://puu.sh/dtBXP.png",
-            "bouncer": "",
-            "host": "http://puu.sh/dtBXP.png"
+            "residentdj" : "http://i.imgur.com/fxzZfT3.png",
+            "manager": "http://i.imgur.com/ip1USAm.png",
+            "cohost": "http://i.imgur.com/1IFhNIV.png",
+            "bouncer": "http://i.imgur.com/oCUpdWo.png",
+            "host": "http://i.imgur.com/1wa9Sw2.png"
         }
     },
     "rules": {
