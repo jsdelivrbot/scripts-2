@@ -735,7 +735,7 @@ display: none !important;
     width: auto;
 }
 
-{
+/*{
     "colors": {
         "background": "",
         "chat": {
@@ -763,7 +763,7 @@ display: none !important;
         "background-position": "center center"
     }
  
-    "images": {
+    /*"images": {
         "background": "http://i.imgur.com/20aQbPW.png",
         "booth": "",
         "icons": {
@@ -773,7 +773,7 @@ display: none !important;
             "host": "http://i.imgur.com/DDfC8JB.png",
             "manager": "http://i.imgur.com/ah4bqht.png"
         }
-    }
+    }*/
     
     #dj-button.is-locked .left,#dj-button.is-full .left,#vote .crowd-response.disabled .bottom {
     background: #222224;
