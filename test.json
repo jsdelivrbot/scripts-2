@@ -67,6 +67,22 @@
                 "border-left": "#ac76ff 3px solid",
                 "background-color": "rgba(24, 0, 38, 0.9) !important"
             },
+            "_trapcitybot":"",
+         "#chat .message.from-5152412":{
+			"background-color":"rgba(8,30,45,1)"
+         },
+         "#chat .mention.from-5520820 > i":{
+			"background-image":"url('http://i.imgur.com/2PMLx9n.png') !important",
+            "background-position":"0 0"
+         },
+         "#chat .message.from-5520820 > i":{
+			"background-image":"url('http://i.imgur.com/2PMLx9n.png') !important",
+            "background-position":"0 0"
+         },
+         "#chat .emote.from-5520820 > i":{
+			"background-image":"url('http://i.imgur.com/2PMLx9n.png') !important",
+            "background-position":"0 0"
+         },
             "#chat .from-5394a133877b9237c099983d": {
                 "color": "rgba(66, 165, 220, 0.9) !important"
             },
