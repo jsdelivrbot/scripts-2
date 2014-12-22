@@ -38,6 +38,8 @@
             "#chat": {
                 "background": "none"
             },
+            "#meh": {
+                "display": "none"
             "#room .app-right": {
                 "background": "rgba(10, 10, 10, 0.7)"
             },
