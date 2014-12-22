@@ -171,10 +171,10 @@
         "booth": "http://i.imgur.com/FmLscNm.png",
         "playback": "",
         "icons": {
-            "bouncer": "https://i.imgur.com/GF4B4mY.png",
-            "cohost": "https://i.imgur.com/NqhbPQB.png",
-            "host": "https://i.imgur.com/NqhbPQB.png",
-            "manager": "https://i.imgur.com/bNBAiLo.png",
+            "bouncer": "https://i.imgur.com/bNBAiLo.png",
+            "cohost": "http://i.imgur.com/VwhJPgB.png",
+            "host": "http://i.imgur.com/VwhJPgB.png",
+            "manager": "https://i.imgur.com/NqhbPQB.png",
 	    "residentdj": ""
         }
     },
