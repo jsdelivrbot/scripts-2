@@ -1,6 +1,6 @@
 {
     "colors": {
-        "background": "http://i.imgur.com/ppcsOb2.png",
+        "background": "",
         "chat": {
             "admin": "",
             "ambassador": "",
@@ -170,7 +170,7 @@
     },
     "images": {
         "background": "http://i.imgur.com/ppcsOb2.png",
-        "booth": "http://i.imgur.com/FmLscNm.png",
+        "booth": "",
         "playback": "",
         "icons": {
             "residentdj" : "http://i.imgur.com/fxzZfT3.png",
