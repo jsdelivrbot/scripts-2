@@ -173,11 +173,11 @@
         "booth": "http://i.imgur.com/FmLscNm.png",
         "playback": "",
         "icons": {
-            "bouncer": "https://i.imgur.com/bNBAiLo.png",
-            "cohost": "http://i.imgur.com/lm5Ot5B.png",
-            "host": "http://i.imgur.com/lm5Ot5B.png",
-            "manager": "https://i.imgur.com/NqhbPQB.png",
-	    "residentdj": ""
+            "residentdj" : "http://i.imgur.com/fxzZfT3.png",
+            "manager": "http://i.imgur.com/ip1USAm.png",
+             "cohost": "http://i.imgur.com/VwhJPgB.png",
+             "bouncer": "http://i.imgur.com/oCUpdWo.png",
+             "host": "http://i.imgur.com/VwhJPgB.png"
         }
     },
     "rules": {
