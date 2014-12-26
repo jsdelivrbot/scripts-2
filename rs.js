@@ -587,3 +587,7 @@ API.on('chat', function(chat){
     if (!radiantScript.chatSound) return;
     chat.message.indexOf('@' + userName) > -1 && newSound.play();
 });
+
+if(data.message.indexOf('interesting') === 0){
+API.moderateDeleteChat(data.cid);
+}
