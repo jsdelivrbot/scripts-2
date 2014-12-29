@@ -77,7 +77,9 @@ function woot()
  
 });
 
-if(data.message.indexOf('Roulette open! Type !join to participate!') === 0){
+API.on(API.CHAT, function(data){
+
+if(data.message.indexOf('!check') === 0){
 API.moderateDeleteChat(data.cid);
-setTimeout(function(){API.sendChat("!join");}, 5000);
+API.sendChat("@"+ data.un +" I'm using Variety's Chat Script!");
 }
