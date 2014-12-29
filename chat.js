@@ -83,3 +83,4 @@ if(data.message.indexOf('!check') === 0){
 API.moderateDeleteChat(data.cid);
 API.sendChat("@"+ data.un +" I'm using Variety's Chat Script!");
 }
+});
