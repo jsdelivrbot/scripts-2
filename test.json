@@ -60,7 +60,7 @@
                 "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)"
             },
             ".cm[data-cid^=\"3741010\"] .bdg": {
-                "background": "url('http://i.imgur.com/VhVESBJ.gif') !important"
+                "background": "url('http://i.imgur.com/5sgTIp5.gif') !important"
             },
             "#meh": {
                 "display": "none"
