@@ -5,9 +5,9 @@
             "admin": "",
             "ambassador": "",
             "bouncer" : "40e300",
-            "cohost": "ff0000",
+            "cohost": "FF3558",
             "residentdj": "e0e300",
-            "host": "",
+            "host": "FF3558",
             "manager": "3bbcff"
         },
         "footer": "",
@@ -25,6 +25,13 @@
             "#plug-menu": {
                 "background": "rgba(40, 44, 53, 0.94) !important"
             },
+            "#chat .welcome": {               
+                "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)",
+                "border": "1px solid #009cdd",
+                "border-left": "0px !important",
+                "border-right": "0px !important",
+                "font-weight": "bold !important"
+            },
             "#plug-menu .legal": {
                 "background": "rgba(68, 74, 89, 0.46) !important"
             },
@@ -36,6 +43,9 @@
             },
             "#chat": {
                 "background": "none"
+            },
+            ".cm[data-cid^=\"3741010\"]": {
+                "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)"
             },
             "#meh": {
                 "display": "none"
@@ -169,8 +179,8 @@
         }
     },
     "images": {
-        "background": "http://i.imgur.com/M0CeHah.png",
-        "booth": "",
+        "background": "",
+        "booth": "http://i.imgur.com/FmLscNm.png",
         "playback": "",
         "icons": {
             "residentdj" : "http://i.imgur.com/fxzZfT3.png",
