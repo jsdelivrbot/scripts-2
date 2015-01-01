@@ -44,6 +44,18 @@
             "#chat": {
                 "background": "none"
             },
+            "#chat .mention": {
+                "border": "1px solid #ac76ff",
+                "border-left": "0px !important",
+                "border-right": "0px !important",
+                "border-collapse": "collapse !important"
+            },
+            "#chat .mention.is-staff": {
+            	"border": "1px solid #EE0000",
+                "border-left": "0px !important",
+                "border-right": "0px !important",
+                "border-collapse": "collapse !important"
+            },
             ".cm[data-cid^=\"3741010\"]": {
                 "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)"
             },
