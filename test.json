@@ -17,7 +17,7 @@
         "font": [
         ],
         "import": [
-        	"https://dl.dropboxusercontent.com/s/ha2h0nqi1v50kga/OrigemCSS.css"
+        	"https://rawgit.com/Varietyy/scripts/master/test.css"
         ],
         "rule": {
             "#header": {
