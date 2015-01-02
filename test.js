@@ -1,5 +1,5 @@
   !
-  function () {
+  (function () {
      var a = {
          attr: {
              aw: !0,
