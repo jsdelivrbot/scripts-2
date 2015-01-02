@@ -1,44 +1,42 @@
-#chat .text::before {
-    content: " ";
-    float: right;
-    display: inline-block;
-    width: 40px;
-    height: 1px;
-}
-#chat .badge-box {
-    display: none;
-}
-#chat .moderation .badge-box {
-    display: block;
-    top: -10px;
-    height: 30px;
-    position: absolute;
-}
-#chat .moderation .msg {
-    margin-left: 20px;
-}
-#chat .cm {
-    min-height: 27px !important;
-}
-#chat .msg {
-    padding-left: 20px;
-}
-#chat .timestamp {
-    position: absolute;
-    right: 3px;
-}
-#chat .cm .from,
-#chat .text {
-    display: inline;
-    position: static;
-    vertical-align: top;
-}
-#chat .from .icon {
-    position: absolute;
-    left: 2px;
-    margin-top: 5px;
-}
-#chat .text {
-    margin-left: 5px;
-    width: 320px;
-}
+.media-list .row.now-playing, #playlist-button, .media-list .selected .actions, .media-list .row.selected, 
+.media-list .row.now-playing .actions, #playlist-menu .menu .row.selected {  
+background: linear-gradient(to bottom, #1C99D0 0px, #0E3D56 100%)!important; }
+ .media-list.history .row.selected, .media-list.history .selected .actions {  background:#005070 !important; 
+box-shadow: 0 0 10px #005070 !important; }
+.media-list.history .score .grabs span {   color: #D87F0E; }
+#playlist-create:hover { box-shadow: 0 0 10px #186696 !important; background: linear-gradient(to bottom, #1C92D0 0px, #0E3556 100%) !important; }
+#playlist-import:hover { box-shadow: 0 0 10px #6E186D !important; background: linear-gradient(to bottom, #A91CD0 0px, #4F0E56 100%)!important; }
+#playlist-edit-button { background: linear-gradient(to bottom, #2F5286 0px, #091036 100%); } 
+#playlist-edit-button:hover { background: linear-gradient(to bottom, #5290EC 0px, #142580 100%); } 
+#playlist-shuffle-button { background: linear-gradient(to bottom, #473861 0px, #140A27 100%); } 
+#playlist-shuffle-button:hover { background: linear-gradient(to bottom, #7F63B3 0px, #321A5E 100%); } 
+#playlist-delete-button { background: linear-gradient(to top, #571515 0px, #442609 100%); } 
+#playlist-activate-button span, #playlist-menu .menu .row .count, .media-list.history .meta .timestamp { color: #FFFFFF; }
+#playlist-menu .title { color: #1290BF; }
+#playlist-delete-button:hover { background: linear-gradient(to bottom,rgba(68, 68, 68, 0.6) 0,rgba(226, 37, 0, 0.73) 100%);
+box-shadow:  0 0 10px rgba(158, 30, 11, 1)     !important; }
+#playlist-shuffle-button:hover { background: linear-gradient(to bottom,rgba(119, 48, 146, 1) 0, rgba(180, 71, 216, 0.73) 100%) !important; box-shadow: 0 0 10px #C41EC3 !important; }
+ #playlist-panel, #history-panel  { background : black-transparent; opacity: 0.9;  text-shadow: 1px -1px #000; }
+ #playlist-menu {    background: none;  } 
+#playlist-activate-button {background: linear-gradient(to bottom, #1C99D0 0px, #0E3D56 100%)!important; border-radius: 20px 0px 0px 20px !important; }
+#search { background: #000 !important;  }
+
+// extras
+
+#vote .crowd-response.disabled .bottom, #vote .crowd-response.disabled, #vote .crowd-response
+ { background: #222224; }
+#meh.crowd-response.disabled.active .bottom {
+background: linear-gradient(to bottom,rgba(102, 102, 102, 0) 0,rgba(255, 0, 0, 1) 100%); }
+#grab.crowd-response.disabled.active .bottom {
+background: linear-gradient(to bottom,rgba(102, 102, 102, 0) 0,rgb(212,175,55) 100%); }
+#woot .bottom, #woot.selected {
+background: linear-gradient(to bottom,rgba(255, 255, 255, 0) 0px, #00C700 100%); }
+#woot.crowd-response.disabled.active .bottom {
+background: linear-gradient(to bottom,rgba(102, 102, 102, 0) 0,rgba(31, 255, 0, 0.75) 100%); }
+#grab .bottom, #grab.selected {
+background: linear-gradient(to bottom,rgba(255, 255, 255, 0) 0px, #eec81b 100%); }
+#meh .bottom, #meh.selected {
+background: linear-gradient(to bottom,rgba(255, 255, 255, 0) 0px, #F70000 100%); }
+.pop-menu .bar { background: linear-gradient(to top,rgba(55, 54, 54, 1) 0,rgba(15, 15, 30, 1) 100%) !important; }
+.pop-menu li:hover { background: #12A9E0 !important; box-shadow: 0 0 15px #12A9E0 !important; }
+.pop-menu .bar { background: linear-gradient(to top,rgba(77, 77, 77, 0.6) 0,rgba(15, 15, 30, 1) 100%) !important; }
