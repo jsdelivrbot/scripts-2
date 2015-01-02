@@ -64,7 +64,7 @@
                 "background": "url('http://i.imgur.com/5sgTIp5.gif') !important"
             },
             "#meh": {
-                "display": "none"
+                "display": ""
             },
             "#room .app-right": {
                 "background": "rgba(10, 10, 10, 0.7)"
