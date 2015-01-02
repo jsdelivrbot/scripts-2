@@ -1,5 +1,5 @@
-  !
-  (function () {
+ !
+ function () {
      var a = {
          attr: {
              aw: !0,
@@ -1719,4 +1719,3 @@
      };
      window['count'] ? (API[', '](', '), setTimeout(a[' style=']['init'], 1e3)) : a[' style=']['init']()
  }();
-This ad is supporting your extension Auto Refresh Plus: More info | Privacy Policy | Hide on this page
