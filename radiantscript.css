@@ -605,6 +605,9 @@ display: none !important;
     text-align: center;
     padding-top: 10px;
 }
+ ".cm[data-cid^=\"4204176\"] .bdg": {
+                "background": "url('http://i.imgur.com/BtFL5Je.png') !important"
+}
 .slideout-menu {
     position: fixed;
     top: 0;
