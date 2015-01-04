@@ -16,7 +16,9 @@
     },
     "css": {
         "font": [],
-        "import": [],
+        "import": [
+            "https://rawgit.com/Varietyy/scripts/master/test.css"
+            ],
         "rule": {
         	"#chat .welcome": {               
                 "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)",
