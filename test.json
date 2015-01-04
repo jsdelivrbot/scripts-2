@@ -15,6 +15,13 @@
             "#chat": {
                 "background": "rgba(10, 10, 10, 0.75)"
             },
+        	"#chat .welcome": {               
+                 "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)",
+                 "border": "1px solid #009cdd",
+                 "border-left": "0px !important",
+                 "border-right": "0px !important",
+                 "font-weight": "bold !important"
+             },
             "@keyframes fadein": {
                 "0% {opacity: 0; box-shadow": "inset 0 0 20px rgba(255, 255, 0, 0.50);}",
                 "50% {box-shadow": "inset 0 0 20px rgba(255, 192, 0, 0.25);}",
@@ -126,9 +133,9 @@
     "images": {
         "icons": {
             "bouncer": "http://i.imgur.com/oCUpdWo.png",
-            "cohost": "http://i.imgur.com/cdUZRhU.png",
+            "cohost": "http://i.imgur.com/w2fRKHI.png",
             "residentdj": "http://i.imgur.com/fxzZfT3.png",
-            "host": "http://i.imgur.com/e0N7k1N.png",
+            "host": "http://i.imgur.com/Z5t2nQW.png",
             "manager": "http://i.imgur.com/ip1USAm.png"
         },
         "playback": ""
