@@ -54,11 +54,6 @@
              ".cm[data-cid^=\"4204176\"] .bdg": {
                  "background": "url('http://i.imgur.com/UbHFS7F.png') !important"
              },
-            "#chat .emote .from, #chat .emote span": {
-                "font-style": "oblique",
-                "color": "#ff0 !important",
-                "font-weight ": "700"
-            },
             ".dialog": {
                 "-webkit-animation": "fadein 0.4s",
                 "-moz-animation": "fadein 0.4s",
