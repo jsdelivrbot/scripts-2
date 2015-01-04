@@ -21,51 +21,51 @@
             ],
         "rule": {
             "#chat .welcome": {               
-                "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)",
-                "border": "1px solid #009cdd",
-                "border-left": "0px !important",
-                "border-right": "0px !important",
-                "font-weight": "bold !important"
-            },
-            "#plug-menu .legal": {
-                "background": "rgba(68, 74, 89, 0.46) !important"
-            },
-            "#settings": {
-                "background": "rgba(10, 10, 10, 0.89) !important"
-            },
-            "#settings .header": {
-                "background": "rgba(28, 31, 37, 0.78) !important"
-            },
-            "#chat": {
-                "background": "none"
-            },
-            "#chat .mention": {
-                "border": "1px solid #ac76ff",
-                "border-left": "0px !important",
-                "border-right": "0px !important",
-                "border-collapse": "collapse !important"
-            },
-            "#chat .mention.is-staff": {
-            	"border": "1px solid #EE0000",
-                "border-left": "0px !important",
-                "border-right": "0px !important",
-                "border-collapse": "collapse !important"
-            },
-            ".cm[data-cid^=\"3741010\"]": {
-                "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)"
-            },
-            ".cm[data-cid^=\"3741010\"] .bdg": {
-                "background": "url('http://i.imgur.com/5sgTIp5.gif') !important"
-            },
-            ".cm[data-cid^=\"5169520\"] .bdg": {
-                "background": "url('http://i.imgur.com/BtFL5Je.png') !important"
-            },
-            ".cm[data-cid^=\"4204176\"] .bdg": {
-                "background": "url('http://i.imgur.com/UbHFS7F.png') !important"
-            },
-            "#meh": {
-                "display": ""
-            },
+                 "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)",
+                 "border": "1px solid #009cdd",
+                 "border-left": "0px !important",
+                 "border-right": "0px !important",
+                 "font-weight": "bold !important"
+             },
+             "#plug-menu .legal": {
+                 "background": "rgba(68, 74, 89, 0.46) !important"
+             },
+             "#settings": {
+                 "background": "rgba(10, 10, 10, 0.89) !important"
+             },
+             "#settings .header": {
+                 "background": "rgba(28, 31, 37, 0.78) !important"
+             },
+             "#chat": {
+                 "background": "none"
+             },
+             "#chat .mention": {
+                 "border": "1px solid #ac76ff",
+                 "border-left": "0px !important",
+                 "border-right": "0px !important",
+                 "border-collapse": "collapse !important"
+             },
+             "#chat .mention.is-staff": {
+             	"border": "1px solid #EE0000",
+                 "border-left": "0px !important",
+                 "border-right": "0px !important",
+                 "border-collapse": "collapse !important"
+             },
+             ".cm[data-cid^=\"3741010\"]": {
+                 "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)"
+             },
+             ".cm[data-cid^=\"3741010\"] .bdg": {
+                 "background": "url('http://i.imgur.com/5sgTIp5.gif') !important"
+             },
+             ".cm[data-cid^=\"5169520\"] .bdg": {
+                 "background": "url('http://i.imgur.com/BtFL5Je.png') !important"
+             },
+             ".cm[data-cid^=\"4204176\"] .bdg": {
+                 "background": "url('http://i.imgur.com/UbHFS7F.png') !important"
+             },
+             "#meh": {
+                 "display": ""
+             },
             "@keyframes fadein":{
                 "from {opacity":"0;}",
                 "to {opacity":"1;}"
@@ -85,21 +85,7 @@
             "@-o-keyframes fadein":{
                 "from {opacity":"0;}",
                 "to {opacity":"1;}"
-            },
-            "#user-lists .list":{
-                "-webkit-animation":"fadein 0.5s",
-                "-moz-animation":"fadein 0.5s",
-                "-ms-animation":"fadein 0.5s",
-                "-o-animation":"fadein 0.5s",
-                "animation":"fadein 0.5s"
-            },
-            "#waitlist .list":{
-            "-webkit-animation":"fadein 0.5s",
-            "-moz-animation":"fadein 0.5s",
-            "-ms-animation":"fadein 0.5s",
-            "-o-animation":"fadein 0.5s",
-            "animation":"fadein 0.5s"
-            },
+            }
         }
     },
     "images": {
