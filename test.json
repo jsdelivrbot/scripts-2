@@ -100,7 +100,6 @@
             "-o-animation":"fadein 0.5s",
             "animation":"fadein 0.5s"
             }
-        }
     },
     "images": {
         "background": "",
