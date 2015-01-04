@@ -3,11 +3,12 @@
     "colors": {
         "chat": {
             "ambassador": "#9a50ff",
-            "bouncer": "40e300",
-            "cohost": "FF3558",
-            "residentdj": "e0e300",
-            "host": "FF3558",
-            "manager": "3bbcff"
+            "bouncer": "#01e1ff",
+            "cohost": "#FF3558",
+            "residentdj": "#89BE6C",
+            "host": "#FF3558",
+            "manager": "#0191ff",
+            "message": "#B0B0B0"
         }
     },
     "css": {
