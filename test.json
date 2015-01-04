@@ -1,57 +1,43 @@
 {
-    "author": "",
+    "author": "Variety",
     "colors": {
-        "background": "",
         "chat": {
-            "admin": "",
-            "ambassador": "",
-            "bouncer": "#01e1ff",
-            "cohost": "#FF3558",
-            "residentdj": "#89BE6C",
-            "host": "#FF3558",
-            "manager": "#0191ff",
-        },
-        "footer": "",
-        "header": ""
+            "ambassador": "#9a50ff",
+            "bouncer": "40e300",
+            "cohost": "FF3558",
+            "residentdj": "e0e300",
+            "host": "FF3558",
+            "manager": "3bbcff"
+        }
     },
     "css": {
-        "font": [],
-        "import": [
-            "https://rawgit.com/Varietyy/scripts/master/test.css"
-            ],
         "rule": {
-            "#chat .welcome": {               
-                 "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)",
-                 "border": "1px solid #009cdd",
-                 "border-left": "0px !important",
-                 "border-right": "0px !important",
-                 "font-weight": "bold !important"
-             },
-             "#plug-menu .legal": {
-                 "background": "rgba(68, 74, 89, 0.46) !important"
-             },
-             "#settings": {
-                 "background": "rgba(10, 10, 10, 0.89) !important"
-             },
-             "#settings .header": {
-                 "background": "rgba(28, 31, 37, 0.78) !important"
-             },
-             "#chat": {
-                 "background": "none"
-             },
-             "#chat .mention": {
-                 "border": "1px solid #ac76ff",
-                 "border-left": "0px !important",
-                 "border-right": "0px !important",
-                 "border-collapse": "collapse !important"
-             },
-             "#chat .mention.is-staff": {
-             	"border": "1px solid #EE0000",
-                 "border-left": "0px !important",
-                 "border-right": "0px !important",
-                 "border-collapse": "collapse !important"
-             },
-             ".cm[data-cid^=\"3741010\"]": {
+            "import": {
+                "https://rawgit.com/Varietyy/scripts/master/test.css"
+            }
+            "#chat": {
+                "background": "rgba(10, 10, 10, 0.75)"
+            },
+            "@keyframes fadein": {
+                "0% {opacity: 0; box-shadow": "inset 0 0 20px rgba(255, 255, 0, 0.50);}",
+                "50% {box-shadow": "inset 0 0 20px rgba(255, 192, 0, 0.25);}",
+                "100% {opacity: 1; box-shadow": "inset 0 0 20px rgba(0, 0, 0, 0);}"
+            },
+            "@-webkit-keyframes fadein": {
+                "0% {opacity: 0; box-shadow": "inset 0 0 20px rgba(255, 255, 0, 0.50);}",
+                "50% {box-shadow": "inset 0 0 20px rgba(255, 192, 0, 0.25);}",
+                "100% {opacity: 1; box-shadow": "inset 0 0 20px rgba(0, 0, 0, 0);}"
+            },
+            "#chat .emote:last-child, #chat .mention:last-child, #chat .message:last-child, #chat .moderation:last-child, #chat .skip:last-child, #chat .system:last-child, #chat .update:last-child, #chat .welcome:last-child": {
+                "background": "rgba(0, 0, 0, 0.5)",
+                "-webkit-animation": "fadein 0.25s",
+                "-moz-animation": "fadein 0.25s",
+                "animation": "fadein 0.25s"
+            },
+            "#chat .emote:nth-child(2n+1), #chat .mention:nth-child(2n+1), #chat .message:nth-child(2n+1), #chat .moderation:nth-child(2n+1), #chat .skip:nth-child(2n+1), #chat .update:nth-child(2n+1), #chat .welcome:nth-child(2n+1)": {
+                "background": "rgba(0, 0, 0, 0.5)"
+            },
+            ".cm[data-cid^=\"3741010\"]": {
                  "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)"
              },
              ".cm[data-cid^=\"3741010\"] .bdg": {
@@ -63,48 +49,91 @@
              ".cm[data-cid^=\"4204176\"] .bdg": {
                  "background": "url('http://i.imgur.com/UbHFS7F.png') !important"
              },
-             "#meh": {
-                 "display": ""
-             },
-            "@keyframes fadein":{
-                "from {opacity":"0;}",
-                "to {opacity":"1;}"
+            "#chat .emote .from, #chat .emote span": {
+                "font-style": "oblique",
+                "color": "#ff0 !important",
+                "font-weight ": "700"
             },
-            "@-moz-keyframes fadein":{
-                "from {opacity":"0;}",
-                "to {opacity":"1;}"
+            ".dialog": {
+                "-webkit-animation": "fadein 0.4s",
+                "-moz-animation": "fadein 0.4s",
+                "animation": "fadein 0.4s"
             },
-            "@-webkit-keyframes fadein":{
-                "from {opacity":"0;}",
-                "to {opacity":"1;}"
+            ".media-list img": {
+                "-webkit-animation": "fadein 0.5s",
+                "-moz-animation": "fadein 0.5s",
+                "animation": "fadein 0.5s"
             },
-            "@-ms-keyframes fadein":{
-                "from {opacity":"0;}",
-                "to {opacity":"1;}"
+            ".media-list .row.selected": {
+                "background": "rgba(50, 0, 136, 0.36)",
+                "border-left": "rgb(189, 75, 224) 4px solid",
+                "border-right": "rgb(184, 71, 228) 4px solid",
+                "border-radius": "10px",
+                "width": "initial",
+                "-webkit-transition": "100ms linear 50ms",
+                "transition": "100ms linear 50ms"
             },
-            "@-o-keyframes fadein":{
-                "from {opacity":"0;}",
-                "to {opacity":"1;}"
+            "#media-panel .history .meta .timestamp": {
+                "color": "#EE1261"
+            },
+            "#media-panel.header": {
+                "background-color": "rgba(0, 0, 0, 0.5)"
+            },
+            "#meh": {
+                "display": ""
+            },
+            "#playlist-menu": {
+                "background-color ": "rgba(0, 0, 0, 0.5)"
+            },
+            "#playlist-menu .menu .row.selected": {
+                "background": "rgba(44, 0, 119, 0.46)",
+                "border-left": "rgb(148, 45, 197) 4px solid",
+                "border-radius": "10px",
+                "border-right": "rgb(148, 45, 197) 4px solid",
+                "width": "initial",
+                "-webkit-transition": "100ms linear 50ms",
+                "transition": "100ms linear 50ms"
+            },
+            "#user-lists .list": {
+                "-webkit-animation": "fadein 0.5s",
+                "-moz-animation": "fadein 0.5s",
+                "animation": "fadein 0.5s"
+            },
+            "#user-lists .list .user:hover": {
+                "background-color": "rgba(173, 0, 255, 0.35)",
+                "border-left": "rgb(175, 74, 201) 4px solid",
+                "border-right": "rgb(153, 65, 202) 4px solid",
+                "border-radius": "10px",
+                "width": "initial",
+                "-webkit-transition": "100ms linear 50ms",
+                "transition": "100ms linear 50ms"
+            },
+            "#user-rollover .actions .action:hover": {
+                "background": "linear-gradient(to right, rgba(0, 0, 0, 0.06) , rgba(179, 9, 245, 0.85), rgba(0, 0, 204, 0.01))",
+                "-webkit-animation": "fadein 0.25s",
+                "-moz-animation": "fadein 0.25s",
+                "animation": "fadein 0.25s"
+            },
+            "#user-rollover": {
+                "-webkit-animation": "fadein 0.5s",
+                "-moz-animation": "fadein 0.5s",
+                "animation": "fadein 0.5s"
+            },
+            "#waitlist .list": {
+                "-webkit-animation": "fadein 0.5s",
+                "-moz-animation": "fadein 0.5s",
+                "animation": "fadein 0.5s"
             }
         }
     },
     "images": {
-        "background": "",
-        "booth": "http://i.imgur.com/FmLscNm.png",
         "icons": {
-            "admin": "",
-            "ambassador": "",
             "bouncer": "http://i.imgur.com/oCUpdWo.png",
-            "cohost": "http://i.imgur.com/w2fRKHI.png",
+            "cohost": "http://i.imgur.com/cdUZRhU.png",
             "residentdj": "http://i.imgur.com/fxzZfT3.png",
-            "host": "http://i.imgur.com/Z5t2nQW.png",
+            "host": "http://i.imgur.com/e0N7k1N.png",
             "manager": "http://i.imgur.com/ip1USAm.png"
         },
         "playback": ""
-    },
-    "rules": {
-        "allowAutojoin": "",
-        "allowAutorespond": "",
-        "allowAutowoot": ""
     }
 }
