@@ -1,10 +1,11 @@
 {
+    "author": "",
     "colors": {
         "background": "",
         "chat": {
             "admin": "",
             "ambassador": "",
-            "bouncer" : "40e300",
+            "bouncer": "40e300",
             "cohost": "FF3558",
             "residentdj": "e0e300",
             "host": "FF3558",
@@ -14,19 +15,10 @@
         "header": ""
     },
     "css": {
-        "font": [
-        ],
-        "import": [
-        	"https://rawgit.com/Varietyy/scripts/master/test.css"
-        ],
+        "font": [],
+        "import": [],
         "rule": {
-            "#header": {
-                "opacity": "0.75"
-            },
-            "#plug-menu": {
-                "background": "rgba(40, 44, 53, 0.94) !important"
-            },
-            "#chat .welcome": {               
+        	"#chat .welcome": {               
                 "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)",
                 "border": "1px solid #009cdd",
                 "border-left": "0px !important",
@@ -72,86 +64,6 @@
             "#meh": {
                 "display": ""
             },
-            "#room .app-right": {
-                "background": "rgba(10, 10, 10, 0.7)"
-            },
-            "#room .room-background": {
-                "width": "2000px",
-                "height": "2000px"
-            },
-            "#footer": {
-                "background": "rgba(40, 44, 53, 0.8)"
-            },
-            "#waitlist .list .user": {
-                "background": "none"
-            },
-            "#user-lists .list .user:hover": {
-                "background-color": "rgba(28, 31, 37, 0.5)"
-            },
-            "#chat .message:nth-child(2n+1),#chat .skip:nth-child(2n+1),#chat .mention:nth-child(2n+1),#chat .moderation:nth-child(2n+1),#chat .emote:nth-child(2n+1),#chat .update:nth-child(2n+1),#chat .welcome:nth-child(2n+1)": {
-                "background-color": "rgba(17, 19, 23, 0.75)"
-            },
-            "#chat .mention": {
-                "background-color": "rgba(23, 141, 252, 0.22) !important",
-                "font-weight": "700",
-                "padding-left": "25px",
-                "border-left": "#ac76ff 3px solid"
-            },
-            "#chat .emote.from-53399f81877b921f2f6f6f3f": {
-                "border-left": "#ac76ff 3px solid",
-                "background-color": "rgba(24, 0, 38, 0.9) !important"
-            },
-            "_trapcitybot":"",
-         "#chat .message.from-5152412":{
-			"background-color":"rgba(8,30,45,1)"
-         },
-         "#chat .mention.from-5520820 > i":{
-			"background-image":"url('http://i.imgur.com/2PMLx9n.png') !important",
-            "background-position":"0 0"
-         },
-         "#chat .message.from-5520820 > i":{
-			"background-image":"url('http://i.imgur.com/2PMLx9n.png') !important",
-            "background-position":"0 0"
-         },
-         "#chat .emote.from-5520820 > i":{
-			"background-image":"url('http://i.imgur.com/2PMLx9n.png') !important",
-            "background-position":"0 0"
-         },
-            "#chat .from-5394a133877b9237c099983d": {
-                "color": "rgba(66, 165, 220, 0.9) !important"
-            },
-            "#chat .name.from-5394a133877b9237c099983d": {
-                "color": "rgba(66, 165, 220, 0.9) !important"
-            },
-            ".emote.from-53399f81877b921f2f6f6f3f .from.staff.clickable": { 
-                "display": "none"
-            },
-            ".emote.from-53399f81877b921f2f6f6f3f .icon-chat-manager": { 
-                "display": "none"
-            },
-            "#chat .emote.from-53399f81877b921f2f6f6f3f .from": { 
-                 "color": "#ac76ff !important"
-            },
-            "#chat .emote.from-53399f81877b921f2f6f6f3f .text": { 
-                "font-style": "normal",
-                "font-weight": "bold",
-                "color": "#ac76ff"
-            },
-            "#chat .emote, #chat .mention, #chat .message, #chat .moderation, #chat .skip, #chat .system, #chat .update, #chat .welcome":{
-                "-webkit-animation":"fadein 0.25s",
-                "-moz-animation":"fadein 0.25s",
-                "-ms-animation":"fadein 0.25s",
-                "-o-animation":"fadein 0.25s",
-                "animation":"fadein 0.25s"
-            },
-            "#chat .message:nth-child(2n+1),#chat .mention:nth-child(2n+1),#chat .skip:nth-child(2n+1),#chat .moderation:nth-child(2n+1),#chat .emote:nth-child(2n+1),#chat .update:nth-child(2n+1),#chat .welcome:nth-child(2n+1)": {
-                "background-color": "rgba(17, 19, 23, 0.32)",
-                "-webkit-animation":"fadein 0.25s",
-                "-moz-animation":"fadein 0.25s",
-                "-ms-animation":"fadein 0.25s",
-                "-o-animation":"fadein 0.25s",
-                "animation":"fadein 0.25s"
-            },
             "@keyframes fadein":{
                 "from {opacity":"0;}",
                 "to {opacity":"1;}"
@@ -185,36 +97,26 @@
             "-ms-animation":"fadein 0.5s",
             "-o-animation":"fadein 0.5s",
             "animation":"fadein 0.5s"
-            },
-            "div.message.from-3685410 .icon": {
-                "background": "url('/_/static/images/emoji.90761eb.png') no-repeat -34px -1122px"
-            },
-            "div[class^='message cid-5394a13387'] .icon": {
-                "background-image": "url('http://welovekpop.18865-301876.srv24.sysproserver.de/wp-content/uploads/2014/06/bot.png') !important"
-            },
-            "div.message.from-4393540 .icon": {
-                "background": "url('/_/static/images/emoji.90761eb.png') no-repeat -34px -782px"
-            },
-            "div.message.from-3576298 .icon": {
-                "background": "url('/_/static/images/emoji.90761eb.png') no-repeat -119px -408px"
             }
         }
     },
     "images": {
         "background": "",
         "booth": "http://i.imgur.com/FmLscNm.png",
-        "playback": "",
         "icons": {
-            "residentdj" : "http://i.imgur.com/fxzZfT3.png",
-            "manager": "http://i.imgur.com/ip1USAm.png",
-             "cohost": "http://i.imgur.com/cdUZRhU.png",
-             "bouncer": "http://i.imgur.com/oCUpdWo.png",
-             "host": "http://i.imgur.com/e0N7k1N.png"
-        }
+            "admin": "",
+            "ambassador": "",
+            "bouncer": "http://i.imgur.com/oCUpdWo.png",
+            "cohost": "http://i.imgur.com/cdUZRhU.png",
+            "residentdj": "http://i.imgur.com/fxzZfT3.png",
+            "host": "http://i.imgur.com/e0N7k1N.png",
+            "manager": "http://i.imgur.com/ip1USAm.png"
+        },
+        "playback": ""
     },
     "rules": {
+        "allowAutojoin": "true",
         "allowAutorespond": "false",
-        "allowAutowoot": "true",
-        "allowAutojoin": "true"
+        "allowAutowoot": "true"
     }
 }
