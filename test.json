@@ -12,9 +12,6 @@
     },
     "css": {
         "rule": {
-            "import": {
-                "https://rawgit.com/Varietyy/scripts/master/test.css"
-}
             "#chat": {
                 "background": "rgba(10, 10, 10, 0.75)"
             },
