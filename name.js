@@ -324,8 +324,8 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     radiantScript.init();  
     var plugCubed;
     var content1 = '<section id="radiantscript">\
-        <h3 id="rm_button" style="cursor:pointer;">♥ sheebeexo ♥</h3>\
-        <p class="version">Busy fucking your bitch!</p>\
+        <h3 id="rm_button" style="cursor:pointer;">♥ Shelby ♥</h3>\
+        <p class="version"></p>\
         <div id="rm_menu">\
         <div><p>Auto Woot</p>\
         <div class="onoffswitch">\
