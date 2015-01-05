@@ -407,35 +407,6 @@ position:absolute;
 z-index:999999;
 pointer-events:none;
 }
-#tooltip_custom span {
-font-family:Roboto,sans-serif;
-font-size:12px;
-font-weight:600;
-white-space:nowrap;
-background:#555d70;
-pointer-events:none;
-padding:4px 8px;
-}
-#tooltip_custom .corner {
-position:absolute;
-bottom:-12px;
-left:0;
-width:0;
-height:0;
-border-right:10px solid transparent;
-border-bottom:10px solid transparent;
-border-top:10px solid #555d70;
-border-left:10px solid #555d70;
-z-index:-1;
-pointer-events:none;
-}
-#tooltip_custom.right .corner {
-left:auto;
-right:0;
-border-left:10px solid transparent;
-border-top:10px solid #555d70;
-border-right:10px solid #555d70;
-}
 #rmbooth {
 background-position: center center;
 background-repeat: no-repeat;
