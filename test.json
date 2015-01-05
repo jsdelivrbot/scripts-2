@@ -3,9 +3,9 @@
     "colors": {
         "chat": {
             "ambassador": "#9a50ff",
-            "bouncer": "#01e1ff",
+            "bouncer": "",
             "cohost": "#FF3558",
-            "residentdj": "#89BE6C",
+            "residentdj": "",
             "host": "#FF3558",
             "manager": "#0191ff",
             "message": "#B0B0B0"
@@ -131,9 +131,9 @@
     },
     "images": {
         "icons": {
-            "bouncer": "http://i.imgur.com/oCUpdWo.png",
+            "bouncer": "",
             "cohost": "http://i.imgur.com/w2fRKHI.png",
-            "residentdj": "http://i.imgur.com/fxzZfT3.png",
+            "residentdj": "",
             "host": "http://i.imgur.com/Z5t2nQW.png",
             "manager": "http://i.imgur.com/ip1USAm.png"
         },
