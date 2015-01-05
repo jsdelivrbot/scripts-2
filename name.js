@@ -2,7 +2,7 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
 
     var radiantScript = {
 
-        version       : "Fuck plug.dj",
+        version       : "Chase was here :)",
         autoWoot      : true,
         cAutoWoot     : '',
         autoJoin      : true,
