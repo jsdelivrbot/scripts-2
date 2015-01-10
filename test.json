@@ -3,7 +3,7 @@
     "colors": {
         "chat": {
             "ambassador": "#9a50ff",
-            "bouncer": "",
+            "bouncer": "40e300",
             "cohost": "FFFFFF",
             "residentdj": "",
             "host": "#fffd07",
@@ -134,7 +134,7 @@
     },
     "images": {
         "icons": {
-            "bouncer": "",
+            "bouncer": "http://i.imgur.com/oCUpdWo.png",
             "cohost": "http://i.imgur.com/3T6BCiY.png",
             "residentdj": "",
             "host": "http://i.imgur.com/e0N7k1N.png",
