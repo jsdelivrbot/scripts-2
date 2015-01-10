@@ -4,9 +4,9 @@
         "chat": {
             "ambassador": "#9a50ff",
             "bouncer": "",
-            "cohost": "#FF3558",
+            "cohost": "FFFFFF",
             "residentdj": "",
-            "host": "#FF3558",
+            "host": "#fffd07",
             "manager": "#0191ff",
             "message": "#B0B0B0"
         }
@@ -137,8 +137,8 @@
             "bouncer": "",
             "cohost": "http://i.imgur.com/w2fRKHI.png",
             "residentdj": "",
-            "host": "http://i.imgur.com/w2fRKHI.png",
-            "manager": "http://i.imgur.com/ip1USAm.png"
+            "host": "http://i.imgur.com/e0N7k1N.png",
+            "manager": "http://i.imgur.com/lfCYPM7.png"
         },
         "playback": ""
     }
