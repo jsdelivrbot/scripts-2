@@ -2,13 +2,12 @@
     "author": "Chase aka Variety",
     "colors": {
         "chat": {
-            "ambassador": "#9a50ff",
-            "bouncer": "40e300",
+            "ambassador": "",
+            "bouncer": "",
             "cohost": "",
             "residentdj": "",
             "host": "#fffd07",
-            "manager": "#0191ff",
-            "message": "#B0B0B0"
+            "manager": "",
         }
     },
     "css": {
