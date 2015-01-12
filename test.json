@@ -4,7 +4,7 @@
         "chat": {
             "ambassador": "#9a50ff",
             "bouncer": "40e300",
-            "cohost": "FFFFFF",
+            "cohost": "",
             "residentdj": "",
             "host": "#fffd07",
             "manager": "#0191ff",
@@ -135,7 +135,7 @@
     "images": {
         "icons": {
             "bouncer": "http://i.imgur.com/oCUpdWo.png",
-            "cohost": "http://i.imgur.com/3T6BCiY.png",
+            "cohost": "",
             "residentdj": "",
             "host": "http://i.imgur.com/e0N7k1N.png",
             "manager": "http://i.imgur.com/lfCYPM7.png"
