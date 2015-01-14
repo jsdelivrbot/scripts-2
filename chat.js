@@ -33,7 +33,7 @@ var intervalMessage = setInterval(function(){message();},3480000); //60,000 is 1
  
 function message(){
 var m, msgs;
-msgs = ["!shelby","!variety","!sam","!mikey"];
+msgs = ["nice play + @"+ API.getDJ().username +"!","nice @"+ API.getDJ().username +"!","good play @"+ API.getDJ().username +"!",":+1: @"+ API.getDJ().username +"!", ":fire: @"+ API.getDJ().username +"!"];
  
 m = Math.floor(Math.random() * msgs.length);
 API.sendChat(msgs[m]);          
