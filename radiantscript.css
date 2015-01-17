@@ -300,7 +300,7 @@ font-size: 14px;
 #dj-button .left {
     background: linear-gradient(to bottom,rgba(0, 181, 230, 0.75) 0,rgba(0, 156, 221, 0.75) 100%);
 }
-/*#chat .message:nth-child(2n+1),#chat .mention:nth-child(2n+1),#chat .skip:nth-child(2n+1),#chat .moderation:nth-child(2n+1),#chat .emote:nth-child(2n+1),#chat .update:nth-child(2n+1),#chat .welcome:nth-child(2n+1) {
+#chat .message:nth-child(2n+1),#chat .mention:nth-child(2n+1),#chat .skip:nth-child(2n+1),#chat .moderation:nth-child(2n+1),#chat .emote:nth-child(2n+1),#chat .update:nth-child(2n+1),#chat .welcome:nth-child(2n+1) {
     background-color: rgba(17, 19, 23, 0.32);
     -webkit-animation:fadein 0.25s;
     -moz-animation:fadein 0.25s;
@@ -316,11 +316,10 @@ font-size: 14px;
     animation:fadein 0.25s;
 }
 #chat .mention {
-    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(229, 0, 174, 1) 100%) !important;
-    font-weight: 700;
-    padding-left: 25px;
     border-left: #7681FF 3px solid;
-}*/
+    border-left: rgba(174, 69, 189, 1) 3px solid !important;
+    background-color: rgba(190, 28, 213, 0.22) !important;
+}
 #footer {
     background: linear-gradient(to bottom,rgba(0, 0, 0, 1); 0,rgba(0, 0, 0, 1) 100%);
 }
