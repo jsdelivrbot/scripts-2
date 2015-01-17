@@ -685,7 +685,7 @@ display: none !important;
 }
 
 .progress {
-    background: linear-gradient(to bottom, rgb(0, 0, 0) 0, rgb(255, 0, 0) 100%) !important;
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0, rgba(0, 153, 204, 1) 100%) !important;
 }
  
 .progress:after {
@@ -694,10 +694,10 @@ display: none !important;
     top: 0; left: 0; bottom: 0; right: 0;
     background-image:
        -webkit-gradient(linear, 0 0, 100% 100%,
-          color-stop(.25, rgba(0, 0, 0, 1)),
+          color-stop(.25, rgba(0, 153, 204, 1)),
           color-stop(.25, transparent), color-stop(.5, transparent),
-          color-stop(.5, rgba(0, 0, 0, 1)),
-          color-stop(.75, rgba(0, 0, 0, 1)),
+          color-stop(.5, rgba(0, 153, 204, 1)),
+          color-stop(.75, rgba(0, 153, 204, 1)),
           color-stop(.75, transparent), to(transparent)
        );
     z-index: 0;
@@ -729,46 +729,6 @@ display: none !important;
     position: relative !important;
     width: auto;
 }
-
-/*{
-    "colors": {
-        "background": "",
-        "chat": {
-            "admin": "667A8E",
-            "ambassador": "6B8E26",
-            "bouncer": "66CCFF",
-            "cohost": "F55B36",
-            "residentdj": "55AA55",
-            "host": "F55B36",
-            "manager": "5E597F"
-        },
-        "footer": "",
-        "header": ""
-    },
- 
-    "css": {
-        "font": [],
-        "import": [],
-        "rule": {}
-    },
- 
-    "#plug-dj": {
-        "background-image": "url('http://i.imgur.com/qap40GB.png') !important",
-        "background-repeat": "no-repeat",
-        "background-position": "center center"
-    }
- 
-    /*"images": {
-        "background": "http://i.imgur.com/20aQbPW.png",
-        "booth": "",
-        "icons": {
-            "bouncer": "http://i.imgur.com/VYCLOEE.png",
-            "cohost": "http://i.imgur.com/DDfC8JB.png",
-            "residentdj": "http://i.imgur.com/PV3oLYL.png",
-            "host": "http://i.imgur.com/DDfC8JB.png",
-            "manager": "http://i.imgur.com/ah4bqht.png"
-        }
-    }*/
     
     #dj-button.is-locked .left,#dj-button.is-full .left,#vote .crowd-response.disabled .bottom {
     background: #222224;
