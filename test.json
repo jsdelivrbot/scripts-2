@@ -11,11 +11,11 @@
         }
     },
     "css": {
-        "rule": {
-            "import": [
+        "import": [
         	"https://rawgit.com/Varietyy/scripts/master/test.css"
         ]
     },
+        "rule": {
             "#chat": {
                 "background": "rgba(10, 10, 10, 0.75)"
             },
