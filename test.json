@@ -1,12 +1,9 @@
 {
-    "_comment0" : "Radiant Music's RSS for plug.dj, credit goes to Origin (Radiant Music) and Unnoen (FiM room)",
-    "_comment1" : "Unnoen - Credit for fade-in chat code",
-    "_comment2" : "Origin - Credit for CSS and graphics",
-    "_comment3" : "Radiant Music - https://radiant.dj",
-    "_comment4" : "Facebook - https://facebook.com/RadiantEDM",
-    "_comment5" : "Twitter - https://twitter.com/RadiantEDM",
-    "_comment6" : "plug.dj - https://plug.dj/radiant",
+     "author": "Chase aka Variety", 
      "css": {
+        "rule": {
+            "#chat": {
+                "css": {
         "import": [
         	"https://rawgit.com/Varietyy/scripts/master/test.css"
         ]
