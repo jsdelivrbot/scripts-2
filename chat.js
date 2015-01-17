@@ -1,7 +1,7 @@
 $(document).ready(function(){
  
 //When script loads
-API.chatLog("Variety's ChatScript! Commands: /on, /off, /chat")
+API.chatLog("King Variety's ChatScript! Commands: /on, /off, /chat")
 $('#button-vote-positive').click();
  
 //global var
@@ -33,7 +33,7 @@ var intervalMessage = setInterval(function(){message();},3480000); //60,000 is 1
  
 function message(){
 var m, msgs;
-msgs = ["Not AFK."];
+msgs = ["I'm AFK."];
  
 m = Math.floor(Math.random() * msgs.length);
 API.sendChat(msgs[m]);          
