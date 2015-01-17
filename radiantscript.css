@@ -316,8 +316,9 @@ font-size: 14px;
     animation:fadein 0.25s;
 }
 #chat .mention {
-    border-left: rgba(174, 69, 189, 1) 3px solid !important;
-    background-color: rgba(190, 28, 213, 0.22) !important;
+    font-weight: 700;
+    /*padding-left: 25px;*/
+    border-left: #7681FF 3px solid;
 }
 #footer {
     background: linear-gradient(to bottom,rgba(0, 0, 0, 1); 0,rgba(0, 0, 0, 1) 100%);
