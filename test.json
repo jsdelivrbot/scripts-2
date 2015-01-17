@@ -1,21 +1,27 @@
 {
     "author": "Chase aka Variety",
     "colors": {
+        "background": "",
         "chat": {
+            "admin": "",
             "ambassador": "",
             "bouncer": "",
             "cohost": "",
             "residentdj": "",
             "host": "#fffd07",
-            "manager": "",
-        }
+            "manager": ""
+        },
+        "footer": "",
+        "header": ""
     },
     "css": {
-        "rule": {
-            "#chat": {
+        "font": [],
+        "import": [],
+        "rule": {}
+        "#chat": {
                 "background": "rgba(10, 10, 10, 0.75)"
             },
-        	"#chat .welcome": {               
+        "#chat .welcome": {               
                  "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)",
                  "border": "1px solid #009cdd",
                  "border-left": "0px !important",
@@ -97,16 +103,24 @@
                 "-moz-animation": "fadein 0.5s",
                 "animation": "fadein 0.5s"
             }
-        }
     },
     "images": {
+        "background": "",
+        "booth": "",
         "icons": {
-            "bouncer": "http://i.imgur.com/oCUpdWo.png",
+            "admin": "",
+            "ambassador": "",
+            "bouncer": "",
             "cohost": "",
             "residentdj": "",
             "host": "",
-            "manager": "http://i.imgur.com/lfCYPM7.png",
+            "manager": ""
         },
         "playback": ""
+    },
+    "rules": {
+        "allowAutojoin": "true",
+        "allowAutorespond": "false",
+        "allowAutowoot": "true"
     }
 }
