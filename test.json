@@ -1,15 +1,24 @@
 {
-     "author": "Chase aka Variety", 
-     "css": {
-        "rule": {
-            "#chat": {
-                "css": {
-        "import": [
-        	"https://rawgit.com/Varietyy/scripts/master/test.css"
-        ]
+    "author": "Chase aka Variety",
+    "colors": {
+        "background": "",
+        "chat": {
+            "admin": "",
+            "ambassador": "",
+            "bouncer": "",
+            "cohost": "",
+            "residentdj": "",
+            "host": "",
+            "manager": ""
+        },
+        "footer": "",
+        "header": ""
     },
-    "#chat": { 
-        ".cm[data-cid^=\"3741010\"]": {
+    "css": {
+        "font": [],
+        "import": ["https://rawgit.com/Varietyy/scripts/master/test.css"],
+        "rule": {
+             ".cm[data-cid^=\"3741010\"]": {
                  "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)"
              },
              ".cm[data-cid^=\"3741010\"] .bdg": {
@@ -29,9 +38,23 @@
              }
         }
     },
+    "images": {
+        "background": "",
+        "booth": "",
+        "icons": {
+            "admin": "",
+            "ambassador": "",
+            "bouncer": "",
+            "cohost": "",
+            "residentdj": "",
+            "host": "",
+            "manager": ""
+        },
+        "playback": ""
+    },
     "rules": {
-        "allowAutorespond": "false",
-        "allowAutowoot": "true",
-        "allowAutojoin": "false"
+        "allowAutojoin": "true",
+        "allowAutorespond": "true",
+        "allowAutowoot": "true"
     }
 }
