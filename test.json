@@ -6,7 +6,7 @@
             "admin": "",
             "ambassador": "",
             "bouncer": "",
-            "cohost": "",
+            "cohost": "FFFFFF",
             "residentdj": "",
             "host": "",
             "manager": ""
@@ -62,7 +62,7 @@
             "admin": "",
             "ambassador": "",
             "bouncer": "",
-            "cohost": "",
+            "cohost": "http://i.imgur.com/3T6BCiY.png",
             "residentdj": "",
             "host": "",
             "manager": ""
@@ -71,7 +71,7 @@
     },
     "rules": {
         "allowAutojoin": "true",
-        "allowAutorespond": "true",
+        "allowAutorespond": "false",
         "allowAutowoot": "true"
     }
 }
