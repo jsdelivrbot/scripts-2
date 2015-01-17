@@ -35,7 +35,8 @@
              },
              ".cm[data-cid^=\"5288534\"] .bdg": {
                  "background": "url('http://i.imgur.com/gPwyPMq.png') !important"
-                 "#chat .welcome": {               
+             },
+        	"#chat .welcome": {               
                  "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)",
                  "border": "1px solid #009cdd",
                  "border-left": "0px !important",
