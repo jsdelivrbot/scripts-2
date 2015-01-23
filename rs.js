@@ -588,6 +588,13 @@ API.on('chat', function(chat){
     chat.message.indexOf('@' + userName) > -1 && newSound.play();
 });
 
-if(data.message.indexOf('interesting') === 0){
-API.moderateDeleteChat(data.cid);
-}
+(function(){
+        var skipping = false, skipThreshold = 8;
+        API.on(API.SCORE_UPDATE,function(score){
+                if (score.negative >= skipThreshold && !skipping) {
+                        skipping = true;
+                        API.once(API.DJ_ADVANCE,function(){skipping = false;});
+                        API.moderateForceSkip();
+                }
+        });
+})();
