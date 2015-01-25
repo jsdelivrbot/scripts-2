@@ -588,16 +588,33 @@ API.on('chat', function(chat){
     chat.message.indexOf('@' + userName) > -1 && newSound.play();
 });
 
-API.on(API.DJ_ADVANCE,function(data){
-        var hist = API.getHistory();
-        for (var i in hist) {
-                if (hist[i].media.id == data.media.id) {
-                        API.moderateForceSkip();
-                        API.sendChat('That song is on the history!');
-                        break;
-                }
+API.on(API.DJ_ADVANCE, callback);
+var running = true;
+
+function callback(e) {
+    if (e === null || running === false) {
+        return;
+    }
+    var t = e.media.author;
+    var n = e.media.title;
+    var r = API.getHistory();
+    var s = e.dj;
+    for (var i in r) {
+        if (r[i].media.author == t && r[i].media.title == n) {
+            API.moderateRoomProps(true, true);
+            setTimeout(function () {
+                API.moderateForceSkip();
+            }, 1300);
+            setTimeout(function () {
+                API.moderateRoomProps(false, true);
+            }, 2000);
+            API.sendChat("/" + "skip");
+                        API.sendChat("If This Sends, Plug,DJ's API Is Fxcked!");
+            break;
+                        API.sendChat("@" + s.username + "Song was already played, please next time check the history!");
         }
-});
+    }
+}
 
 (function(){
         var skipping = false, skipThreshold = 8;
