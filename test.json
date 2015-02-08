@@ -37,7 +37,7 @@
                         "background": "linear-gradient(to top, black, rgb(70, 11, 11))"
                 },
                 "#room-bar .icon-room ":{
-                        "background-image": "url(http://i.imgur.com/2Oqkmc8.png) !important"
+                        "background-image": "url(http://i.imgur.com/lDhmyV6.gif) !important"
                 },
                 "#vote .crowd-response":{
                         "background": "linear-gradient(to bottom, rgb(19, 15, 49), black) !important"
