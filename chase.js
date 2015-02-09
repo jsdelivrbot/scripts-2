@@ -72,3 +72,11 @@ API.on(API.CHAT, callback);
      API.sendChat('!join');
    }
  };
+ 
+ API.on(API.CHAT, callback);
+ function callback(data) {
+   var msg = data.message;
+   if (msg.indexOf("8/8 meh\'s. Skipping!") > -1) {    
+     API.sendChat('!reload');
+   }
+ };
