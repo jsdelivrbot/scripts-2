@@ -37,7 +37,7 @@ msgs = [
  "/me Reminder: Be sure to check the OP list before you play so you don't get skipped: http://pastebin.com/eW26rqFW",
  "/me Reminder: Chat every 60 minutes in order to DJ or you will be removed from the waitlist!",
  "/me Reminder: Ask the staff if you are unsure if your song is appropriate for the room!",
- "/me Reminder: The bot will skip you if you acquire 8 meh's on your track.",
+ "/me Reminder: The bot will skip you if you acquire 8 meh's on your track!",
  "/me Reminder: Play English only songs or you will be skipped!"];
  
 m = Math.floor(Math.random() * msgs.length);
