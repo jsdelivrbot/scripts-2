@@ -25,6 +25,7 @@ msgs = [
  "/me Reminder: Ask the staff if you are unsure if your song is appropriate for the room!",
  "/me Reminder: If you disconnect and you lose your spot, type !dc and the bot will move you back to your position!",
  "/me Reminder: The bot will skip you if you acquire 8 meh's on your track!",
+ "/me Reminder: If you don't like a song, mute it and move on.",
  "/me Reminder: Play English only songs or you will be skipped!"];
  
 m = Math.floor(Math.random() * msgs.length);
