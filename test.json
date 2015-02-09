@@ -1,7 +1,7 @@
 {
     "author": "Chase aka Variety",
     "colors": {
-        "background": "http://i.imgur.com/6N7svVu.png",
+        "background": "",
         "chat": {
             "ambassador": "#84B423",
             "bouncer": "#f35063",
@@ -137,7 +137,7 @@
         }
     },
     "images": {
-        "background": "http://i.imgur.com/6N7svVu.png",
+        "background": "",
         "booth": "http://i.imgur.com/FmLscNm.png",
         "icons": {
             "bouncer": "http://i.imgur.com/BkX5GOl.png",
