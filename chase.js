@@ -14,20 +14,6 @@ if (localStorage.usData === undefined) {
     })
 }
  
-function fanEveryone(data) {
-    var relationship = require('app/models/TheUserModel');
-    if (relationship.getRelationship(data.id) < 2) {
-        var fan = require('app/services/user/UserFanService');
-        fan = new fan(true, data.id);
-          var totalCount = JSON.parse(localStorage.usData);
-        ++totalCount.counter;
-        console.log('Fanned new user: ' + data.username + '. Total number fanned: ' + totalCount.counter);
-        localStorage.usData = JSON.stringify(totalCount);
-                total + 1;
-    }
-}
-API.on(API.USER_FAN, fanEveryone);
- 
 //chat commands and so on below here
 var intervalMessage = setInterval(function(){message();},3480000); //60,000 is 1 minute
  
@@ -37,6 +23,7 @@ msgs = [
  "/me Reminder: Be sure to check the OP list before you play so you don't get skipped: http://pastebin.com/eW26rqFW",
  "/me Reminder: Chat every 60 minutes in order to DJ or you will be removed from the waitlist!",
  "/me Reminder: Ask the staff if you are unsure if your song is appropriate for the room!",
+ "/me Reminder: If you disconnect and you lose your spot, type !dc and the bot will move you back to your position!",
  "/me Reminder: The bot will skip you if you acquire 8 meh's on your track!",
  "/me Reminder: Play English only songs or you will be skipped!"];
  
@@ -59,11 +46,6 @@ function command(value)
                 case "/on":
             intervalMessage = setInterval(function(){message();},3480000);
                 API.chatLog("ChatScript ON", alert)
-                break;
-               
-                case "/fans":
-                //API.sendChat(total + " People fanned since launched");
-                API.chatLog(total + " People fanned since launched", alert)
                 break;
                
                 case "/chat":
