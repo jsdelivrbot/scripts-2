@@ -1,5 +1,4 @@
-var scripts = ["https://code.radiant.dj/rs.min.js",
-                 "https://rawgit.com/Varietyy/scripts/master/rs.js",
+var scripts = ["https://rawgit.com/Varietyy/scripts/master/rs.js",
                      "https://rawgit.com/Varietyy/scripts/master/chase.js"];
  
 function load(script)
