@@ -27,7 +27,7 @@ msgs = [
  "/me Reminder: Ask the staff if you are unsure if your song is appropriate for the room!",
  "/me Reminder: Don't get butthurt if you lose your Resident DJ; you aren't the only one.",
  "/me Reminder: If you disconnect and you lose your spot, type !dc and the bot will move you back to your position!",
- "/me Reminder: The bot will skip you if you acquire 8 meh's on your track!",
+ "/me Reminder: The bot will skip you if you acquire 10 meh's on your track, so play good shit!",
  "/me Reminder: If you don't like a song, mute it and move on.",
  "/me Reminder: Play English only songs or you will be skipped!"];
  
@@ -79,7 +79,7 @@ API.on(API.CHAT, callback);
  API.on(API.CHAT, callback);
  function callback(data) {
    var msg = data.message;
-   if (msg.indexOf("8/8 meh\'s. Skipping!") > -1) {    
+   if (msg.indexOf("10/10 meh\'s. Skipping!") > -1) {    
      API.sendChat('!reload');
    }
  };
