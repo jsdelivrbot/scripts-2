@@ -97,7 +97,7 @@
                 "#curate.selected":{
                         "background": "linear-gradient(to bottom, rgb(87, 0, 128), rgb(38, 0, 56)) !important"
                 },
-                "#playback": {
+                "#playback .background img": {
                 "display": "none"
                 },
                 ".header-panel-button.selected":{
