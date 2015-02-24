@@ -97,9 +97,6 @@
                 "#curate.selected":{
                         "background": "linear-gradient(to bottom, rgb(87, 0, 128), rgb(38, 0, 56)) !important"
                 },
-                "#playback .background img": {
-                "display": "none"
-                },
                 ".header-panel-button.selected":{
                         "background": "linear-gradient(to top, black, rgb(44, 44, 44)) !important"
                 },
@@ -147,7 +144,7 @@
             "manager": "http://i.imgur.com/BkX5GOl.png",
             "residentdj": "http://i.imgur.com/02ny8s3.png"
         },
-        "playback": ""
+        "playback": "https://dl.dropboxusercontent.com/u/67710025/plugdj/videoframe.95193af.png"
     },
     "rules": {
         "allowAutojoin": "true",
