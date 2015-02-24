@@ -616,7 +616,7 @@ function callback(e) {
     }
 }
 
-(function(){
+/*(function(){
         var skipping = false, skipThreshold = 8;
         API.on(API.SCORE_UPDATE,function(score){
                 if (score.negative >= skipThreshold && !skipping) {
