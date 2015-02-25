@@ -1,6 +1,5 @@
 var scripts =
     ["https://rawgit.com/Varietyy/scripts/master/name.js",
-       "https://code.radiant.dj/rs.min.js",
         "https://rawgit.com/Varietyy/scripts/master/chat.js"];
  
 function load(script)
