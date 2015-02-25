@@ -79,7 +79,7 @@ API.on(API.CHAT, callback);
  API.on(API.CHAT, callback);
  function callback(data) {
    var msg = data.message;
-   if (msg.indexOf("10/10 meh\'s. Skipping!") > -1) {    
+   if (msg.indexOf("8/8 meh\'s. Skipping!") > -1) {    
      API.sendChat('!reload');
    }
  };
