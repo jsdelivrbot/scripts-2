@@ -100,6 +100,19 @@
                 ".header-panel-button.selected":{
                         "background": "linear-gradient(to top, black, rgb(44, 44, 44)) !important"
                 },
+                "#chat .emote .timestamp": {
+                        "background-image": "url(http://i.imgur.com/w0BKNbm.png) !important",
+                        "background-repeat": "no-repeat",
+                        "color": "rgba(255, 255, 255, 0)"
+        },
+        "#chat-messages .emote .icon": {
+            "position": "absolute",
+                        "width": "30px",
+                        "height": "30px",
+                        "background": "url(/_/static/images/icons.5c6e59d.png)",
+                        "background-position-y": "414px",
+                        "background-position-x": "-182px"
+        },
                 "#chat .mention.from-5169520 > i": {
                 "background-image": "url('http://i.imgur.com/tFqorbY.png') !important",
                 "background-position": "0 0"
