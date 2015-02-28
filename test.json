@@ -100,6 +100,28 @@
                 ".header-panel-button.selected":{
                         "background": "linear-gradient(to top, black, rgb(44, 44, 44)) !important"
                 },
+                "#chat .mention.from-5169520 > i": {
+                "background-image": "url('http://i.imgur.com/tFqorbY.png') !important",
+                "background-position": "0 0"
+            },
+            "#chat .message.from-5169520 > i": {
+                "background-image": "url('http://i.imgur.com/tFqorbY.png') !important",
+                "background-position": "0 0"
+            },
+            "#chat .emote.from-5169520 > i": {
+                "background-image": "url('http://i.imgur.com/tFqorbY.png') !important",
+                "background-position": "0 0",
+                                "background-repeat": "no-repeat"
+            },
+                        "#chat .mention.from-5169520": {
+                                "background": "rgba(55, 78, 102, 0.5)"
+            },
+            "#chat .message.from-5169520": {
+                                "background": "rgba(55, 78, 102, 0.5)"
+            },
+            "#chat .emote.from-5169520": {
+                                "background": "rgba(55, 78, 102, 0.5)"
+            },
              ".cm[data-cid^=\"3741010\"]": {
                  "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)"
              },
