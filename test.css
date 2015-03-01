@@ -227,3 +227,19 @@ background-color: rgba(17, 19, 23, 0.32); -webkit-animation:fadein 0.6s;  -moz-a
 #user-rollover .meta.away { background: linear-gradient(to bottom,rgba(109, 92, 40, 0.5) 0,rgba(28, 31, 37, 1) 100%);  opacity: .85;}
 #footer-user .menu {background-color: rgba(0,0,0,0.85) !important; }
  #user-rollover .meta .joined {color: #eee;}
+
+.experience .xp .bar .progress {
+border-radius: 10px 0px 10px 0px !important; background: #12A9E0; box-shadow: 0 0 10px 5px #12A9E0; }
+#footer-user .bar .progress { border-radius: 10px 0px 10px 0px !important; background: #12A9E0; box-shadow: 0 0 15px #12A9E0 !important; }
+.experience .xp .bar, #footer-user .meta div.bar { border-radius: 10px 0px 10px 0px !important; }
+#footer-user .meta div.bar { border-radius: 10px 0px 10px 0px !important; }
+
+#user-inventory .avatars .grid .cell, { border-radius: 3000px; 
+background: linear-gradient(to bottom,#12A9E0 0,#0D607E 56%,#000 73%,#39393A 100%)  !important; }
+#user-inventory .avatars .grid .cell:hover>.top, #user-avatars .my-avatars .grid .cell.selected .top {
+background: linear-gradient(to bottom,#12A9E0 0,#0D607E 56%,#000 73%,#39393A 100%) !important; }
+#user-menu .avatar { background: linear-gradient(to bottom,#12A9E0 0,#0D607E 56%,#000 73%,#39393A 100%); }
+#user-menu .icon .icon-locked-grey{ float: right; }
+#user-inventory .avatars .grid .cell, #user-inventory .badges .grid .cell, { border-radius: 100px; }
+.user-content .grid .cell:hover>.top {background: linear-gradient(to bottom,#12A9E0 0,#0D607E 56%,#000 73%,#39393A 100%);}
+#user-inventory .avatars .grid .cell.selected .top {background: linear-gradient(to bottom,#12A9E0 0,#0D607E 56%,#000 73%,#39393A 100%);}
