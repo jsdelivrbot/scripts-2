@@ -16,7 +16,7 @@
     },
     "css": {
         "font": [],
-        "import": ["https://rawgit.com/Varietyy/scripts/master/test.css"],
+        "import": ["https://rawgit.com/OrigemWoot/OrigemWoot/master/CSS/OrigemCSS.css"],
         "rule": {
             "#header":{
                         "background": "#000000"
