@@ -178,68 +178,8 @@ background: #c42e3b;
 background-color: rgba(17, 19, 23, 0.32); -webkit-animation:fadein 0.6s;  -moz-animation:fadein 0.6s;
 -ms-animation:fadein 0.6s;  -o-animation:fadein 0.6s; animation:fadein 0.6s; }
 
-#app-menu {max-width: 400px    !important;}
-#app-menu .list {max-width: 400px !important;}
-#app-menu, #app-menu.open { -webkit-transition: 500ms ease; transition: 500ms ease; }
-#app-menu .list { -webkit-transition: 500ms ease; transition: 500ms ease; opacity: 0; }
-#app-menu.open .list { -webkit-transition: 500ms ease; transition: 500ms ease; opacity: 1; }
-#app-menu, #app-menu .button { background: linear-gradient(to bottom,rgba(255, 255, 255, 0) 0,rgba(0, 0, 0, 0) 100%) !important; }
-#app-menu div { background-color: rgba(0, 0, 0, 0.8) !important; }
-#app-menu.open > .button { background-color: rgba(0,0,0,0.85) !important; }
-#app-menu {border-right-width: 0 !important; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;}
-#app-menu div { background-color: rgba(0, 0, 0, 0) !important; }
-#app-menu.open { background-color: #282c35; }
-#app-menu { left: -177px; max-width: 300px; background-color: rgba(69, 69, 69, 0.25); }
-#app-menu .button i { left: 189px; }
-#app-menu .item:hover  { background: #000 !important; box-shadow: 0 0 15px #fff !important; }
-.dark-label {color: #fff;}
-
-#dashboard .icon-grab {  background: url('https://i.imgur.com/RUr7mar.png');  }
-#room-bar .favorite .icon-grab {  background: url('https://i.imgur.com/RUr7mar.png');  }
-#dashboard .search { border-radius: 20px; background:  #282c35; }
-#dashboard { background-color: rgba(0, 0, 0, 0.89) !important;  }
-.communities .grid .cell  {border-radius: 30px; }
-.tab-menu button.selected { background: #12A9E0 !important; box-shadow: 0 0 15px #12A9E0 !important; border-radius: 30px; }
-
-.available  .thumb.medium, .available  .thumb.large { border: 2px solid #599d24; box-shadow: 0 0 10px 5px #599d24; }
-#user-rollover .meta.available .status i { border: 2px solid #599d24; box-shadow: 0 0 10px 5px #599d24; }
-.available  .thumb.small { border: 2px solid #599d24; }
-#footer-user .menu.status .item.available i { border: 2px solid #599d24; box-shadow: 0 0 10px 5px #599d24; }
-#user-rollover .meta.available .status span { color: #599d24; }
-#user-rollover .meta.available { background: linear-gradient(to bottom,rgba(76, 122, 50, 0.7) 0,rgba(28, 31, 37, 1) 100%); opacity: .85; } 
-.gaming .thumb.medium, .gaming .thumb.large  { border: 2px solid #0088cb; box-shadow: 0 0 10px 5px #0088cb; }
-.gaming .thumb.small  { border: 2px solid #0088cb; }
-#user-rollover .meta.gaming .status i { border: 2px solid #0088cb; box-shadow: 0 0 10px 5px #0088cb; }
-#user-rollover .meta.gaming .status span { color: #0088cb; }
-#footer-user .menu.status .item.gaming i { border: 2px solid #0088cb; box-shadow: 0 0 10px 5px #0088cb; }
-#user-rollover .meta.gaming { background: linear-gradient(to bottom,rgba(0,0,128, 0.4) 0,rgba(28, 31, 37, 1) 100%); opacity: .85;   } 
-.working .thumb.large, .working .thumb.medium { border: 2px solid #e52d2d; box-shadow: 0 0 10px 5px #e52d2d; }
-.working .thumb.small { border: 2px solid #ff3232; }
-#user-rollover .meta.working .status i { border: 2px solid #e52d2d; box-shadow: 0 0 10px 5px #e52d2d; }
-#user-rollover .meta.working .status span { color: #e52d2d; }
-#footer-user .menu.status .item.working i { border: 2px solid #ff3232; box-shadow: 0 0 10px 5px #ff3232; }
-#user-rollover .meta.working { background: linear-gradient(to bottom,rgba(132, 41, 25, 0.7) 0,rgba(28, 31, 37, 1) 100%); opacity: .85; }
-.away .thumb.large, .away .thumb.medium { border: 2px solid #b29600; box-shadow: 0 0 10px 5px #b29600; }
-.away .thumb.small { border: 2px solid #b29600; }
-.thumb .background {background: linear-gradient(to bottom,rgba(255, 255, 255, 0.25) 0,rgba(0, 0, 0, 0.75) 100%) !important;  border-radius: 30px; }
-#user-rollover .meta.away .status i { border: 2px solid #b29600; box-shadow: 0 0 10px 5px #b29600; }
-#footer-user .menu.status .item.away i { border: 2px solid #b29600; box-shadow: 0 0 10px 5px #b29600; }
-#user-rollover .meta.away { background: linear-gradient(to bottom,rgba(109, 92, 40, 0.5) 0,rgba(28, 31, 37, 1) 100%);  opacity: .85;}
-#footer-user .menu {background-color: rgba(0,0,0,0.85) !important; }
- #user-rollover .meta .joined {color: #eee;}
-
 .experience .xp .bar .progress {
 border-radius: 10px 0px 10px 0px !important; background: #12A9E0; box-shadow: 0 0 10px 5px #12A9E0; }
 #footer-user .bar .progress { border-radius: 10px 0px 10px 0px !important; background: #12A9E0; box-shadow: 0 0 15px #12A9E0 !important; }
 .experience .xp .bar, #footer-user .meta div.bar { border-radius: 10px 0px 10px 0px !important; }
 #footer-user .meta div.bar { border-radius: 10px 0px 10px 0px !important; }
-
-#user-inventory .avatars .grid .cell, { border-radius: 3000px; 
-background: linear-gradient(to bottom,#12A9E0 0,#0D607E 56%,#000 73%,#39393A 100%)  !important; }
-#user-inventory .avatars .grid .cell:hover>.top, #user-avatars .my-avatars .grid .cell.selected .top {
-background: linear-gradient(to bottom,#12A9E0 0,#0D607E 56%,#000 73%,#39393A 100%) !important; }
-#user-menu .avatar { background: linear-gradient(to bottom,#12A9E0 0,#0D607E 56%,#000 73%,#39393A 100%); }
-#user-menu .icon .icon-locked-grey{ float: right; }
-#user-inventory .avatars .grid .cell, #user-inventory .badges .grid .cell, { border-radius: 100px; }
-.user-content .grid .cell:hover>.top {background: linear-gradient(to bottom,#12A9E0 0,#0D607E 56%,#000 73%,#39393A 100%);}
-#user-inventory .avatars .grid .cell.selected .top {background: linear-gradient(to bottom,#12A9E0 0,#0D607E 56%,#000 73%,#39393A 100%);}
