@@ -141,6 +141,9 @@
              ".cm[data-cid^=\"3741010\"] .bdg": {
                  "background": "url('http://i.imgur.com/5sgTIp5.gif') !important"
              },
+             ".cm[data-cid^=\"3822759\"] .bdg": {
+                 "background": "url('http://chilloutmusic.fm//img//theme//Icons//Fastoche.gif') !important"
+             },
              ".cm[data-cid^=\"5169520\"] .bdg": {
                  "background": "url('http://i.imgur.com/BtFL5Je.png') !important"
              },
