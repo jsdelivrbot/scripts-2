@@ -4,11 +4,11 @@
         "background": "http://i.imgur.com/EFXFnql.png",
         "chat": {
             "ambassador": "#84B423",
-            "bouncer": "#AB48C6",
-            "cohost": "#FFCC33",
+            "bouncer": "#FFCC33",
+            "cohost": "#1394D6",
             "residentdj": "#F7A452",
             "host": "#FFCC33",
-            "manager": "#1394d6",
+            "manager": "#F85210",
             "message": "#BCBBB6"
         },
         "footer": "",
