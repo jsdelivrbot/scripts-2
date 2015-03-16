@@ -156,6 +156,9 @@
              ".cm[data-cid^=\"3679917\"] .bdg": {
                  "background": "url('http://i.imgur.com/NO5C3oa.gif') !important"
              },
+             ".cm[data-cid^=\"4204176\"] .bdg": {
+                 "background": "url('http://im.ezgif.com/tmp/ezgif-1704365947.gif') !important"
+             },
         	"#chat .welcome": {               
                  "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)",
                  "border": "1px solid #009cdd",
