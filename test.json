@@ -89,13 +89,13 @@
                         "border-radius": "25px 0 0 25px"
                 },
                 "#woot.selected":{
-                        "background": "linear-gradient(to bottom, green, rgb(0, 56, 9)) !important"
+                        "background": "linear-gradient(to bottom, rgb(19, 15, 49), black) !important"
                 },
                 "#meh.selected":{
-                        "background": "linear-gradient(to bottom, maroon, rgb(56, 0, 0)) !important"
+                        "background": "linear-gradient(to bottom, rgb(19, 15, 49), black) !important"
                 },
                 "#curate.selected":{
-                        "background": "linear-gradient(to bottom, rgb(87, 0, 128), rgb(38, 0, 56)) !important"
+                        "background": "linear-gradient(to bottom, rgb(19, 15, 49), black) !important"
                 },
                 ".header-panel-button.selected":{
                         "background": "linear-gradient(to top, black, rgb(44, 44, 44)) !important"
