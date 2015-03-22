@@ -54,15 +54,9 @@
                 "#curate.crowd-response.disabled.active .bottom":{
                         "background": "linear-gradient(to top, rgba(24, 0, 54, 0.63), rgb(36, 0, 65), rgba(6, 0, 17, 0.86)) !important"
                 },
-                "#woot":{
-                        "border-radius": "25px 0 0 25px !important"
-                },
                 "#woot .bottom":{
                         "border-radius": "0 0 0 25px !important",
                         "background": "linear-gradient(to top, rgb(0, 37, 0), black)"
-                },
-                "#meh":{
-                        "border-radius": "0 25px 25px 0 !important"
                 },
                 "#meh .bottom":{
                         "border-radius": "0 0 25px !important",
