@@ -16,9 +16,9 @@
     },
     "css": {
         "font": [],
-        "import": ["https://rawgit.com/Varietyy/scripts/master/test.css"],
+        "import": [],
         "rule": {
-            "#header":{
+                "#header":{
                         "background": "#000000"
                 },
                 "#footer":{
@@ -37,7 +37,7 @@
                         "background": "linear-gradient(to top, black, rgb(70, 11, 11))"
                 },
                 "#room-bar .icon-room ":{
-                        "background-image": "url(http://i.imgur.com/2Oqkmc8.png) !important"
+                        "background-image": "url(http://i.imgur.com/ICQ1T1u.gif) !important"
                 },
                 "#vote .crowd-response":{
                         "background": "linear-gradient(to bottom, rgb(19, 15, 49), black) !important"
