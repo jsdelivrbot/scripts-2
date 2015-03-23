@@ -397,7 +397,7 @@ if (API.enabled && $("#radiantscriptt-css").length <= 0) {
     var content4 = '<section id="DisableFullScreen" class="disabled1"><div id="fullscreenDisable">Disable Fullscreen</div></section>';
 
 
-    //$('body').prepend('<link rel="stylesheet" type="text/css" id="radiantscriptt-css" href="https://rawgit.com/Varietyy/scripts/master/radiantscriptt.css" />');  
+    $('body').prepend('<link rel="stylesheet" type="text/css" id="radiantscriptt-css" href="https://rawgit.com/Varietyy/scripts/master/radiantscriptt.css" />');  
     $('#room').append(content1);
     $('#room').append(content2);
     $('#room').append(content3);
