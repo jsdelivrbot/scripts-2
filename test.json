@@ -37,40 +37,7 @@
                         "background": "linear-gradient(to top, black, rgb(70, 11, 11))"
                 },
                 "#room-bar .icon-room ":{
-                        "background-image": "url(http://i.imgur.com/lDhmyV6.gif) !important"
-                },
-                "#vote .crowd-response":{
-                        "background": "linear-gradient(to bottom, rgb(19, 15, 49), black) !important"
-                },
-                "#vote .crowd-response.disabled .bottom":{
-                        "background": "linear-gradient(to top, rgb(19, 15, 49), black) !important"
-                },
-                "#woot.crowd-response.disabled.active .bottom":{
-                        "background": "linear-gradient(to top, rgba(0, 54, 2, 0.63), rgb(0, 65, 5), rgba(0, 17, 1, 0.86)) !important"
-                },
-                "#meh.crowd-response.disabled.active .bottom":{
-                        "background": "linear-gradient(to top, rgba(54, 0, 0, 0.63), rgb(65, 0, 0), rgba(17, 0, 0, 0.86)) !important"
-                },
-                "#curate.crowd-response.disabled.active .bottom":{
-                        "background": "linear-gradient(to top, rgba(24, 0, 54, 0.63), rgb(36, 0, 65), rgba(6, 0, 17, 0.86)) !important"
-                },
-                "#header":{
-                        "background": "#000000"
-                },
-                "#footer":{
-                        "background": "#000000"
-                },
-                "#plug-dj":{
-                        "background": "linear-gradient(to top, black, rgb(44, 44, 44))"
-                },
-                "#plugcubed":{
-                        "background": "linear-gradient(to top, black, rgb(44, 44, 44)) !important"
-                },
-                "#playlist-button":{
-                        "background": "linear-gradient(to top, black, rgb(11, 22, 70))"
-                },
-                "#store-button":{
-                        "background": "linear-gradient(to top, black, rgb(70, 11, 11))"
+                        "background-image": "url(http://i.imgur.com/2Oqkmc8.png) !important"
                 },
                 "#vote .crowd-response":{
                         "background": "linear-gradient(to bottom, rgb(19, 15, 49), black) !important"
