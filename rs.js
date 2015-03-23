@@ -1,4 +1,4 @@
-//if (API.enabled && $("#radiantscriptt-css").length <= 0) {
+if (API.enabled <= 0) {
 
     var radiantScript = {
 
