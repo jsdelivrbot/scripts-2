@@ -56,7 +56,7 @@
                 },
                 "#woot .bottom":{
                         "border-radius": "0 0 0 25px !important",
-                        "background": "linear-gradient(to top, rgb(37, 0, 0), black)"
+                        "background": "linear-gradient(to top, rgb(o, 37, 0), black)"
                 },
                 "#meh .bottom":{
                         "border-radius": "0 0 25px !important",
