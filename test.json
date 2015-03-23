@@ -54,17 +54,58 @@
                 "#curate.crowd-response.disabled.active .bottom":{
                         "background": "linear-gradient(to top, rgba(24, 0, 54, 0.63), rgb(36, 0, 65), rgba(6, 0, 17, 0.86)) !important"
                 },
+                "#header":{
+                        "background": "#000000"
+                },
+                "#footer":{
+                        "background": "#000000"
+                },
+                "#plug-dj":{
+                        "background": "linear-gradient(to top, black, rgb(44, 44, 44))"
+                },
+                "#plugcubed":{
+                        "background": "linear-gradient(to top, black, rgb(44, 44, 44)) !important"
+                },
+                "#playlist-button":{
+                        "background": "linear-gradient(to top, black, rgb(11, 22, 70))"
+                },
+                "#store-button":{
+                        "background": "linear-gradient(to top, black, rgb(70, 11, 11))"
+                },
+                "#room-bar .icon-room ":{
+                        "background-image": "url(http://i.imgur.com/2Oqkmc8.png) !important"
+                },
+                "#vote .crowd-response":{
+                        "background": "linear-gradient(to bottom, rgb(19, 15, 49), black) !important"
+                },
+                "#vote .crowd-response.disabled .bottom":{
+                        "background": "linear-gradient(to top, rgb(19, 15, 49), black) !important"
+                },
+                "#woot.crowd-response.disabled.active .bottom":{
+                        "background": "linear-gradient(to top, rgba(0, 54, 2, 0.63), rgb(0, 65, 5), rgba(0, 17, 1, 0.86)) !important"
+                },
+                "#meh.crowd-response.disabled.active .bottom":{
+                        "background": "linear-gradient(to top, rgba(54, 0, 0, 0.63), rgb(65, 0, 0), rgba(17, 0, 0, 0.86)) !important"
+                },
+                "#curate.crowd-response.disabled.active .bottom":{
+                        "background": "linear-gradient(to top, rgba(24, 0, 54, 0.63), rgb(36, 0, 65), rgba(6, 0, 17, 0.86)) !important"
+                },
+                "#woot":{
+                        "border-radius": "25px 0 0 25px !important"
+                },
                 "#woot .bottom":{
                         "border-radius": "0 0 0 25px !important",
-                        "background": "linear-gradient(to top, rgb(o, 37, 0), black)"
+                        "background": "linear-gradient(to top, rgb(0, 37, 0), black)"
+                },
+                "#meh":{
+                        "border-radius": "0 25px 25px 0 !important"
                 },
                 "#meh .bottom":{
                         "border-radius": "0 0 25px !important",
                         "background": "linear-gradient(to top, rgb(37, 0, 0), black)"
                 },
-                
                 "#curate .bottom":{
-                        "background": "linear-gradient(to top, rgb(37, 0, 0), black)"
+                        "background": "linear-gradient(to top, rgb(28, 0, 70), black)"
                 },
                 "#dj-button":{
                         "border-radius": "25px",
@@ -83,16 +124,19 @@
                         "border-radius": "25px 0 0 25px"
                 },
                 "#woot.selected":{
-                        "background": "linear-gradient(to bottom, rgb(19, 15, 49), black) !important"
+                        "background": "linear-gradient(to bottom, green, rgb(0, 56, 9)) !important"
                 },
                 "#meh.selected":{
-                        "background": "linear-gradient(to bottom, rgb(19, 15, 49), black) !important"
+                        "background": "linear-gradient(to bottom, maroon, rgb(56, 0, 0)) !important"
                 },
                 "#curate.selected":{
-                        "background": "linear-gradient(to bottom, rgb(19, 15, 49), black) !important"
+                        "background": "linear-gradient(to bottom, rgb(87, 0, 128), rgb(38, 0, 56)) !important"
                 },
                 ".header-panel-button.selected":{
                         "background": "linear-gradient(to top, black, rgb(44, 44, 44)) !important"
+                },
+                "#chat": {
+                        "background": "linear-gradient(to left, rgba(0, 0, 0, 1), rgba(32, 31, 49, 0.59), rgba(0, 0, 0, 1))"
                 },
                 "#chat .emote .timestamp": {
                         "background-image": "url(http://i.imgur.com/w0BKNbm.png) !important",
