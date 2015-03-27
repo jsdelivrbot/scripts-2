@@ -16,7 +16,7 @@
     },
     "css": {
         "font": [],
-        "import": [],
+        "import": ["https://rawgit.com/Varietyy/scripts/master/test.css"],
         "rule": {
                 "#header":{
                         "background": "#000000"
