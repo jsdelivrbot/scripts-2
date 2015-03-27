@@ -5,10 +5,10 @@
         "chat": {
             "ambassador": "#84B423",
             "bouncer": "#F85210",
-            "cohost": "#1394D6",
+            "cohost": "#FF69B4",
             "residentdj": "#F7A452",
-            "host": "#1394D6",
-            "manager": "#FF69B4",
+            "manager": "#1394D6",
+            "host": "#FF69B4",
             "message": "#BCBBB6"
         },
         "footer": "",
