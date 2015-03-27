@@ -1,170 +1,82 @@
-/*.room-background {
-    background: url(https://code.radiant.dj/require/radiant.music.nov1.jpg) no-repeat !important;
-    width: 500% !important;
-    height: 500% !important;
-}*/
-#user-lists .list.staff .group {
-    background: linear-gradient(to right,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 1) 100%) !important;
+#lobby-overlay {
+	box-shadow: 0 0 48px 4px #000;
+	border: 1px solid #272727;
+	background: rgba(0, 0, 0, 0.35);
+	background-image: none;
+	font-family: Segoe UI Light !important;
 }
-#footer {
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.25) 0,rgba(0, 0, 0, 0.75) 100%);
+.overlay-header {
+	background-image: none;
+	background-color: rgba(0, 0, 0, 0.0);
 }
-#playlist-button {
-    background: linear-gradient(to bottom,#FF5CDE 0,#5700FF 100%);
+.overlay-title {
+	font-size: 23px;
+	top: 11px;
+	left: 10px;
+	font-family: Segoe UI Light;
 }
-#app-header {
-    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.25) 0,rgba(0, 0, 0, 0.75) 100%);
+#lobby-search {
+	background: #ECF0F1;
+	height: 28px;
+	top: 16px;
+	background-image: none;
 }
-#store-button {
-    background: linear-gradient(to bottom,#FF0000 0,#A00000 100%);
+#lobby-search .search-input input {
+	top: 4px;
+	color: #95A5A6;
 }
-#plug-dj {
-    background: linear-gradient(to bottom,#0268AC 0,#02225C 100%);
+#create-room-button {
+	top: 16px;
+	width: 130px;
+	height: 28px;
+	font-size: 18px;
+	text-align: center;
+	background: #95A5A6;
+	background-image: none;
 }
-.header-panel-button.selected {
-    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.25) 0,rgba(255, 255, 255, 0.06) 100%);
+#lobby-panel {
+	background-image: none;
 }
-#plug-menu {
-    background: rgba(40, 44, 53, 0.94) !important;
+#lobby-panel-list {
+	font-size: 11px;
+	background-color: rgba(0, 0, 0, 0.0);
 }
-#plug-menu .legal {
-    background: rgba(68, 74, 89, 0.46) !important;
+#lobby-panel-list ul {
+	font-size: 11px;
+	background-color: rgba(0, 0, 0, 0.0);
 }
-#settings {
-    background: rgba(10, 10, 10, 0.89) !important;
+.room-list {
+	border: none;
+	background: none;
 }
-#user-lists .list .user:hover {
-    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(255, 0, 194, 0.27) 100%) !important;
+.room-list-item {
+	height: 88px !important;
+	background: rgba(153, 153, 153, 0.22);
 }
-#waitlist .list .user {
-    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(255, 0, 194, 0.13) 100%) !important;
+.room-population {
+	color:  #FFF;
 }
-.app-right .friends {
-    background: none !important;
+.room-name {
+	color: #5BC0F0;
 }
-#settings .header {
-    background: rgba(28, 31, 37, 0.78) !important;
+.room-hosted-by {
+	color: #A8A8A8;
+	font-size: 11px;
 }
-@media (max-width: 1600px) {
-    #room .app-right {
-        background: linear-gradient(to right,rgba(0, 0, 0, 0.70) 0,rgba(0, 0, 0, 1) 100%);
-    }
+.room-host-name {
+	color: #5BC0F0;
+	font-size: 12px;
 }
-#chat .message:nth-child(2n+1),#chat .mention:nth-child(2n+1),#chat .skip:nth-child(2n+1),#chat .moderation:nth-child(2n+1),#chat .emote:nth-child(2n+1),#chat .update:nth-child(2n+1),#chat .welcome:nth-child(2n+1) {
-    background-color: rgba(17, 19, 23, 0.32);
-    -webkit-animation:fadein 0.25s;
-    -moz-animation:fadein 0.25s;
-    -ms-animation:fadein 0.25s;
-    -o-animation:fadein 0.25s;
-    animation:fadein 0.25s;
+.room-now-playing {
+	color: #FFF;
+	top: 29px;
 }
-#chat .emote, #chat .mention, #chat .message, #chat .moderation, #chat .skip, #chat .system, #chat .update, #chat .welcome {
-    -webkit-animation:fadein 0.25s;
-    -moz-animation:fadein 0.25s;
-    -ms-animation:fadein 0.25s;
-    -o-animation:fadein 0.25s;
-    animation:fadein 0.25s;
+.room-media {
+	top: 29px;
+	color: #A8A8A8;
 }
-#chat .mention {
-    font-weight: 700;
-    /*padding-left: 25px;*/
-    border-left: #7681FF 3px solid;
-}
-#chat .emote .from {
-     color: #ac76ff !important;
-}
-#chat .emote {
-    border-left: rgba(174, 69, 189, 1) 3px solid !important;
-    background-color: rgba(190, 28, 213, 0.22) !important;
-}
-#chat-messages .emote .icon {
-    /*left: 4px;*/
-}
-#chat .emote .text {
-    font-style: normal;
-    font-weight: bold;
-    color: #ac76ff;
-}
-#footer {
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.25) 0,rgba(0, 0, 0, 0.75) 100%);
-}
-#playlist-button {
-    background: linear-gradient(to bottom,#FF5CDE 0,#5700FF 100%);
-}
-.social-menu .icon-twitter,.social-menu .icon-facebook {
-    opacity: 1;
-}
-#playlist-panel {
-    background: rgba(17, 19, 23, 0.9);
-}
-#playlist-menu {
-    background: rgba(28, 31, 37, 0.67);
-}
-#search {
-    background: rgba(50, 55, 66, 0.58);
-}
-#search-bar {
-    background: rgba(17, 19, 23, 0.77);
-}
-#filter-bar {
-    background: rgba(17, 19, 23, 0.77);
-}
-#playlist-edit-button {
-    background: rgba(85, 93, 112, 0.75);
-}
-#playlist-shuffle-button {
-    background: rgba(68, 74, 89, 0.75);
-}
-#playlist-delete-button {
-    background: rgba(50, 55, 66, 0.75);
-}
-#user-panel .score {
-    background: rgba(28, 31, 37, 0.59);
-}
-#dj-button.is-locked .left,#dj-button.is-full .left,#vote .crowd-response.disabled .bottom {
-    background: #222224;
-}
-#dj-button.is-quit .left, #dj-button.is-leave .left, #dj-button.is-wait .left, #dj-button.is-locked .left, #dj-button.is-full .left {
-background: #121214;
-border-radius: 8px;
-border-left-width: 4px;
-}
-#dj-button.is-quit .left {
-border-left: 3px solid #f46b40;
-}
-#dj-button.is-leave .left {
-border-left: 3px solid #f46b40;
-}
-#dj-button.is-wait .left {
-border-left: 3px solid #00b5e6;
-}
-#dj-button.is-locked .left {
-border-left: 3px solid #734ba9;
-}
-#dj-button.is-full .left {
-border-left: 3px solid #CCCCCC;
-}
-#dj-button {
-background: #222224;
-border-radius: 8px;
-}
-#vote .crowd-response {
-background: #222224;
-}
-#woot .bottom, #woot.selected {
-background: #90ad2f;
-}
-#grab .bottom, #grab.selected {
-background: #aa74ff;
-}
-#meh .bottom, #meh.selected {
-background: #c42e3b;
-}
-.row:hover {
-    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(255, 0, 194, 0.27) 100%) !important;
-}
-#chat .mention .msg {
-    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(255, 0, 194, 0.27) 100%) !important;
+.room-djs {
+	color: #A8A8A8;
 }
 
 #room-name  span:hover {
