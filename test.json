@@ -56,7 +56,6 @@
                 },
                 "#woot":{
                         "border-radius": "25px 0 0 25px !important"
-                        "background": "linear-gradient(to bottom, rgb(87, 0, 128), rgb(38, 0, 56)) !important"
                 },
                 "#woot .bottom":{
                         "border-radius": "0 0 0 25px !important",
@@ -64,7 +63,6 @@
                 },
                 "#meh":{
                         "border-radius": "0 25px 25px 0 !important"
-                        "background": "linear-gradient(to bottom, rgb(87, 0, 128), rgb(38, 0, 56)) !important"
                 },
                 "#meh .bottom":{
                         "border-radius": "0 0 25px !important",
