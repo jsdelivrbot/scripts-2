@@ -68,12 +68,6 @@
                         "border-radius": "0 0 25px !important",
                         "background": "linear-gradient(to top, rgb(37, 0, 0), black)"
                 },
-                "#curate .bottom":{
-                        "background": "linear-gradient(to top, rgb(28, 0, 70), black)"
-                },
-                "#curate":{
-                    "background": "linear-gradient(to bottom, rgb(87, 0, 128), rgb(38, 0, 56)) !important"
-                },
                 "#dj-button":{
                         "border-radius": "25px",
                         "background": "linear-gradient(to bottom, rgb(19, 15, 49), black) !important"
