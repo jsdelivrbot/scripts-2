@@ -19,68 +19,11 @@
 	background: #000;
 	background: hsla(0,0%,0%,0);
 }
-#playback-controls {
-	left: -7px !important;
-}
-.app-header {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
-}
-.background img {
-	display: none;
-}
-#video-only-dj, .pop-menu.grab, #footer-user .button.inventory .image, #woot .bottom, #grab .bottom, #meh .bottom, #woot.crowd-response.disabled .bottom, #woot.crowd-response.disabled.active .bottom, #grab.crowd-response.disabled .bottom, #grab.crowd-response.disabled.active .bottom, #meh.crowd-response.disabled .bottom, #meh.crowd-response.disabled.active .bottom {
-	background: rgba(0,0,0,0) !important;
-}
-.pop-menu.grab .bar {
-	border-radius: 30px 30px 0 0;
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%));
-}
-.pop-menu.grab .menu ul {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%));
-	box-shadow: inset 0 0 70px rgba(255,255,255,0.05);
-}
-.pop-menu.grab .menu li:hover {
-	border-radius: 20px;
-	background: radial-gradient(rgb(40,0,105), rgb(50,0,125));
-	box-shadow: inset 0 0 5px rgba(200,200,200,0.2);
-}
-.pop-menu.grab .menu li.create:hover {
-	background: radial-gradient(rgb(0,25,63), rgb(0,50,125));
-}
 #friends-button .request-count, #user-friends .tab-menu button .count, #user-menu .item .count, .app-right .friends .header i {
 	background: #0af !important;
 }
-.app-right .friends .header {
-	background: linear-gradient(135deg, #035, #057);
-	box-shadow: inset 0 0 60px hsla(0,0%,100%,0.15);
-}
-.app-right .friends .header:hover {
-	background: linear-gradient(135deg, #057, #079);
-}
 #room-settings, #room-settings-menu {
 	background: hsla(0,0%,0%,0.7);
-}
-#room-settings-menu > .item.selected {
-	background: linear-gradient(135deg, hsla(190,100%,60%,0.7), hsla(190,90%,50%,0.7));
-}
-#room-settings-menu > .item, #room-settings button.off, #room-settings button.on {
-	border-radius: 50px;
-	box-shadow: 0 0 5px #000;
-}
-#user-friends .list .row, #user-friends .list .row .buttons button.positive, #user-friends .list .row .buttons button.negative {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%));
-}
-#user-friends .list .row .buttons button.positive:hover {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%));
-}
-#user-friends .list .row .buttons button.negative:hover {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%));
-}
-#plugcubed, #app-menu > div.button {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%)) !important;
-}
-#user-settings > div.application.section > div > div:nth-child(3) > div > div.slider > div.circle {
-	background: radial-gradient(#80F, #50B);
 }
 #chat-messages .delete-button {
 	height: 15px; width: 38px;
@@ -93,127 +36,23 @@
 #chat-messages .delete-button:hover {
 	background: radial-gradient(hsla(0,100%,50%,0.8), hsla(0,50%,50%,0.7));
 }
-#dialog-media-update {
-	background: #102;
-}
-#dialog-media-update > div.dialog-body {
-	background: #050015;
-}
-#dialog-media-update > div:nth-child(3) > div.button.submit {
-	background: #707;
-}
-#dialog-media-update > div.dialog-body > div.swap {
-	background: #404;
-}
-#dialog-confirm, #dialog-restricted-media > div.dialog-body {
-	border-radius: 50px 50px 0 0;
-}
-#dialog-restricted-media > div.dialog-body > span.media-name {
-	color: #F0F;
-}
-div.tab-menu > button {
-	border-radius: 50px;
-}
-.dialog {
-	background: radial-gradient(#100025 40%, #203);
-	border-radius: 50px !important;
-}
-#dialog-restricted-media > div:nth-child(3) > div, #dialog-alert > div:nth-child(3) > div {
-	border-radius: 0 0 50px 50px;
-	background: linear-gradient(#607, #506);
-}
-.dialog-body {
-	background: radial-gradient(#305 40%, #304);
-	border-radius: 50px;
-}
-#dialog-user-role > div.dialog-body > div.role-menu, #dialog-user-role > div.dialog-body > div.role-menu > div.menu > ul > li {
-	background: #203;
-}
-#dialog-user-role > div.dialog-body > div.role-menu > div.menu > ul > li {
-	border-color: #07A;
-}
-.button.submit {
-	border-radius: 50px 0;
-}
-#dialog-playlist-delete > div.dialog-body > span {
-	color: #f0F !important;
-}
-.dialog.destructive .button.submit {
-	border-radius: 50px 0;
-	background: linear-gradient(#607, #506);
-}
-#playlist-panel {
-	background: rgba(0,0,0,0.90);
-}
-#playlist-menu {
-	background: linear-gradient(135deg, #203, #102);
-}
-#playlist-menu > div.menu > div > div > div > div.row.selected {
-	background: radial-gradient(#102, #050010);
-	border-radius: 20px;
-}
-#playlist-edit-button, #playlist-shuffle-button {
-	background: radial-gradient(rgba(100,0,137,0.6), rgba(76,0,175,0.6)), radial-gradient(rgba(255,255,255,0.7), rgba(0,0,0,0));
-	border-radius: 100%;
-}
-#playlist-edit-button:hover, #playlist-shuffle-button:hover {
-	background: radial-gradient(rgba(150,0,187,0.6), rgba(126,5,225,0.6)), radial-gradient(rgba(255,255,255,0.7), rgba(0,0,0,0));
-}
-#playlist-delete-button {
-	background: radial-gradient(rgba(175,0,0,0.6), rgba(185,0,0,0.6)), radial-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0));
-	border-radius: 100%;
-}
-#playlist-delete-button:hover {
-	background: radial-gradient(rgba(225,20,5,0.6), rgba(215,20,0,0.6)), radial-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0));
-}
-#playlist-activate-button {
-	background: rgba(100,0,137,0.6);
-	box-shadow: inset 0 0 50px rgba(150,0,187,0.6);
-	border-radius: 100px;
-}
-#playlist-activate-button:hover {
-	background: rgba(150,0,187,0.6);
-}
-#playlist-activate-button.active {
-	background: rgba(150,0,187,0.6);
-}
-#playlist-activate-button span {
-	color: #eee !important;
-}
-#playlist-create:hover, #playlist-import:hover {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%);
-}
-#playlist-create, #playlist-import {
-	border: 1px solid rgba(255,255,255,0.1);
-	border-bottom: none;
-}
 #user-menu .avatar {
 	background: url(https://dl.dropboxusercontent.com/s/9x7dbbnpq71cpyl/fond-avatar.jpg) !important;
 	box-shadow: inset 0 0 15px #000;
 }
 #the-user-profile, #user-settings, #user-communities, #user-history, #user-friends, #user-store, #user-inventory {
-	background: linear-gradient(to bottom, rgba(10,2,24,1) 0%,rgba(255, 0, 0, 1) 100%);
+	background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(0,0,0,1) 41%, rgba(73,165,191,1) 100%);
 }
 #user-settings > div.account.section > div > div.right > button,a > button {
 	border-radius: 20px;
 }
 a > button:hover, #user-settings > div.account.section > div > div.right > button:hover, div.tab-menu > button.selected, #user-menu .item.selected, .back {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
+	background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(0,0,0,1) 41%, rgba(73,165,191,1) 100%) !important;
 	box-shadow: inset 0 0 50px rgba(255,255,255,0.1);
 	border-radius: 20px;
 }
-#user-menu, #footer-user .buttons {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%);
-}
-.back {
-	border-radius: 0;
-}
-.item .selected {
-	border: 2px solid #eee;
-	border-left: none;
-}
 #user-inventory .selected .top, #user-inventory .cell:hover {
-	background: linear-gradient(to bottom, rgba(30,119,154,1) 0%,rgba(22,79,108,1) 68%,rgba(0,0,0,1) 71%,rgba(35,35,35,1) 100%) !important;
+	background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(0,0,0,1) 41%, rgba(73,165,191,1) 100%) !important;
 }
 #chat .emote.fromID-3455411, #chat .cm.emote {
 	background: linear-gradient(135deg, #023, #001525) !important;
@@ -232,105 +71,6 @@ a > button:hover, #user-settings > div.account.section > div > div.right > butto
 }
 #chat .emote .text {
 	font-style: normal !important;
-}
-#app-menu .button, #app-menu .list {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
-}
-.list-header, .list-header .list {
-	background: rgb(0,67,102);
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%);
-	color: #eee !important;
-}
-.header-panel-button.selected, #history-button {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
-}
-.app-right, .list.jspScrollable {
-	background: rgb(0,180,90);
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
-}
-.jspPane, .jspPane .user {
-	background: rgba(0,0,0,0.0) !important;
-	border-radius: 20px
-}
-.jspPane .user:hover {
-	background: rgba(0,0,0,0.5) !important;
-}
-#vote {
-	background: rgba(0,0,0,0) !important;
-	width: 252px !important;
-}
-#woot, #grab, #meh {
-	margin: 0 !important;
-}
-#woot {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%)) !important;
-}
-#woot.selected {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%)) !important;
-}
-#grab {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%)) !important;
-}
-#grab.selected {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%)) !important;
-}
-#meh {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%)) !important;
-}
-#meh.selected {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%)) !important;
-}
-#twitter-menu, #facebook-menu, .shop-button {
-	visibility: hidden !important;
-}
-#chat-input, .dialog-input-background, #search-bar, #filter-bar, .input-background {
-	border: 1px solid #7F00FF !important;
-	border-radius: 15px !important;
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
-}
-.focused {
-	border: 1px solid #7F00FF !important;
-	box-shadow: inset 0 0 15px #7F00FF !important;
-	border-radius: 15px !important;
-}
-#playlist-button {
-	background: rgb(109,12,255) !important;
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d0cff', endColorstr='#5c0bff',GradientType=0 ) !important;
-}
-#search, #footer, #footer-user .image, #footer-user .info {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
-}
-.status.menu, .user.menu {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
-	border-radius: 20px 20px 0 0;
-	box-shadow: 0 -1px 10px black !important
-}
-#footer-user .bar .value {
-	display: block !important;
-}
-.chevron:before, .chevron:after {
-	background: #85E !important;
-}
-#footer-user .menu .item:hover {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%));
-	border-radius: 100px;
-	border-left: 3px solid rgba(250,250,250,0.4);
-	width: 342px;
-}
-.gaming .thumb, .status .gaming i {
-	box-shadow: 0 0 15px #7F00FF;
-}
-.available .thumb, .status .available i {
-	box-shadow: 0 0 10px #8ce14a;
-	border-color: #8ce14a;
-}
-.working .thumb, .status .working i {
-	box-shadow: 0 0 15px #FF670F;
-}
-.away .thumb, .status .away i {
-	box-shadow: 0 0 15px #ffc100;
-	border-color: #ffc100;
 }
 .name .icon {
 	visibility: hidden;
@@ -376,178 +116,15 @@ a > button:hover, #user-settings > div.account.section > div > div.right > butto
 	border-radius: 50px 0 0 50px;
 	box-shadow: 1px 0 5px rgba(0,0,0,0.5);
 }
-#chat .rsshit {
-	min-height: 10px !important;
-}
-#chat .rs-log-user-leave, #chat .rs-log-red, #chat .rs-log-green, #chat .rs-log-green, #chat .rs-log-user-meh {
-	border-width: 0 !important;
-}
-#chat .rsshit .msg {
-	padding: 5px 8px 6px 10px;
-}
-#chat .rsshit .from, #chat .rsshit .badge-box, #rs-skip-button {
-  display: none;
-}
-#chat-messages .delete-button {
-	height: 15px; width: 38px;
-	padding: 0 0 1px 6px !important;
-	right: 40px; top: 5px;
-	border-radius: 5px;
-	color: #eee;
-	background: radial-gradient(hsla(0,5%,0%,0.4), hsla(0,10%,0%,0.3));
-}
-#chat-messages .delete-button:hover {
-	background: radial-gradient(hsla(0,100%,50%,0.8), hsla(0,50%,50%,0.7));
-}
-#dialog-media-update {
-	background: #102;
-}
-#dialog-media-update > div.dialog-body {
-	background: #050015;
-}
-#dialog-media-update > div:nth-child(3) > div.button.submit {
-	background: #707;
-}
-#dialog-media-update > div.dialog-body > div.swap {
-	background: #404;
-}
-#dialog-confirm, #dialog-restricted-media > div.dialog-body {
-	border-radius: 50px 50px 0 0;
-}
-#dialog-restricted-media > div.dialog-body > span.media-name {
-	color: #F0F;
-}
-div.tab-menu > button {
-	border-radius: 50px;
-}
-.dialog {
-	background: radial-gradient(#100025 40%, #203);
-	border-radius: 50px !important;
-}
-#dialog-restricted-media > div:nth-child(3) > div, #dialog-alert > div:nth-child(3) > div {
-	border-radius: 0 0 50px 50px;
-	background: linear-gradient(#607, #506);
-}
-.dialog-body {
-	background: radial-gradient(#305 40%, #304);
-	border-radius: 50px;
-}
-#dialog-user-role > div.dialog-body > div.role-menu, #dialog-user-role > div.dialog-body > div.role-menu > div.menu > ul > li {
-	background: #203;
-}
-#dialog-user-role > div.dialog-body > div.role-menu > div.menu > ul > li {
-	border-color: #07A;
-}
-.button.submit {
-	border-radius: 50px 0;
-}
-#dialog-playlist-delete > div.dialog-body > span {
-	color: #f0F !important;
-}
-.dialog.destructive .button.submit {
-	border-radius: 50px 0;
-	background: linear-gradient(#607, #506);
-}
-#playlist-panel {
-	background: rgba(0,0,0,0.90);
-}
-#playlist-menu {
-	background: linear-gradient(135deg, #203, #102);
-}
-#playlist-menu > div.menu > div > div > div > div.row.selected {
-	background: radial-gradient(#102, #050010);
-	border-radius: 20px;
-}
-#playlist-edit-button, #playlist-shuffle-button {
-	background: radial-gradient(rgba(100,0,137,0.6), rgba(76,0,175,0.6)), radial-gradient(rgba(255,255,255,0.7), rgba(0,0,0,0));
-	border-radius: 100%;
-}
-#playlist-edit-button:hover, #playlist-shuffle-button:hover {
-	background: radial-gradient(rgba(150,0,187,0.6), rgba(126,5,225,0.6)), radial-gradient(rgba(255,255,255,0.7), rgba(0,0,0,0));
-}
-#playlist-delete-button {
-	background: radial-gradient(rgba(175,0,0,0.6), rgba(185,0,0,0.6)), radial-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0));
-	border-radius: 100%;
-}
-#playlist-delete-button:hover {
-	background: radial-gradient(rgba(225,20,5,0.6), rgba(215,20,0,0.6)), radial-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0));
-}
-#playlist-activate-button {
-	background: rgba(100,0,137,0.6);
-	box-shadow: inset 0 0 50px rgba(150,0,187,0.6);
-	border-radius: 100px;
-}
-#playlist-activate-button:hover {
-	background: rgba(150,0,187,0.6);
-}
-#playlist-activate-button.active {
-	background: rgba(150,0,187,0.6);
-}
-#playlist-activate-button span {
-	color: #eee !important;
-}
-#playlist-create:hover, #playlist-import:hover {
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%);
-}
-#playlist-create, #playlist-import {
-	border: 1px solid rgba(255,255,255,0.1);
-	border-bottom: none;
-}
-#user-menu .avatar {
-	background: url(https://dl.dropboxusercontent.com/s/9x7dbbnpq71cpyl/fond-avatar.jpg) !important;
-	box-shadow: inset 0 0 15px #000;
-}
-#the-user-profile, #user-settings, #user-communities, #user-history, #user-friends, #user-store, #user-inventory {
-	background: linear-gradient(to bottom, rgba(10,2,24,1) 0%,rgba(21,6,46,1) 100%);
-}
-#user-settings > div.account.section > div > div.right > button,a > button {
-	border-radius: 20px;
-}
-a > button:hover, #user-settings > div.account.section > div > div.right > button:hover, div.tab-menu > button.selected, #user-menu .item.selected, .back {
-	background: linear-gradient(to bottom, rgba(90,42,178,1) 0%,rgba(76,32,146,1) 100%) !important;
-	box-shadow: inset 0 0 50px rgba(255,255,255,0.1);
-	border-radius: 20px;
-}
-#user-menu, #footer-user .buttons {
-	background: linear-gradient(to top, rgba(10,2,24,1) 0%,rgba(255, 0, 0, 1) 100%);
-}
-.back {
-	border-radius: 0;
-}
-.item .selected {
-	border: 2px solid #eee;
-	border-left: none;
-}
-#user-inventory .selected .top, #user-inventory .cell:hover {
-	background: linear-gradient(to bottom, rgba(30,119,154,1) 0%,rgba(22,79,108,1) 68%,rgba(0,0,0,1) 71%,rgba(35,35,35,1) 100%) !important;
-}
-#chat .emote.fromID-3455411, #chat .cm.emote {
-	background: linear-gradient(135deg, #023, #001525) !important;
-	border-radius: 10px;
-	border: 1px solid #089 !important;
-	width: 338px !important;
-	font-weight: bold !important;
-	margin-bottom: 1px;
-}
-#chat .emote .timestamp, .emote {
-	color: #089 !important;
-}
-#chat .emote .un {
-	color: #0AB !important;
-	text-shadow: 0 0 5px black;
-}
-#chat .emote .text {
-	font-style: normal !important;
-}
 #user-rollover {
 	border-radius: 20px 20px 0 0;
 	box-shadow: 0 0 5px #000;
-	background: radial-gradient(rgba(16,4,38,0.6),rgba(255, 0, 0, 1));
+	background: radial-gradient(rgba(16,4,38,0.6),rgba(147,206,222,1));
 }
 #user-rollover .info {
 	border-radius: 25px 25px 0 0;
 	border-top: 1px solid #a0c;
-	background: linear-gradient(rgba(34,9,76,0.9), rgba(255, 0, 0, 1));
+	background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(0,0,0,1) 41%, rgba(73,165,191,1) 100%));
 }
 #user-rollover > div.info > div.role > span {
 	color: #eee !important;
