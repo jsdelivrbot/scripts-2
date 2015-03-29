@@ -23,7 +23,7 @@
 	left: -7px !important;
 }
 .app-header {
-	background: linear-gradient(to bottom, rgba(16,4,38,1) 0%,rgba(34,9,76,1) 100%) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
 }
 .background img {
 	display: none;
@@ -33,10 +33,10 @@
 }
 .pop-menu.grab .bar {
 	border-radius: 30px 30px 0 0;
-	background: linear-gradient(rgb(50,0,125) , rgb(25,0,63));
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%));
 }
 .pop-menu.grab .menu ul {
-	background: linear-gradient(rgba(50,0,125,0.7) , rgba(25,0,63,0.7));
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%));
 	box-shadow: inset 0 0 70px rgba(255,255,255,0.05);
 }
 .pop-menu.grab .menu li:hover {
@@ -68,16 +68,16 @@
 	box-shadow: 0 0 5px #000;
 }
 #user-friends .list .row, #user-friends .list .row .buttons button.positive, #user-friends .list .row .buttons button.negative {
-	background: linear-gradient(135deg, rgba(90,42,178,0.3), rgba(76,32,146,0.3));
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%));
 }
 #user-friends .list .row .buttons button.positive:hover {
-	background: linear-gradient(135deg, rgba(90,42,178,1), rgba(76,32,146,1));
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%));
 }
 #user-friends .list .row .buttons button.negative:hover {
-	background: linear-gradient(135deg, rgba(150,30,100,1), rgba(130,00,70,1));
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%));
 }
 #plugcubed, #app-menu > div.button {
-	background: linear-gradient(rgba(100,0,255,0.6) , rgba(10,0,35,0.6)) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%)) !important;
 }
 #user-settings > div.application.section > div > div:nth-child(3) > div > div.slider > div.circle {
 	background: radial-gradient(#80F, #50B);
@@ -181,7 +181,7 @@ div.tab-menu > button {
 	color: #eee !important;
 }
 #playlist-create:hover, #playlist-import:hover {
-	background: linear-gradient(to bottom, rgba(16,4,38,0.7) 0%,rgba(34,9,76,0.7) 100%);
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%);
 }
 #playlist-create, #playlist-import {
 	border: 1px solid rgba(255,255,255,0.1);
@@ -198,12 +198,12 @@ div.tab-menu > button {
 	border-radius: 20px;
 }
 a > button:hover, #user-settings > div.account.section > div > div.right > button:hover, div.tab-menu > button.selected, #user-menu .item.selected, .back {
-	background: linear-gradient(to bottom, rgba(90,42,178,1) 0%,rgba(255, 0, 0, 1) 100%) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
 	box-shadow: inset 0 0 50px rgba(255,255,255,0.1);
 	border-radius: 20px;
 }
 #user-menu, #footer-user .buttons {
-	background: linear-gradient(to top, rgba(10,2,24,1) 0%,rgba(255, 0, 0, 1) 100%);
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%);
 }
 .back {
 	border-radius: 0;
@@ -234,19 +234,19 @@ a > button:hover, #user-settings > div.account.section > div > div.right > butto
 	font-style: normal !important;
 }
 #app-menu .button, #app-menu .list {
-	background: linear-gradient(to bottom, rgba(16,4,38,1) 0%,rgba(255, 0, 0, 1) 100%) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
 }
 .list-header, .list-header .list {
 	background: rgb(0,67,102);
-	background: linear-gradient(to top, rgba(16,4,38,1) 0%,rgba(255, 0, 0, 1) 100%);
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%);
 	color: #eee !important;
 }
 .header-panel-button.selected, #history-button {
-	background: linear-gradient(to top, rgba(16,4,38,1) 0%,rgba(255, 0, 0, 1) 100%) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
 }
 .app-right, .list.jspScrollable {
 	background: rgb(0,180,90);
-	background: linear-gradient(to bottom, rgba(16,4,38,1) 0%,rgba(255, 0, 0, 1) 100%) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
 }
 .jspPane, .jspPane .user {
 	background: rgba(0,0,0,0.0) !important;
@@ -263,22 +263,22 @@ a > button:hover, #user-settings > div.account.section > div > div.right > butto
 	margin: 0 !important;
 }
 #woot {
-	background: linear-gradient(rgba(0,170,0,0.6), rgba(255, 0, 0, 1)) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%)) !important;
 }
 #woot.selected {
-	background: linear-gradient(rgba(0,250,0,0.8), rgba(255, 0, 0, 1)) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%)) !important;
 }
 #grab {
-	background: linear-gradient(rgba(100,0,255,0.6) , rgba(255, 0, 0, 1)) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%)) !important;
 }
 #grab.selected {
-	background: linear-gradient(rgba(200,0,255,0.8) , rgba(255, 0, 0, 1)) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%)) !important;
 }
 #meh {
-	background: linear-gradient(rgba(130,0,0,0.6), rgba(255, 0, 0, 1)) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%)) !important;
 }
 #meh.selected {
-	background: linear-gradient(rgba(255,0,0,0.8), rgba(255, 0, 0, 1)) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%)) !important;
 }
 #twitter-menu, #facebook-menu, .shop-button {
 	visibility: hidden !important;
@@ -286,7 +286,7 @@ a > button:hover, #user-settings > div.account.section > div > div.right > butto
 #chat-input, .dialog-input-background, #search-bar, #filter-bar, .input-background {
 	border: 1px solid #7F00FF !important;
 	border-radius: 15px !important;
-	background: linear-gradient(to bottom, rgba(46,12,114,1) 0%,rgba(255, 0, 0, 1) 100%) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
 }
 .focused {
 	border: 1px solid #7F00FF !important;
@@ -295,14 +295,14 @@ a > button:hover, #user-settings > div.account.section > div > div.right > butto
 }
 #playlist-button {
 	background: rgb(109,12,255) !important;
-	background: linear-gradient(to bottom,rgba(109,12,255,1) 0%,rgba(255, 0, 0, 1) 100%) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d0cff', endColorstr='#5c0bff',GradientType=0 ) !important;
 }
 #search, #footer, #footer-user .image, #footer-user .info {
-	background: linear-gradient(to top, rgba(16,4,38,1) 0%,rgba(255, 0, 0, 1) 100%) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
 }
 .status.menu, .user.menu {
-	background: linear-gradient(to top, rgba(16,4,38,1) 0%,rgba(255, 0, 0, 1) 100%) !important;
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%) !important;
 	border-radius: 20px 20px 0 0;
 	box-shadow: 0 -1px 10px black !important
 }
@@ -313,7 +313,7 @@ a > button:hover, #user-settings > div.account.section > div > div.right > butto
 	background: #85E !important;
 }
 #footer-user .menu .item:hover {
-	background: linear-gradient(to top, rgba(0,0,0,0.3)60%, rgba(255, 0, 0, 1));
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%));
 	border-radius: 100px;
 	border-left: 3px solid rgba(250,250,250,0.4);
 	width: 342px;
@@ -487,7 +487,7 @@ div.tab-menu > button {
 	color: #eee !important;
 }
 #playlist-create:hover, #playlist-import:hover {
-	background: linear-gradient(to bottom, rgba(16,4,38,0.7) 0%,rgba(34,9,76,0.7) 100%);
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(143,2,34,1) 46%, rgba(176,0,41,1) 100%);
 }
 #playlist-create, #playlist-import {
 	border: 1px solid rgba(255,255,255,0.1);
