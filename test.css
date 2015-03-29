@@ -6,12 +6,6 @@
 	margin: 0 !important;
 }
 #woot {
-	border-radius: 100px 0 0 100px !important;
-}
-#meh {
-	border-radius: 0 100px 100px 0;
-}
-#woot {
 	background: linear-gradient(rgba(0,170,0,0.6), rgba(0,35,0,0.6)) !important;
 }
 #woot.selected {
