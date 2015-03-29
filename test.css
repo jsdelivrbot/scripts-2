@@ -1,3 +1,172 @@
+#chat .rsshit {
+	min-height: 10px !important;
+}
+#chat .rs-log-user-leave, #chat .rs-log-red, #chat .rs-log-green, #chat .rs-log-green, #chat .rs-log-user-meh {
+	border-width: 0 !important;
+}
+#chat .rsshit .msg {
+	padding: 5px 8px 6px 10px;
+}
+#chat .rsshit .from, #chat .rsshit .badge-box, #rs-skip-button {
+  display: none;
+}
+#chat-messages .delete-button {
+	height: 15px; width: 38px;
+	padding: 0 0 1px 6px !important;
+	right: 40px; top: 5px;
+	border-radius: 5px;
+	color: #eee;
+	background: radial-gradient(hsla(0,5%,0%,0.4), hsla(0,10%,0%,0.3));
+}
+#chat-messages .delete-button:hover {
+	background: radial-gradient(hsla(0,100%,50%,0.8), hsla(0,50%,50%,0.7));
+}
+#dialog-media-update {
+	background: #102;
+}
+#dialog-media-update > div.dialog-body {
+	background: #050015;
+}
+#dialog-media-update > div:nth-child(3) > div.button.submit {
+	background: #707;
+}
+#dialog-media-update > div.dialog-body > div.swap {
+	background: #404;
+}
+#dialog-confirm, #dialog-restricted-media > div.dialog-body {
+	border-radius: 50px 50px 0 0;
+}
+#dialog-restricted-media > div.dialog-body > span.media-name {
+	color: #F0F;
+}
+div.tab-menu > button {
+	border-radius: 50px;
+}
+.dialog {
+	background: radial-gradient(#100025 40%, #203);
+	border-radius: 50px !important;
+}
+#dialog-restricted-media > div:nth-child(3) > div, #dialog-alert > div:nth-child(3) > div {
+	border-radius: 0 0 50px 50px;
+	background: linear-gradient(#607, #506);
+}
+.dialog-body {
+	background: radial-gradient(#305 40%, #304);
+	border-radius: 50px;
+}
+#dialog-user-role > div.dialog-body > div.role-menu, #dialog-user-role > div.dialog-body > div.role-menu > div.menu > ul > li {
+	background: #203;
+}
+#dialog-user-role > div.dialog-body > div.role-menu > div.menu > ul > li {
+	border-color: #07A;
+}
+.button.submit {
+	border-radius: 50px 0;
+}
+#dialog-playlist-delete > div.dialog-body > span {
+	color: #f0F !important;
+}
+.dialog.destructive .button.submit {
+	border-radius: 50px 0;
+	background: linear-gradient(#607, #506);
+}
+#playlist-panel {
+	background: rgba(0,0,0,0.90);
+}
+#playlist-menu {
+	background: linear-gradient(135deg, #203, #102);
+}
+#playlist-menu > div.menu > div > div > div > div.row.selected {
+	background: radial-gradient(#102, #050010);
+	border-radius: 20px;
+}
+#playlist-edit-button, #playlist-shuffle-button {
+	background: radial-gradient(rgba(100,0,137,0.6), rgba(76,0,175,0.6)), radial-gradient(rgba(255,255,255,0.7), rgba(0,0,0,0));
+	border-radius: 100%;
+}
+#playlist-edit-button:hover, #playlist-shuffle-button:hover {
+	background: radial-gradient(rgba(150,0,187,0.6), rgba(126,5,225,0.6)), radial-gradient(rgba(255,255,255,0.7), rgba(0,0,0,0));
+}
+#playlist-delete-button {
+	background: radial-gradient(rgba(175,0,0,0.6), rgba(185,0,0,0.6)), radial-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0));
+	border-radius: 100%;
+}
+#playlist-delete-button:hover {
+	background: radial-gradient(rgba(225,20,5,0.6), rgba(215,20,0,0.6)), radial-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0));
+}
+#playlist-activate-button {
+	background: rgba(100,0,137,0.6);
+	box-shadow: inset 0 0 50px rgba(150,0,187,0.6);
+	border-radius: 100px;
+}
+#playlist-activate-button:hover {
+	background: rgba(150,0,187,0.6);
+}
+#playlist-activate-button.active {
+	background: rgba(150,0,187,0.6);
+}
+#playlist-activate-button span {
+	color: #eee !important;
+}
+#playlist-create:hover, #playlist-import:hover {
+	background: linear-gradient(to bottom, rgba(16,4,38,0.7) 0%,rgba(34,9,76,0.7) 100%);
+}
+#playlist-create, #playlist-import {
+	border: 1px solid rgba(255,255,255,0.1);
+	border-bottom: none;
+}
+#user-menu .avatar {
+	background: url(https://dl.dropboxusercontent.com/s/9x7dbbnpq71cpyl/fond-avatar.jpg) !important;
+	box-shadow: inset 0 0 15px #000;
+}
+#the-user-profile, #user-settings, #user-communities, #user-history, #user-friends, #user-store, #user-inventory {
+	background: linear-gradient(to bottom, rgba(10,2,24,1) 0%,rgba(21,6,46,1) 100%);
+}
+#user-settings > div.account.section > div > div.right > button,a > button {
+	border-radius: 20px;
+}
+a > button:hover, #user-settings > div.account.section > div > div.right > button:hover, div.tab-menu > button.selected, #user-menu .item.selected, .back {
+	background: linear-gradient(to bottom, rgba(90,42,178,1) 0%,rgba(76,32,146,1) 100%) !important;
+	box-shadow: inset 0 0 50px rgba(255,255,255,0.1);
+	border-radius: 20px;
+}
+#user-menu, #footer-user .buttons {
+	background: linear-gradient(to top, rgba(10,2,24,1) 0%,rgba(21,6,46,1) 100%);
+}
+.back {
+	border-radius: 0;
+}
+.item .selected {
+	border: 2px solid #eee;
+	border-left: none;
+}
+#user-inventory .selected .top, #user-inventory .cell:hover {
+	background: linear-gradient(to bottom, rgba(30,119,154,1) 0%,rgba(22,79,108,1) 68%,rgba(0,0,0,1) 71%,rgba(35,35,35,1) 100%) !important;
+}
+#chat .emote.fromID-3455411, #chat .cm.emote {
+	background: linear-gradient(135deg, #023, #001525) !important;
+	border-radius: 10px;
+	border: 1px solid #089 !important;
+	width: 338px !important;
+	font-weight: bold !important;
+	margin-bottom: 1px;
+}
+#chat .emote .timestamp, .emote {
+	color: #089 !important;
+}
+#chat .emote .un {
+	color: #0AB !important;
+	text-shadow: 0 0 5px black;
+}
+#chat .emote .text {
+	font-style: normal !important;
+}
+#chat .emote .icon-chat-host {
+	background: url(https://dl.dropboxusercontent.com/s/3uzitr0tdqc3jvb/Dafty.png) no-repeat top left !important;
+}
+#chat .emote .badge-box .bdg-og {
+	background: url(https://dl.dropboxusercontent.com/s/f2uya4g6pgfqqal/icon_android.png) no-repeat top left !important;
+}
 #lobby-overlay {
 	box-shadow: 0 0 48px 4px #000;
 	border: 1px solid #272727;
