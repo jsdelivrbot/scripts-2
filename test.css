@@ -1,3 +1,99 @@
+#twitter-menu, #facebook-menu, .shop-button {
+	visibility: hidden !important;
+}
+#chat-input, .dialog-input-background, #search-bar, #filter-bar, .input-background {
+	border: 1px solid #7F00FF !important;
+	border-radius: 15px !important;
+	background: linear-gradient(to bottom, rgba(46,12,114,1) 0%,rgba(77,21,175,1) 100%) !important;
+}
+.focused {
+	border: 1px solid #7F00FF !important;
+	box-shadow: inset 0 0 15px #7F00FF !important;
+	border-radius: 15px !important;
+}
+#playlist-button {
+	background: rgb(109,12,255) !important;
+	background: linear-gradient(to bottom,rgba(109,12,255,1) 0%,rgba(92,11,255,1) 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d0cff', endColorstr='#5c0bff',GradientType=0 ) !important;
+}
+#search, #footer, #footer-user .image, #footer-user .info {
+	background: linear-gradient(to top, rgba(16,4,38,1) 0%,rgba(34,9,76,1) 100%) !important;
+}
+.status.menu, .user.menu {
+	background: linear-gradient(to top, rgba(16,4,38,1) 0%,rgba(34,9,76,1) 100%) !important;
+	border-radius: 20px 20px 0 0;
+	box-shadow: 0 -1px 10px black !important
+}
+#footer-user .bar .value {
+	display: block !important;
+}
+.chevron:before, .chevron:after {
+	background: #85E !important;
+}
+#footer-user .menu .item:hover {
+	background: linear-gradient(to top, rgba(0,0,0,0.3)60%, rgba(255,255,255,0.2));
+	border-radius: 100px;
+	border-left: 3px solid rgba(250,250,250,0.4);
+	width: 342px;
+}
+.gaming .thumb, .status .gaming i {
+	box-shadow: 0 0 15px #7F00FF;
+}
+.available .thumb, .status .available i {
+	box-shadow: 0 0 10px #8ce14a;
+	border-color: #8ce14a;
+}
+.working .thumb, .status .working i {
+	box-shadow: 0 0 15px #FF670F;
+}
+.away .thumb, .status .away i {
+	box-shadow: 0 0 15px #ffc100;
+	border-color: #ffc100;
+}
+.name .icon {
+	visibility: hidden;
+	width: 0;
+}
+.meta .bar {
+	background: linear-gradient(to bottom, #111 0, #222 100%) !important;
+	border-radius: 5px;
+}
+.meta .progress {
+	background: linear-gradient(to bottom, rgba(0,187,255,0.6) 0%,rgba(5,126,225,0.6) 100%), linear-gradient(to top,rgba(0, 0, 0, 0.6) 0,rgba(255, 255, 255, 0.3) 100%) !important;
+	border-radius: 5px;
+}
+.info .name {
+	font-weight: bold !important;
+	color: #228ab7 !important;
+	left: -15px;
+}
+.is-dj .name {
+	color: #F7A452 !important;
+}
+#dj-button.is-leave .left, #dj-button.is-quit .left {
+	background: radial-gradient(rgba(200,30,30,0.5), rgba(120,30,30,0.5));
+}
+#dj-button.is-leave:hover .left, #dj-button.is-quit:hover .left {
+	background: radial-gradient(rgb(200,30,30), rgb(120,30,30));
+}
+#dj-button.is-wait .left {
+	background: radial-gradient(rgba(0,200,250,0.5), rgba(0,130,250,0.5));
+}
+#dj-button.is-wait:hover .left {
+	background: radial-gradient(rgb(0,200,250), rgb(0,130,250));
+}
+#dj-button, #vote {
+	border-radius: 30px;
+	box-shadow: 0 0 10px black;
+	background: rgba(0,0,0,0.35) !important;
+}
+#dj-button:hover {
+	background: rgba(0,0,0,0.5) !important;
+}
+#dj-button .left {
+	border-radius: 50px 0 0 50px;
+	box-shadow: 1px 0 5px rgba(0,0,0,0.5);
+}
 #chat .rsshit {
 	min-height: 10px !important;
 }
