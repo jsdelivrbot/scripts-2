@@ -1,7 +1,7 @@
 {
     "author": "Chase N. Cashe aka Variety",
     "colors": {
-        "background": "",
+        "background": "http://i.imgur.com/GZKgCpk.png",
         "chat": {
             "ambassador": "#84B423",
             "bouncer": "#F85210",
@@ -143,7 +143,7 @@
         }
     },
     "images": {
-        "background": "",
+        "background": "http://i.imgur.com/GZKgCpk.png",
         "booth": "",
         "icons": {
             "bouncer": "http://i.imgur.com/jTffUMh.png",
