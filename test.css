@@ -1,3 +1,5 @@
+#user-lists .list { -webkit-animation:fadein 0.5s; -ms-animation:fadein 0.5s; animation:fadein 0.5; }
+#user-lists .list.room .user .icon-meh{ left:auto; right:8px; top:-1px }
 .group {
 	background: linear-gradient(to right, #203, #304) !important;
 	box-shadow: 0 0 1px #406;
