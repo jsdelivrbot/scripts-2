@@ -16,7 +16,7 @@
     },
     "css": {
         "font": [],
-        "import": ["https://github.com/OrigemWoot/OrigemWoot/blob/6609b2646f0670784d1ef1b70550130bd30cda7f/CSS/Balkan%20Party%20CSS.css"],
+        "import": ["https://github.com/Varietyy/scripts/blob/master/test.css"],
         "rule": {
                 "#header":{
                         "background": "#000000"
