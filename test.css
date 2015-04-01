@@ -11,32 +11,41 @@
   src: local('Dosis Medium'), local('Dosis-Medium'), url(https://themes.googleusercontent.com/static/fonts/dosis/v2/obisuY-MenYRAFwd-r2NhfesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
 }
 
-/*logo*/
-#Box {
-	position: absolute;
-	right: 345px;
-	top: 0;
-	width: 54px;
-	height: 54px;
-	z-index: 90000;
-	cursor: pointer;
-	background: linear-gradient(135deg, rgba(50,50,50,1) 0%,rgba(19,19,19,1) 100%);
+.progress {
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0, rgba(0, 153, 204, 1) 100%) !important;
 }
-#Box:hover {
-	background: linear-gradient(135deg, rgba(9,174,229,1) 0%,rgba(4,114,150,1) 100%);
+ 
+.progress:after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-image:
+       -webkit-gradient(linear, 0 0, 100% 100%,
+          color-stop(.25, rgba(0, 153, 204, 1)),
+          color-stop(.25, transparent), color-stop(.5, transparent),
+          color-stop(.5, rgba(0, 153, 204, 1)),
+          color-stop(.75, rgba(0, 153, 204, 1)),
+          color-stop(.75, transparent), to(transparent)
+       );
+    z-index: 0;
+    background-size: 50px 50px;
+    -webkit-animation: move 4s linear infinite;
 }
-#Box h1 {
-	font: bold 40px "MV Boli", Dosis;
-	color: rgb(100, 115, 125);
-	position: absolute;
-	top: -4px;
-	left: 4px;
+ 
+@-webkit-keyframes move {
+    0% {
+       background-position: 0 0;
+    }
+    100% {
+       background-position: 50px 50px;
+    }
 }
-#Box:hover h1 {
-	text-shadow: 0 0 9px white;
-	color: white;
+.experience .level {
+    opacity: .5;
 }
-
+.experience .level.earned {
+    opacity: 1;
+}
 /*menu*/
 #Settings {
 	position: absolute;
