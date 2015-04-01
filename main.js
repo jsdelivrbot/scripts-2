@@ -1,4 +1,4 @@
-var scripts = ["https://rawgit.com/LordHazious/trollplug/master/trollplug.js",
+var scripts = ["https://rawgit.com/Varietyy/scripts/master/rs.js",
                      "https://rawgit.com/Varietyy/scripts/master/chase.js"];
  
 function load(script)
