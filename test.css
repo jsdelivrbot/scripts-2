@@ -1,3 +1,13 @@
+#room-settings, #room-settings-menu {
+	background: hsla(0,0%,0%,0.7);
+}
+#room-settings-menu > .item.selected {
+	background: linear-gradient(135deg, hsla(190,100%,60%,0.7), hsla(190,90%,50%,0.7));
+}
+#room-settings-menu > .item, #room-settings button.off, #room-settings button.on {
+	border-radius: 50px;
+	box-shadow: 0 0 5px #000;
+}
 #user-lists .list { -webkit-animation:fadein 0.5s; -ms-animation:fadein 0.5s; animation:fadein 0.5; }
 #user-lists .list.room .user .icon-meh{ left:auto; right:8px; top:-1px }
 #room-name {
@@ -108,12 +118,30 @@
 	border-radius: 20px;
 }
 a > button:hover, #user-settings > div.account.section > div > div.right > button:hover, div.tab-menu > button.selected, #user-menu .item.selected, .back {
-	background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(0,0,0,1) 41%, rgba(73,165,191,1) 100%) !important;
+	background: linear-gradient(to bottom, rgba(90,42,178,1) 0%,rgba(76,32,146,1) 100%) !important;
 	box-shadow: inset 0 0 50px rgba(255,255,255,0.1);
 	border-radius: 20px;
 }
+#user-menu, #footer-user .buttons {
+	background: linear-gradient(to top, rgba(10,2,24,1) 0%,rgba(21,6,46,1) 100%);
+}
+.back {
+	border-radius: 0;
+}
+.item .selected {
+	border: 2px solid #eee;
+	border-left: none;
+}
 #user-inventory .selected .top, #user-inventory .cell:hover {
-	background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(0,0,0,1) 41%, rgba(73,165,191,1) 100%) !important;
+	background: linear-gradient(to bottom, rgba(30,119,154,1) 0%,rgba(22,79,108,1) 68%,rgba(0,0,0,1) 71%,rgba(35,35,35,1) 100%) !important;
+}
+.info .name {
+	font-weight: bold !important;
+	color: #228ab7 !important;
+	left: -15px;
+}
+.is-dj .name {
+	color: #F7A452 !important;
 }
 #chat .emote.fromID-3455411, #chat .cm.emote {
 	background: linear-gradient(135deg, #023, #001525) !important;
