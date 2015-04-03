@@ -102,14 +102,6 @@
 	color: orangered;
 }
 
-/*placement of menu*/
-#history-button {
-	right: 54px !important;
-}
-#now-playing-time, #volume, #button {
-	right: calc(+115px) !important;
-}
-
 /* Skip button */
 #remove {
 	left: -9px;
