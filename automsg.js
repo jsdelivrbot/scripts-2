@@ -57,7 +57,7 @@ API.on(API.CHAT_COMMAND, function(data){
 			c(messageSet);
 			break;
 		
-		case "thelp":
+		case "list":
 			instructions();
 			break;
 
@@ -78,8 +78,8 @@ function instructions(){
 	<a style='color:#CCCCCC;'>Shows message and time</a><br><br>\
 	<a style='color:#ffffff;'><b>/send</b></a><br>\
 	<a style='color:#CCCCCC;'>Sends the message regardless of interval</a><br><br>\
-	<a style='color:#ffffff;'><b>/thelp</b></a><br>\
-	<a style='color:#CCCCCC;'>This message</a><br>\
+	<a style='color:#ffffff;'><b>/list</b></a><br>\
+	<a style='color:#CCCCCC;'>Display this list</a><br>\
 	<a style='color:#7174ff;'><b>------=[ Chase's Chat Script ]=------</b></a><br>","#CCCCCC");
 }
 instructions();
