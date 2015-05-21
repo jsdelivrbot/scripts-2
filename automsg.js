@@ -1,6 +1,6 @@
-var messageSet = "Message! :o";
-var timeSet = 5;
-var msgOn = false;
+var messageSet = ":+1:";
+var timeSet = 30;
+var msgOn = true;
 var OneMin = 0;
 var Potato = timeSet - OneMin;
 
@@ -67,8 +67,7 @@ API.on(API.CHAT_COMMAND, function(data){
 });
 
 function instructions(){
-	addChat("<img src='https://i.imgur.com/7Ax7ThH.gif'></img><br>\
-	<a style='color:#7174ff;'><b>------=[ AutoMsg Beta v0.5 ]=------</b></a><br>\
+	addChat("<a style='color:#7174ff;'><b>------=[ Chase's Chat Script ]=------</b></a><br>\
 	<a style='color:#ffffff;'><b>/txt</b></a><br>\
 	<a style='color:#CCCCCC;'>Turns messages on (5 min default)</a><br><br>\
 	<a style='color:#ffffff;'><b>/settime</b> + <b><em>TIME (in minutes)</em></b></a><br>\
@@ -81,7 +80,7 @@ function instructions(){
 	<a style='color:#CCCCCC;'>Sends the message regardless of interval</a><br><br>\
 	<a style='color:#ffffff;'><b>/thelp</b></a><br>\
 	<a style='color:#CCCCCC;'>This message</a><br>\
-	<a style='color:#7174ff;'><b>------=[ AutoMsg Beta v0.5 ]=------</b></a><br>","#CCCCCC");
+	<a style='color:#7174ff;'><b>------=[ Chase's Chat Script ]=------</b></a><br>","#CCCCCC");
 }
 instructions();
 
