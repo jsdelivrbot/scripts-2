@@ -117,6 +117,9 @@
              ".cm[data-cid^=\"3679917\"] .bdg": {
                  "background": "url('http://i.imgur.com/NO5C3oa.gif') !important"
              },
+             ".cm[data-cid^=\"4778795\"] .bdg": {
+                 "background": "url('http://i.imgur.com/ctU03pd.jpg') !important"
+             },
              ".cm[data-cid^=\"4204176\"] .bdg": {
                  "background": "url('http://i.imgur.com/myH659T.gif') !important"
              },
