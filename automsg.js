@@ -1,5 +1,5 @@
 var messageSet = ":+1:";
-var timeSet = 30;
+var timeSet = 20;
 var msgOn = true;
 var OneMin = 0;
 var Potato = timeSet - OneMin;
