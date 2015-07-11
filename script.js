@@ -5,40 +5,40 @@
 */
 
 // Variables
-var version = "stable 0.2.3",
+var version = "beta 0.1.3",
 
-    // Options
-    lockDown = false,
-    lockRoom = false,
-    chatLog = true,
-    dataLog = true,
-    ldPerm = 2,
+// Options
+lockDown = false,
+lockRoom = false,
+chatLog = true,
+dataLog = true,
+ldPerm = 2,
 
-    // Status
-    chatCount = 0,
-    logCount = 0,
-    deleteCount = 0,
-    banCount = 0,
+// Status
+chatCount = 0,
+logCount = 0,
+deleteCount = 0,
+banCount = 0,
 
-    // Moderation
-    H = API.BAN.HOUR,
-    D = API.BAN.DAY,
-    P = API.BAN.PERMA,
+// Moderation
+H = API.BAN.HOUR,
+D = API.BAN.DAY,
+P = API.BAN.PERMA,
 
-    S = API.MUTE.SHORT,
-    M = API.MUTE.MEDIUM,
-    L = API.MUTE.LONG,
+S = API.MUTE.SHORT,
+M = API.MUTE.MEDIUM,
+L = API.MUTE.LONG,
 
-    // Permissions
-    perms = [
-        ["0", "User", API.ROLE.NONE],
-        ["1", "Resident DJ", API.ROLE.RESIDENTDJ],
-        ["2", "Bouncer", API.ROLE.BOUNCER],
-        ["3", "Manager", API.ROLE.MANAGER],
-        ["4", "Host", API.ROLE.COHOST],
-        ["8", "Ambassador", API.ROLE.AMBASSADOR],
-        ["10", "Admin", API.ROLE.ADMIN]
-    ];
+// Permissions
+perms = [
+    ["0", "User", API.ROLE.NONE],
+    ["1", "Resident DJ", API.ROLE.RESIDENTDJ],
+    ["2", "Bouncer", API.ROLE.BOUNCER],
+    ["3", "Manager", API.ROLE.MANAGER],
+    ["4", "Host", API.ROLE.COHOST],
+    ["8", "Ambassador", API.ROLE.AMBASSADOR],
+    ["10", "Admin", API.ROLE.ADMIN]
+];
 
 // API on
 API.on(API.CHAT_COMMAND, chatCommand)
@@ -172,14 +172,13 @@ function chatCommand(value) {
             for (var i = 0; i < messages.length; i++) {
                 for (var j = 0; j < messages[i].classList.length; j++) {
                     if (messages[i].classList[j].indexOf('data-cid=') == 0) {
-                        API.sendChat("♥ Chase Cleared The Chat ♥");
                         API.moderateDeleteChat(messages[i].classList[j].substr(4));
                         deleteCount++;
                         break;
                     }
                 }
             }
-            logData("Clearing chat", true, true);
+            API.sendChat("/me Chase just cleared chat!");
             break;
 
         case "/status":
@@ -192,6 +191,23 @@ function chatCommand(value) {
 
         case "/shutdown":
             shutDown(false);
+            break;
+
+        case "/report":
+            $.post(
+                "https://igorantun.slack.com/services/hooks/incoming-webhook?token=gnH0tSJtHUZCILUM2HkZfNTg",
+                JSON.stringify({
+                    'username': 'AntiTroll Script',
+                    'icon_url': 'http://3.bp.blogspot.com/-eCRyNapMRYU/U3EhPadsoUI/AAAAAAAABYw/ELVJHPjVPD8/s1600/2.png',
+                    'attachments': [{
+                        "fallback": "You've got a new report!",
+                        "text": "Report: " + value.substr(8),
+                        "pretext": "You've got a new report from AntiTroll Script",
+                        "color": "#00FF00",
+                        "title": "Username: " + API.getUser().username + " | ID: " + API.getUser().id
+                    }]
+                })
+            );
             break;
     }
 }
@@ -251,7 +267,7 @@ function addChat(text, color, icon) {
 }
 
 logData("AntiTroll Script " + version + " loaded");
-addChat("Chase's Script " + version + " loaded", undefined, "http://i.imgur.com/grVeNnR.png");
+addChat("AntiTroll Script " + version + " loaded", undefined, "http://i.imgur.com/grVeNnR.png");
 
 function shutDown(restart) {
     API.off(API.CHAT_COMMAND, chatCommand)
