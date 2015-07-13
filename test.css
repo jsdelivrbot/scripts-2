@@ -1,4 +1,4 @@
-#playback .background>img[src^='https://cdn.plug.dj/'] {
+/*#playback .background>img[src^='https://cdn.plug.dj/'] {
     width: 100% !important;
     left: -11px !important;
     height: 100% !important;
@@ -7,7 +7,7 @@
     border: 2px solid #222;
     border-top: none;
     box-shadow: 0 0 25px #222, 0 0 5px #222;
-}
+}*/
 .slider .line {
 	background: linear-gradient(to right, hsl(120,100%,50%), hsl(0,100%,50%)) !important;
 }
