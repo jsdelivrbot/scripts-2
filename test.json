@@ -120,6 +120,9 @@
              ".cm[data-cid^=\"5288534\"] .bdg": {
                  "background": "url('http://i.imgur.com/gPwyPMq.png') !important"
              },
+             ".cm[data-cid^=\"4778795\"] .bdg": {
+                 "background": "url('http://i.imgur.com/pzNE5rN.gif') !important"
+             },
              ".cm[data-cid^=\"3679917\"] .bdg": {
                  "background": "url('http://i.imgur.com/NO5C3oa.gif') !important"
              },
