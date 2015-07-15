@@ -7,6 +7,20 @@
     border: 2px solid #222;
     border-top: none;
     box-shadow: 0 0 25px #222, 0 0 5px #222;
+    
+            "ambassador": "#84B423",
+            "bouncer": "#1394d6",
+            "cohost": "#FFF",
+            "residentdj": "#F7A452",
+            "manager": "#e30000",
+            "host": "#FFFFFF",
+            
+           
+            "bouncer": "http://i.imgur.com/Axqvila.png",
+            "cohost": "http://i.imgur.com/H8QzwCa.png",
+            "host": "http://i.imgur.com/H8QzwCa.png",
+            "manager": "http://i.imgur.com/ZkkSJxs.png",
+            "residentdj": "http://i.imgur.com/YPEJMkf.png" 
 }*/
 .slider .line {
 	background: linear-gradient(to right, hsl(120,100%,50%), hsl(0,100%,50%)) !important;
