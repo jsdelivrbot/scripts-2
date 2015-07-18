@@ -270,31 +270,4 @@ background: #c42e3b;
     100% {
        background-position: 50px 50px;
     }
-#room-name .bar-value  {
- -webkit-animation: color_change_nick 1s infinite alternate;
- -moz-animation: color_change_nick 1s infinite alternate;
- -ms-animation: color_change_nick 1s infinite alternate;
- -o-animation: color_change_nick 1s infinite alternate;
- animation: color_change_nick 1s infinite alternate;
- }
- 
-@-webkit-keyframes color_change_nick {
- from { color: #FFD800; }
- to { color: #38E4FF; }
-}
-@-moz-keyframes color_change_nick {
- from { color: #FFD800; }
- to { color: #38E4FF; }
-}
-+@-ms-keyframes color_change_nick {
- from { color: #FFD800; }
- to { color: #38E4FF; }
-}
-@-o-keyframes color_change_nick {
- from { color: #FFD800; }
- to { color: #38E4FF; }
-}
-@keyframes color_change_nick {
- from { color: #FFD800; }
- to { color: #38E4FF; }
-}
+
