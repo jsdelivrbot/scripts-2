@@ -22,6 +22,26 @@
             "manager": "http://i.imgur.com/ZkkSJxs.png",
             "residentdj": "http://i.imgur.com/YPEJMkf.png" 
 }*/
+#user-rollover {
+	border-radius: 20px 20px 0 0;
+	box-shadow: 0 0 5px #000;
+	background: radial-gradient(rgba(16,4,38,0.6),rgba(34,9,76,0.6));
+}
+#user-rollover .info {
+	border-radius: 25px 25px 0 0;
+	border-top: 1px solid #a0c;
+	background: linear-gradient(rgba(34,9,76,0.9), rgba(24,5,58,0.9));
+}
+-#user-rollover > div.info > div.role > span {
+	color: #eee !important;
+}
+#user-rollover .actions .action, .actions .action, #user-menu, #footer-user .buttons {
+	background: rgb(16,4,38);
+	box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+#user-rollover .actions .action:hover, .actions .action:hover, #footer-user .buttons .button:hover {
+-	background: rgb(34,9,76) !important;
+}
 #user-lists .list.staff .group {
     background: linear-gradient(to right,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 1) 100%) !important;
 }
