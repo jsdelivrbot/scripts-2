@@ -5,12 +5,11 @@
          "chat": {
              "ambassador": "#84B423",
              "bouncer": "#1394d6",
-             "cohost": "#FFF",
+             "cohost": "#FFFFFF",
              "residentdj": "#F7A452",
              "manager": "#e30000",
              "host": "#FFFFFF",
              "message": "#BCBBB6"
-            }
          },
          "footer": "",
          "header": ""
@@ -101,13 +100,11 @@
                   "background": "linear-gradient(135deg, #009cdd 0,#0a0a0a 13%,#0a0a0a 100%)"
               },
               ".cm[data-cid^=\"3741010\"] .bdg": {
--                 "background": "url('http://i.imgur.com/Gx1levj.png') !important"
-              },
-              ".cm[data-cid^=\"5118544\"] .bdg": {
-                  "background": "url('http://i.imgur.com/Y9jcUk7.jpg') !important"
+-                 "background": "url('http://i.imgur.com/lSm0Pga.jpg') !important"
++                 "background": "url('http://i.imgur.com/tmL4wKf.png') !important"
               },
               ".cm[data-cid^=\"3822759\"] .bdg": {
-                  "background": "url('http://i.imgur.com/ICQ1T1u.gif') !important"
+                  "background": "url('http://chilloutmusic.fm//img//theme//Icons//Fastoche.gif') !important"
               },
               ".cm[data-cid^=\"5169520\"] .bdg": {
                   "background": "url('http://i.imgur.com/BtFL5Je.png') !important"
@@ -157,8 +154,7 @@
              "cohost": "http://i.imgur.com/H8QzwCa.png",
              "host": "http://i.imgur.com/H8QzwCa.png",
              "manager": "http://i.imgur.com/ZkkSJxs.png",
-             "residentdj": "http://i.imgur.com/YPEJMkf.png",
-         }
+             "residentdj": "http://i.imgur.com/YPEJMkf.png"
          },
          "playback": ""
      },
