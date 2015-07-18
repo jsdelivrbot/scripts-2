@@ -34,6 +34,32 @@
                 "border-right": "0px !important",
                 "font-weight": "bold !important"
             },
+            "#room-name": {
+		  "color":"orange",
+		  "font-weight":"900"
+		  },
+		  "#room-host": {
+		  "color":"#00FFAC",
+		  "font-weight":"bold"
+		  },
+		  
+		  "#now-playing-media": {
+		  "color":"#FFFFFF",
+		  "font-weight":"900"
+		  },
+		  "#now-playing-dj": {
+		  "color":"#FFFFFF",
+		  "font-weight":"bold"
+		  },
+		  
+		  "#now-playing-time": {
+		  "color":"#FFFFFF",
+		  "font-weight":"bold"
+		  },
+		  "#volume": {
+		  "color":"#FFFFFF",
+		  "font-weight":"bold"
+		  },
             ".cm[data-cid^=\"3741010\"] .bdg": {
                 "background": "url('http://i.imgur.com/ljHWUeA.png') !important"
             },
