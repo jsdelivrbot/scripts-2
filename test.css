@@ -22,543 +22,446 @@
             "manager": "http://i.imgur.com/ZkkSJxs.png",
             "residentdj": "http://i.imgur.com/YPEJMkf.png" 
 }*/
-.slider .line {
-	background: linear-gradient(to right, hsl(120,100%,50%), hsl(0,100%,50%)) !important;
+/*
+Credit to Radiant for this CSS file
+http://radiant.dj
+*/
+#user-lists .list.staff .group {
+    background: linear-gradient(to right,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 1) 100%) !important;
 }
-.slider .circle {
-	background: radial-gradient(hsl(0,0%,100%), hsl(0,0%,70%)) !important;
+#footer {
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.25) 0,rgba(0, 0, 0, 0.75) 100%);
 }
-#chat .cm.moderation {
-	background: linear-gradient(hsla(260,50%,25%,0.8), hsla(260,50%,15%,0.8)),
-	linear-gradient(to right, hsla(0,0%,0%,0), hsla(0,0%,100%,0.2)) !important;
-	box-shadow: inset 0 0 0 1px hsl(260,50%,50%);
+#playlist-button {
+    background: linear-gradient(to bottom,#FF5CDE 0,#5700FF 100%);
 }
-#chat .cm.moderation .timestamp {
-	color: hsl(260,70%,70%);
+#app-header {
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.25) 0,rgba(0, 0, 0, 0.75) 100%);
 }
-#chat .cm {
-	background: linear-gradient(hsla(0,0%,13%,0.8), hsla(0,0%,5%,0.8)),
-	linear-gradient(to right, hsla(0,0%,0%,0), hsla(0,0%,100%,0.2)) !important;
-	border-radius: 10px;
-	box-shadow: inset 0 0 0 1px hsla(0,0%,100%,0.15);
+#store-button {
+    background: linear-gradient(to bottom,#FF0000 0,#A00000 100%);
 }
-#chat .cm .badge-box {
-	background: rgba(0,0,0,0) !important;
+#plug-dj {
+    background: linear-gradient(to bottom,#0268AC 0,#02225C 100%);
 }
-#chat .cm .timestamp {
-	color: #818587;
+.header-panel-button.selected {
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.25) 0,rgba(255, 255, 255, 0.06) 100%);
 }
-#chat .cm.deletable .delete-button {
-	border-radius: 8px;
-	background: linear-gradient(hsl(0,0%,30%), hsl(0,0%,40%));
-	box-shadow: inset 0 0 0 1px hsl(0,0%,50%);
+#plug-menu {
+    background: rgba(40, 44, 53, 0.94) !important;
 }
-#chat .cm.deletable .delete-button:hover {
-	background: linear-gradient(hsl(5,100%,60%), hsl(5,100%,50%));
-	box-shadow: 0 0 10px hsl(5,100%,50%);
-	color: #000;
+#plug-menu .legal {
+    background: rgba(68, 74, 89, 0.46) !important;
 }
-.app-right {
-	background: rgba(0,0,0,0.5) !important;
+#settings {
+    background: rgba(10, 10, 10, 0.89) !important;
 }
-#chat-header {
-	background: rgba(30,35,40,0.7);
-	border: none !important;
+#user-lists .list .user:hover {
+    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(255, 0, 194, 0.27) 100%) !important;
 }
-#chat-messages {
-	border-color: #555;
-	box-shadow: 0 51px 0 rgba(30,35,40,0.7);
+#waitlist .list .user {
+    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(255, 0, 194, 0.13) 100%) !important;
 }
-#chat-messages::-webkit-scrollbar {
-	width: 7px !important;
-	box-shadow: inset 0 0 6px #555;
+.app-right .friends {
+    background: none !important;
 }
-#chat-messages::-webkit-scrollbar-thumb {
-	background: hsl(200,100%,40%);
-	box-shadow: inset 0 0 6px -2px #000;
+#settings .header {
+    background: rgba(28, 31, 37, 0.78) !important;
 }
-#chat-input {
-	border-radius: 20px;
-	background: linear-gradient(to top, hsla(220,100%,15%,0.7), hsla(220,100%,10%,0.7)) !important;
-}
-#chat-input.focused {
-	color: #EEE !important;
-	box-shadow: inset 0 0 0 2px #05F !important;
-	background: linear-gradient(to top, hsl(220,100%,30%), hsl(220,100%,20%)) !important;
-}
-#chat-input-field {
-	color: #888 !important;
-	font-weight: bold;
-}
-#chat-input.focused #chat-input-field{
-	color: #EEE !important;
-}
-@font-face {
-	font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Dosis Bold'), local('Dosis-Bold'), url(https://themes.googleusercontent.com/static/fonts/dosis/v2/Luunk03-uSz9LnB7oNEUuvesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
-}
-@font-face {
-	font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Dosis Medium'), local('Dosis-Medium'), url(https://themes.googleusercontent.com/static/fonts/dosis/v2/obisuY-MenYRAFwd-r2NhfesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
-}
-
-.progress {
-    background: linear-gradient(to bottom, rgb(0, 0, 0) 0, rgba(0, 153, 204, 1) 100%) !important;
-}
- 
-.progress:after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    background-image:
-       -webkit-gradient(linear, 0 0, 100% 100%,
-          color-stop(.25, rgba(0, 153, 204, 1)),
-          color-stop(.25, transparent), color-stop(.5, transparent),
-          color-stop(.5, rgba(0, 153, 204, 1)),
-          color-stop(.75, rgba(0, 153, 204, 1)),
-          color-stop(.75, transparent), to(transparent)
-       );
-    z-index: 0;
-    background-size: 50px 50px;
-    -webkit-animation: move 4s linear infinite;
-}
- 
-@-webkit-keyframes move {
-    0% {
-       background-position: 0 0;
-    }
-    100% {
-       background-position: 50px 50px;
+@media (max-width: 1600px) {
+    #room .app-right {
+        background: linear-gradient(to right,rgba(0, 0, 0, 0.70) 0,rgba(0, 0, 0, 1) 100%);
     }
 }
-.experience .level {
-    opacity: .5;
+#chat .message:nth-child(2n+1),#chat .mention:nth-child(2n+1),#chat .skip:nth-child(2n+1),#chat .moderation:nth-child(2n+1),#chat .emote:nth-child(2n+1),#chat .update:nth-child(2n+1),#chat .welcome:nth-child(2n+1) {
+    background-color: rgba(17, 19, 23, 0.32);
+    -webkit-animation:fadein 0.75s;
+    -moz-animation:fadein 0.75s;
+    -ms-animation:fadein 0.75s;
+    -o-animation:fadein 0.75s;
+    animation:fadein 0.75s;
 }
-.experience .level.earned {
-    opacity: 1;
+#chat .emote, #chat .mention, #chat .message, #chat .moderation, #chat .skip, #chat .system, #chat .update, #chat .welcome {
+    -webkit-animation:fadein 0.75s;
+    -moz-animation:fadein 0.75s;
+    -ms-animation:fadein 0.75s;
+    -o-animation:fadein 0.75s;
+    animation:fadein 0.75s;
 }
-/*menu*/
-#Settings {
-	position: absolute;
-	right: 345px;
-	top: 54px;
-	width: 200px;
-	height: 0;
-	z-index: 90001;
-	background: linear-gradient(135deg, rgba(3,61,81,1) 0%,rgba(1,40,53,1) 100%);
-	border-radius: 0 0 0 15px;
-	border-left: 1px solid #eee;
-	border-bottom: 1px solid #eee;
-	box-shadow: -2px 2px 10px #000;
-	font-family: "trebuchet ms";
-	visibility: hidden;
+#chat .mention {
+    font-weight: 700;
+    /*padding-left: 25px;*/
+    border-left: #7681FF 3px solid;
 }
-#Settings ul {
-	list-style-type: none;
+#chat .emote .from {
+     color: #42A5DC !important;
 }
-#Settings li {
-	cursor: pointer;
-	text-align: center;
-	font-size: 22px;
-	color: #808691;
-	margin-left: 1px;
+.app-right #chat .emote {
+    border-left: rgba(66, 165, 220, 1) 3px solid !important;
+    background-color: rgba(66, 165, 220, 0.10) !important;
 }
-#Settings li:hover {
-	background: linear-gradient(135deg, rgba(9,174,229,0.8) 0%,rgba(4,114,150,0.8) 100%), linear-gradient(to top,rgba(0, 0, 0, 1) 0,rgba(255, 255, 255, 1) 100%);
-	border-radius: 15px 0 0 15px;
-	box-shadow: 0 1px 3px #000;
-	text-shadow: 1px 0 4px #000;
-	color: white;
-}
-#nine {
-	color: #08b !important;
-}
-#nine:hover {
-	background: none !important;
-	text-shadow: 0 0 0 #000 !important;
-	box-shadow: none !important;
-	cursor: default;
-	border-radius: none !important;
-}
-.ws-on {
-	color: green;
-}
-.ws-off:hover {
-	color: lightgreen;
-}
-.ws-off {
-	color: orange;
-}
-.ws-off {
-	color: orangered;
-}
-
-/* Skip button */
-#remove {
-	left: -9px;
-	width: 253px;
-	border-radius: 0 0 0 10px;
-}
-#skip {
-	left: 248px;
-	width: 247px;
-	border-radius: 0 0 10px 0;
-	border-left: none !important;
-}
-#remove, #skip {
-	position: absolute;
-	top: 283px;
-	height: 34px;
-	cursor: pointer;
-	border: 2px solid silver;
-	border-top: none;
-	background: linear-gradient(to right, rgba(48,53,64,0.7), rgba(32,37,48,0.7)), linear-gradient(to bottom, #555, #222);
-}
-#remove:hover, #skip:hover {
-	background: linear-gradient(to right, rgba(58,63,74,0.7), rgba(42,47,58,0.7)), linear-gradient(to bottom, #555, #222);
-}
-#remove img, #skip img {
-	position: relative;
-	left: 110px;
-	top: 4px;
-}
-#remove img {
-	top: 7px;
-}
-#playback-container {
-	border: 2px solid #0bf !important;
-	border-top: 0 !important;
-	border-radius: 3px 3px 0 0 !important;
-}
-/*end*/
-#room-settings, #room-settings-menu {
-	background: hsla(0,0%,0%,0.7);
-}
-#room-settings-menu > .item.selected {
-	background: linear-gradient(135deg, hsla(190,100%,60%,0.7), hsla(190,90%,50%,0.7));
-}
-#room-settings-menu > .item, #room-settings button.off, #room-settings button.on {
-	border-radius: 50px;
-	box-shadow: 0 0 5px #000;
-}
-#user-lists .list { -webkit-animation:fadein 0.5s; -ms-animation:fadein 0.5s; animation:fadein 0.5; }
-#user-lists .list.room .user .icon-meh{ left:auto; right:8px; top:-1px }
-#room-name {
-  color: #00EFFF;
-}
-#room-name .bar-value  {
-    display: inline-block;
-    /* top: -10px; */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    /* padding: 10px; */
-    border: none;
-    font: normal 18px/normal "Warnes", Helvetica, sans-serif;
-    color: rgba(255,255,255,1);
-    text-decoration: normal;
-    /*text-align: center;*/
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    white-space: pre;
-    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00EFFF  , 0 0 70px #00EFFF  , 0 0 80px #00EFFF  , 0 0 100px #00EFFF ;
-    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-}
-.group {
-	background: linear-gradient(to right, #203, #304) !important;
-	box-shadow: 0 0 1px #406;
-	border-color: #304 !important;
-}
-.group.host {
-	color: #5D8EFF;
-}
-.group.manager {
-	color: #AB48C6;
-}
-.group.bouncer {
-	color: #F3508F;
-}
-.group.dj {
-	color: #F7A452;
-}
-#playlist-edit-button, #playlist-shuffle-button {
-	background: radial-gradient(rgba(100,0,137,0.6), rgba(76,0,175,0.6)), radial-gradient(rgba(255,255,255,0.7), rgba(0,0,0,0));
-	border-radius: 100%;
-}
-#playlist-edit-button:hover, #playlist-shuffle-button:hover {
-	background: radial-gradient(rgba(150,0,187,0.6), rgba(126,5,225,0.6)), radial-gradient(rgba(255,255,255,0.7), rgba(0,0,0,0));
-}
-#playlist-delete-button {
-	background: radial-gradient(rgba(175,0,0,0.6), rgba(185,0,0,0.6)), radial-gradient(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0));
-	border-radius: 100%;
-}
-#playlist-delete-button:hover {
-	background: radial-gradient(rgba(225,20,5,0.6), rgba(215,20,0,0.6)), radial-gradient(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0));
-}
-#playlist-activate-button {
-	background: rgba(100,0,137,0.6);
-	box-shadow: inset 0 0 50px rgba(150,0,187,0.6);
-	border-radius: 100px;
-}
-#playlist-activate-button:hover {
-	background: rgba(150,0,187,0.6);
-}
-#playlist-activate-button.active {
-	background: rgba(150,0,187,0.6);
-}
-#playlist-activate-button span {
-	color: #eee !important;
-}
-#playlist-create:hover, #playlist-import:hover {
-	background: linear-gradient(to bottom, rgba(16,4,38,0.7) 0%,rgba(34,9,76,0.7) 100%);
-}
-#playlist-create, #playlist-import {
-	border: 1px solid rgba(255,255,255,0.1);
-	border-bottom: none;
-}
-#chat .emote:nth-child(2n+1), #chat .log:nth-child(2n+1), #chat .message:nth-child(2n+1), #chat .moderation:nth-child(2n+1), #chat .user-action:nth-child(2n+1), #chat .welcome:nth-child(2n+1) {
-	background: #000;
-	background: hsla(0,0%,0%,0);
-}
-#friends-button .request-count, #user-friends .tab-menu button .count, #user-menu .item .count, .app-right .friends .header i {
-	background: #0af !important;
-}
-#room-settings, #room-settings-menu {
-	background: hsla(0,0%,0%,0.7);
-}
-#chat-messages .delete-button {
-	height: 15px; width: 38px;
-	padding: 0 0 1px 6px !important;
-	right: 40px; top: 5px;
-	border-radius: 5px;
-	color: #eee;
-	background: radial-gradient(hsla(0,5%,0%,0.4), hsla(0,10%,0%,0.3));
-}
-#chat-messages .delete-button:hover {
-	background: radial-gradient(hsla(0,100%,50%,0.8), hsla(0,50%,50%,0.7));
-}
-#user-menu .avatar {
-	background: url(https://dl.dropboxusercontent.com/s/9x7dbbnpq71cpyl/fond-avatar.jpg) !important;
-	box-shadow: inset 0 0 15px #000;
-}
-#the-user-profile, #user-settings, #user-communities, #user-history, #user-friends, #user-store, #user-inventory {
-	background: linear-gradient(to bottom, rgba(10,2,24,1) 0%,rgba(21,6,46,1) 100%);
-}
-#user-settings > div.account.section > div > div.right > button,a > button {
-	border-radius: 20px;
-}
-a > button:hover, #user-settings > div.account.section > div > div.right > button:hover, div.tab-menu > button.selected, #user-menu .item.selected, .back {
-	background: linear-gradient(to bottom, rgba(90,42,178,1) 0%,rgba(76,32,146,1) 100%) !important;
-	box-shadow: inset 0 0 50px rgba(255,255,255,0.1);
-	border-radius: 20px;
-}
-#user-menu, #footer-user .buttons {
-	background: linear-gradient(to top, rgba(10,2,24,1) 0%,rgba(21,6,46,1) 100%);
-}
-.back {
-	border-radius: 0;
-}
-.item .selected {
-	border: 2px solid #eee;
-	border-left: none;
-}
-#user-inventory .selected .top, #user-inventory .cell:hover {
-	background: linear-gradient(to bottom, rgba(30,119,154,1) 0%,rgba(22,79,108,1) 68%,rgba(0,0,0,1) 71%,rgba(35,35,35,1) 100%) !important;
-}
-.info .name {
-	font-weight: bold !important;
-	color: #228ab7 !important;
-	left: -15px;
-}
-.is-dj .name {
-	color: #F7A452 !important;
-}
-#chat .emote.fromID-3455411, #chat .cm.emote {
-	background: linear-gradient(135deg, #023, #001525) !important;
-	border-radius: 10px;
-	border: 1px solid #089 !important;
-	width: 338px !important;
-	font-weight: bold !important;
-	margin-bottom: 1px;
-}
-#chat .emote .timestamp, .emote {
-	color: #089 !important;
-}
-#chat .emote .un {
-	color: #0AB !important;
-	text-shadow: 0 0 5px black;
+#chat-messages .emote .icon {
+    /*left: 4px;*/
 }
 #chat .emote .text {
-	font-style: normal !important;
+    font-style: normal;
+    font-weight: bold;
+    color: #42A5DC;
 }
-.name .icon {
-	visibility: hidden;
-	width: 0;
+#footer {
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.25) 0,rgba(0, 0, 0, 0.75) 100%);
 }
-.meta .bar {
-	background: linear-gradient(to bottom, #111 0, #222 100%) !important;
-	border-radius: 5px;
+#playlist-button {
+    background: linear-gradient(to bottom,#FF5CDE 0,#5700FF 100%);
 }
-.meta .progress {
-	background: linear-gradient(to bottom, rgba(0,187,255,0.6) 0%,rgba(5,126,225,0.6) 100%), linear-gradient(to top,rgba(0, 0, 0, 0.6) 0,rgba(255, 255, 255, 0.3) 100%) !important;
-	border-radius: 5px;
+.social-menu .icon-twitter,.social-menu .icon-facebook {
+    opacity: 1;
 }
-.info .name {
-	font-weight: bold !important;
-	color: #228ab7 !important;
-	left: -15px;
+#playlist-panel {
+    background: rgba(17, 19, 23, 0.9);
 }
-.is-dj .name {
-	color: #F7A452 !important;
+#playlist-menu {
+    background: rgba(28, 31, 37, 0.67);
 }
-#dj-button.is-leave .left, #dj-button.is-quit .left {
-	background: radial-gradient(rgba(200,30,30,0.5), rgba(120,30,30,0.5));
+#search {
+    background: rgba(50, 55, 66, 0.58);
 }
-#dj-button.is-leave:hover .left, #dj-button.is-quit:hover .left {
-	background: radial-gradient(rgb(200,30,30), rgb(120,30,30));
+#search-bar {
+    background: rgba(17, 19, 23, 0.77);
+}
+#filter-bar {
+    background: rgba(17, 19, 23, 0.77);
+}
+#playlist-edit-button {
+    background: rgba(85, 93, 112, 0.75);
+}
+#playlist-shuffle-button {
+    background: rgba(68, 74, 89, 0.75);
+}
+#playlist-delete-button {
+    background: rgba(50, 55, 66, 0.75);
+}
+#user-panel .score {
+    background: rgba(28, 31, 37, 0.59);
+}
+#dj-button.is-locked .left,#dj-button.is-full .left,#vote .crowd-response.disabled .bottom {
+    background: #222224;
+}
+#dj-button.is-quit .left, #dj-button.is-leave .left, #dj-button.is-wait .left, #dj-button.is-locked .left, #dj-button.is-full .left {
+background: #121214;
+border-radius: 8px;
+border-left-width: 4px;
+}
+#dj-button.is-quit .left {
+border-left: 3px solid #f46b40;
+}
+#dj-button.is-leave .left {
+border-left: 3px solid #f46b40;
 }
 #dj-button.is-wait .left {
-	background: radial-gradient(rgba(0,200,250,0.5), rgba(0,130,250,0.5));
+border-left: 3px solid #00b5e6;
 }
-#dj-button.is-wait:hover .left {
-	background: radial-gradient(rgb(0,200,250), rgb(0,130,250));
+#dj-button.is-locked .left {
+border-left: 3px solid #734ba9;
 }
-#dj-button, #vote {
-	border-radius: 30px;
-	box-shadow: 0 0 10px black;
-	background: rgba(0,0,0,0.35) !important;
+#dj-button.is-full .left {
+border-left: 3px solid #CCCCCC;
 }
-#dj-button:hover {
-	background: rgba(0,0,0,0.5) !important;
+#dj-button {
+background: #222224;
+border-radius: 8px;
 }
-#dj-button .left {
-	border-radius: 50px 0 0 50px;
-	box-shadow: 1px 0 5px rgba(0,0,0,0.5);
+#vote .crowd-response {
+background: #222224;
 }
-#user-rollover {
-	border-radius: 20px 20px 0 0;
-	box-shadow: 0 0 5px #000;
-	background: radial-gradient(rgba(16,4,38,0.6),rgba(34,9,76,0.6));
+#woot .bottom, #woot.selected {
+background: #90ad2f;
 }
-#user-rollover .info {
-	border-radius: 25px 25px 0 0;
-	border-top: 1px solid #a0c;
-	background: linear-gradient(rgba(34,9,76,0.9), rgba(24,5,58,0.9));
+#grab .bottom, #grab.selected {
+background: #aa74ff;
 }
-#user-rollover > div.info > div.role > span {
-	color: #eee !important;
+#meh .bottom, #meh.selected {
+background: #c42e3b;
 }
-#user-rollover .actions .action, .actions .action, #user-menu, #footer-user .buttons {
-	background: rgb(16,4,38);
-	box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+.row:hover {
+    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(41, 48, 124, 0.27) 100%) !important;
 }
-#user-rollover .actions .action:hover, .actions .action:hover, #footer-user .buttons .button:hover {
-	background: rgb(34,9,76) !important;
+#chat .mention .msg {
+    background: linear-gradient(to right,rgba(255, 118, 118, 0) 0,rgba(41, 48, 124, 0.27) 100%) !important;
 }
-#footer-user .buttons .button.inventory:hover {
-	box-shadow: 0 0 0 #000;
-}
-#lobby-overlay {
-	box-shadow: 0 0 48px 4px #000;
-	border: 1px solid #272727;
-	background: rgba(0, 0, 0, 0.35);
-	background-image: none;
-	font-family: Segoe UI Light !important;
-}
-.overlay-header {
-	background-image: none;
-	background-color: rgba(0, 0, 0, 0.0);
-}
-.overlay-title {
-	font-size: 23px;
-	top: 11px;
-	left: 10px;
-	font-family: Segoe UI Light;
-}
-#lobby-search {
-	background: #ECF0F1;
+
+/* Custom woot/grab/meh icons */
+
+#woot .icon-woot-disabled, #woot .icon {
+	width: 28px;
 	height: 28px;
-	top: 16px;
-	background-image: none;
+	background: url("https://static-cdn.jtvnw.net/emoticons/v1/20280/1.0") !important;
 }
-#lobby-search .search-input input {
-	top: 4px;
-	color: #95A5A6;
+
+
+#grab .icon-grab-disabled, #grab .icon {
+	width:28px;
+	height:28px;
+	background: url("https://static-cdn.jtvnw.net/emoticons/v1/33940/1.0") !important;
 }
-#create-room-button {
-	top: 16px;
-	width: 130px;
-	height: 28px;
-	font-size: 18px;
-	text-align: center;
-	background: #95A5A6;
-	background-image: none;
+
+
+#meh .icon-meh-disabled, #meh .icon {
+	width:28px;
+	height:28px;
+	background: url("https://static-cdn.jtvnw.net/emoticons/v1/27307/1.0");
 }
-#lobby-panel {
-	background-image: none;
+
+/* Probably just silly stuff */ 
+
+#chat .moderation, #chat .moderation .from, #chat .moderation .from .un {
+    color: rgb(66, 165, 220) !important;
 }
-#lobby-panel-list {
-	font-size: 11px;
-	background-color: rgba(0, 0, 0, 0.0);
-}
-#lobby-panel-list ul {
-	font-size: 11px;
-	background-color: rgba(0, 0, 0, 0.0);
-}
-.room-list {
-	border: none;
+
+#chat {
 	background: none;
 }
-.room-list-item {
-	height: 88px !important;
-	background: rgba(153, 153, 153, 0.22);
-}
-.room-population {
-	color:  #FFF;
-}
-.room-name {
-	color: #5BC0F0;
-}
-.room-hosted-by {
-	color: #A8A8A8;
-	font-size: 11px;
-}
-.room-host-name {
-	color: #5BC0F0;
-	font-size: 12px;
-}
-.room-now-playing {
-	color: #FFF;
-	top: 29px;
-}
-.room-media {
-	top: 29px;
-	color: #A8A8A8;
-}
-.room-djs {
-	color: #A8A8A8;
+
+#room .app-right {
+	background: rgba(10, 10, 10, 0.8);
 }
 
-#room-name  span:hover {
-    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #12A9E0 , 0 0 70px #12A9E0 , 0 0 80px #12A9E0 , 0 0 100px #12A9E0 ;
+.icon-room {
+	background: url('https://openmerchantaccount.com/img/mH9SLK2.png');
 }
-#chat .emote { border-left: rgba(174, 69, 189, 1) 3px solid !important; background-color: rgba(190, 28, 213, 0.22) 
-!important; background: linear-gradient(to right,rgba(255, 118, 118, 0.05) 0,rgba(255, 0, 194, 0.27) 100%) !important; }
-#chat .message:nth-child(2n+1),#chat .mention:nth-child(2n+1),#chat .skip:nth-child(2n+1),#chat .moderation:nth-child(2n+1),
-#chat .emote:nth-child(2n+1),#chat .update:nth-child(2n+1),#chat .welcome:nth-child(2n+1) #chat .emote, #chat .mention,
-#chat .message, #chat .moderation, #chat .skip, #chat .system, #chat .update, #chat .welcome {
-background-color: rgba(17, 19, 23, 0.32); -webkit-animation:fadein 0.6s;  -moz-animation:fadein 0.6s;
--ms-animation:fadein 0.6s;  -o-animation:fadein 0.6s; animation:fadein 0.6s; }
 
-.experience .xp .bar .progress {
-border-radius: 10px 0px 10px 0px !important; background: #12A9E0; box-shadow: 0 0 10px 5px #12A9E0; }
-#footer-user .bar .progress { border-radius: 10px 0px 10px 0px !important; background: #12A9E0; box-shadow: 0 0 15px #12A9E0 !important; }
-.experience .xp .bar, #footer-user .meta div.bar { border-radius: 10px 0px 10px 0px !important; }
-#footer-user .meta div.bar { border-radius: 10px 0px 10px 0px !important; }
+/* Custom user icons/colours */
+
+/* RengeBOT */
+
+.id-5808118 .msg .from .icon-chat-manager { 
+    background: url('https://openmerchantaccount.com/img/dosAyJI.png') !important;
+}
+
+.id-5808118 span.un.clickable { 
+color: rgb(66, 165, 220) !important;
+}
+
+/* Rose */
+
+.id-5713188 span.un.clickable { 
+    color: #FF007F !important;
+} 
+
+.id-5713188 .msg .from .icon-chat-host { 
+    background: url('https://dazzuh.ovh/plug/roseicon.png') !important;
+}
+
+#user-lists .id-5786782 .list.room .user .icon-chat-manager + .name {
+	color: #FF007F;
+}
+
+/* Leafweed */
+
+.id-4178820 i.bdg {
+    width: 30px;
+    height: 30px;
+    background: url('http://i.imgur.com/lcO6Wge.gif') !important;
+} 
+
+.id-4178820 span.un.clickable {
+ -webkit-animation: color_change_leaf 1s infinite alternate;
+ -moz-animation: color_change_leaf 1s infinite alternate;
+ -ms-animation: color_change_leaf 1s infinite alternate;
+ -o-animation: color_change_leaf 1s infinite alternate;
+ animation: color_change_leaf 1s infinite alternate;
+}
+
+@-webkit-keyframes color_change_leaf {
+ from { color: #7FE22E; }
+ to { color: #aa74ff; }
+}
+@-moz-keyframes color_change_leaf {
+ from { color: #7FE22E; }
+ to { color: #aa74ff; }
+}
+@-ms-keyframes color_change_leaf {
+ from { color: #7FE22E; }
+ to { color: #aa74ff; }
+}
+@-o-keyframes color_change_leaf {
+ from { color: #7FE22E; }
+ to { color: #aa74ff; }
+}
+@keyframes color_change_leaf {
+ from { color: #7FE22E; }
+ to { color: #aa74ff; }
+}
+
+
+/*
+.id-5713188 i.bdg {
+	width: 30px;
+	height: 30px;
+    background: url('https://dazzuh.ovh/plug/rose.png') !important;
+} 
+*/
+
+/* Dazzuh */ 
+
+.id-5786782 span.un.clickable {
+ -webkit-animation: color_change 1s infinite alternate;
+ -moz-animation: color_change 1s infinite alternate;
+ -ms-animation: color_change 1s infinite alternate;
+ -o-animation: color_change 1s infinite alternate;
+ animation: color_change 1s infinite alternate;
+}
+
+@-webkit-keyframes color_change {
+ from { color: #00B6CD; }
+ to { color: #aa74ff; }
+}
+@-moz-keyframes color_change {
+ from { color: #00B6CD; }
+ to { color: #aa74ff; }
+}
+@-ms-keyframes color_change {
+ from { color: #00B6CD; }
+ to { color: #aa74ff; }
+}
+@-o-keyframes color_change {
+ from { color: #00B6CD; }
+ to { color: #aa74ff; }
+}
+@keyframes color_change {
+ from { color: #00B6CD; }
+ to { color: #aa74ff; }
+}
+
+
+
+/* Sinful */
+
+.id-3583919 span.un.clickable { 
+    color: #00B6CD !important;
+} 
+
+.id-3583919 .icon-chat-ambassador { 
+    background: url('https://dazzuh.ovh/plug/bluesin.png') !important;
+}
+
+.id-3583919 .msg .from .icon-chat-host { 
+    background: url('https://dazzuh.ovh/plug/hostsin.png') !important;
+}
+
+/* Le Coffee */
+
+.id-6654355 .msg .from .icon-chat-bouncer {
+	background: url("http://dazzuh.ovh/plug/coffee.png") !important;
+	width: 16px;
+	height: 16px;
+}
+
+/* DigBickNick */
+
+.id-5502961 i.bdg {
+    width: 30px;
+    height: 30px;
+    background: url('https://dazzuh.ovh/plug/nickbadge.gif') !important;
+} 
+
+.id-5502961 span.un.clickable {
+ -webkit-animation: color_change_nick 1s infinite alternate;
+ -moz-animation: color_change_nick 1s infinite alternate;
+ -ms-animation: color_change_nick 1s infinite alternate;
+ -o-animation: color_change_nick 1s infinite alternate;
+ animation: color_change_nick 1s infinite alternate;
+}
+
+@-webkit-keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
+}
+@-moz-keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
+}
+@-ms-keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
+}
+@-o-keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
+}
+@keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
+}
+
+/* Le Toucan */
+
+.id-4193885 span.un.clickable {
+ -webkit-animation: color_change_toucan 1s infinite alternate;
+ -moz-animation: color_change_toucan 1s infinite alternate;
+ -ms-animation: color_change_toucan 1s infinite alternate;
+ -o-animation: color_change_toucan 1s infinite alternate;
+ animation: color_change_toucan 1s infinite alternate;
+}
+
+@-webkit-keyframes color_change_toucan {
+ from { color: #FF9438; }
+ to { color: #aa74ff; }
+}
+@-moz-keyframes color_change_toucan {
+ from { color: #FF9438; }
+ to { color: #aa74ff; }
+}
+@-ms-keyframes color_change_toucan {
+ from { color: #FF9438; }
+ to { color: #aa74ff; }
+}
+@-o-keyframes color_change_toucan {
+ from { color: #FF9438; }
+ to { color: #aa74ff; }
+}
+@keyframes color_change_toucan {
+ from { color: #FF9438; }
+ to { color: #aa74ff; }
+}
+
+/* NB3 */
+
+.id-6363341 span.un.clickable { 
+    
+color: #FF38CB !important;
+} 
+.id-6363341 .msg .from .icon-chat-host {
+	background: url("http://dazzuh.ovh/plug/pinkhost.png") !important;
+	width: 16px;
+	height: 16px;
+}
+
+/*
+.id-6363341 i.bdg {
+    width: 30px;
+    height: 30px;
+    background: url('https://dazzuh.ovh/plug/keepo.png') !important;
+} 
+*/
+
+/* Pick-a-chu */
+
+.id-6630381 i.bdg {
+    width: 30px;
+    height: 30px;
+    background: url('https://dazzuh.ovh/plug/badges/pika.jpg') !important;
+} 
+
+/* Origin */
+
+.id-3741010 .msg .from .un::before {
+    content: 'Senpai ';
+}
+
+.id-3741010 .msg .from .un::after {
+    content: url('https://dazzuh.ovh/plug/test.png');
+    position: relative;
+    left: 3px;
+
+}
