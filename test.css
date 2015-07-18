@@ -22,6 +22,16 @@
             "manager": "http://i.imgur.com/ZkkSJxs.png",
             "residentdj": "http://i.imgur.com/YPEJMkf.png" 
 }*/
+.id-3741010 .msg .from .un::before {
+    content: 'Senpai ';
+}
+
+.id-3741010 .msg .from .un::after {
+    content: url('https://dazzuh.ovh/plug/test.png');
+    position: relative;
+    left: 3px;
+
+}
 #user-rollover {
 	border-radius: 20px 20px 0 0;
 	box-shadow: 0 0 5px #000;
