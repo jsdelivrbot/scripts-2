@@ -250,3 +250,52 @@ background: #c42e3b;
  from { color: #FF9438; }
  to { color: #aa74ff; }
 }
+.progress {
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0, rgba(0, 153, 204, 1) 100%) !important;
+}
+ 
+.progress:after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-image:
+       -webkit-gradient(linear, 0 0, 100% 100%,
+          color-stop(.25, rgba(0, 153, 204, 1)),
+          color-stop(.25, transparent), color-stop(.5, transparent),
+          color-stop(.5, rgba(0, 153, 204, 1)),
+          color-stop(.75, rgba(0, 153, 204, 1)),
+          color-stop(.75, transparent), to(transparent)
+       );
+    z-index: 0;
+    background-size: 50px 50px;
+    -webkit-animation: move 4s linear infinite;
+}
+ 
+@-webkit-keyframes move {
+    0% {
+       background-position: 0 0;
+    }
+    100% {
+       background-position: 50px 50px;
+    }
+#room-name .bar-value  {
+    display: inline-block;
+    /* top: -10px; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* padding: 10px; */
+    border: none;
+    font: normal 18px/normal "Warnes", Helvetica, sans-serif;
+    color: rgba(255,255,255,1);
+    text-decoration: normal;
+    /*text-align: center;*/
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: pre;
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00EFFF  , 0 0 70px #00EFFF  , 0 0 80px #00EFFF  , 0 0 100px #00EFFF ;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
