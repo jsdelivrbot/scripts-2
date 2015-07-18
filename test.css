@@ -250,6 +250,34 @@ background: #c42e3b;
  from { color: #FF9438; }
  to { color: #aa74ff; }
 }
+.id-5018901 span.un.clickable {
+ -webkit-animation: color_change_toucan 1s infinite alternate;
+ -moz-animation: color_change_toucan 1s infinite alternate;
+ -ms-animation: color_change_toucan 1s infinite alternate;
+ -o-animation: color_change_toucan 1s infinite alternate;
+ animation: color_change_toucan 1s infinite alternate;
+}
+
+@-webkit-keyframes color_change_toucan {
+ from { color: #FF9438; }
+ to { color: #aa74ff; }
+}
+@-moz-keyframes color_change_toucan {
+ from { color: #FF9438; }
+ to { color: #aa74ff; }
+}
+@-ms-keyframes color_change_toucan {
+ from { color: #FF9438; }
+ to { color: #aa74ff; }
+}
+@-o-keyframes color_change_toucan {
+ from { color: #FF9438; }
+ to { color: #aa74ff; }
+}
+@keyframes color_change_toucan {
+ from { color: #FF9438; }
+ to { color: #aa74ff; }
+}
 .progress {
     background: linear-gradient(to bottom, rgb(0, 0, 0) 0, rgba(0, 153, 204, 1) 100%) !important;
 }
