@@ -242,100 +242,6 @@ background: #c42e3b;
 	background: rgba(10, 10, 10, 0.8);
 }
 
-/*me*/
-.id-3741010 span.un.clickable {
- -webkit-animation: color_change_nick 1s infinite alternate;
- -moz-animation: color_change_nick 1s infinite alternate;
- -ms-animation: color_change_nick 1s infinite alternate;
- -o-animation: color_change_nick 1s infinite alternate;
- animation: color_change_nick 1s infinite alternate;
-}
-
-@-webkit-keyframes color_change_toucan {
- from { color: #FF9438; }
- to { color: #aa74ff; }
-}
-@-moz-keyframes color_change_toucan {
- from { color: #FF9438; }
- to { color: #aa74ff; }
-}
-@-ms-keyframes color_change_toucan {
- from { color: #FF9438; }
- to { color: #aa74ff; }
-}
-@-o-keyframes color_change_toucan {
- from { color: #FF9438; }
- to { color: #aa74ff; }
-}
-@keyframes color_change_toucan {
- from { color: #FF9438; }
- to { color: #aa74ff; }
-}
-
-.id-3822759 i.bdg {
-    width: 30px;
-    height: 30px;
-    background: url('https://dazzuh.ovh/plug/nickbadge.gif') !important;
-} 
-
-.id-3822759 span.un.clickable {
- -webkit-animation: color_change_nick 1s infinite alternate;
- -moz-animation: color_change_nick 1s infinite alternate;
- -ms-animation: color_change_nick 1s infinite alternate;
- -o-animation: color_change_nick 1s infinite alternate;
- animation: color_change_nick 1s infinite alternate;
- }
- 
-@-webkit-keyframes color_change_nick {
- from { color: #FFD800; }
- to { color: #38E4FF; }
-}
-@-moz-keyframes color_change_nick {
- from { color: #FFD800; }
- to { color: #38E4FF; }
-}
-+@-ms-keyframes color_change_nick {
- from { color: #FFD800; }
- to { color: #38E4FF; }
-}
-@-o-keyframes color_change_nick {
- from { color: #FFD800; }
- to { color: #38E4FF; }
-}
-@keyframes color_change_nick {
- from { color: #FFD800; }
- to { color: #38E4FF; }
-}
- 
-/*deeb*/
-.id-5018901 span.un.clickable {
- -webkit-animation: color_change_toucan 1s infinite alternate;
- -moz-animation: color_change_toucan 1s infinite alternate;
- -ms-animation: color_change_toucan 1s infinite alternate;
- -o-animation: color_change_toucan 1s infinite alternate;
- animation: color_change_toucan 1s infinite alternate;
-}
-
-@-webkit-keyframes color_change_toucan {
- from { color: #FF9438; }
- to { color: #aa74ff; }
-}
-@-moz-keyframes color_change_toucan {
- from { color: #FF9438; }
- to { color: #aa74ff; }
-}
-@-ms-keyframes color_change_toucan {
- from { color: #FF9438; }
- to { color: #aa74ff; }
-}
-@-o-keyframes color_change_toucan {
- from { color: #FF9438; }
- to { color: #aa74ff; }
-}
-@keyframes color_change_toucan {
- from { color: #FF9438; }
- to { color: #aa74ff; }
-}
 .progress {
     background: linear-gradient(to bottom, rgb(0, 0, 0) 0, rgba(0, 153, 204, 1) 100%) !important;
 }
@@ -365,23 +271,30 @@ background: #c42e3b;
        background-position: 50px 50px;
     }
 #room-name .bar-value  {
-    display: inline-block;
-    /* top: -10px; */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    /* padding: 10px; */
-    border: none;
-    font: normal 18px/normal "Warnes", Helvetica, sans-serif;
-    color: rgba(255,255,255,1);
-    text-decoration: normal;
-    /*text-align: center;*/
-    -o-text-overflow: clip;
-    text-overflow: clip;
-    white-space: pre;
-    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00EFFF  , 0 0 70px #00EFFF  , 0 0 80px #00EFFF  , 0 0 100px #00EFFF ;
-    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+ -webkit-animation: color_change_nick 1s infinite alternate;
+ -moz-animation: color_change_nick 1s infinite alternate;
+ -ms-animation: color_change_nick 1s infinite alternate;
+ -o-animation: color_change_nick 1s infinite alternate;
+ animation: color_change_nick 1s infinite alternate;
+ }
+ 
+@-webkit-keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
+}
+@-moz-keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
+}
++@-ms-keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
+}
+@-o-keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
+}
+@keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
 }
