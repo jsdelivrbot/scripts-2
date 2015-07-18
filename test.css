@@ -286,6 +286,27 @@ background: #c42e3b;
  animation: color_change_nick 1s infinite alternate;
  }
  
+@-webkit-keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
+}
+@-moz-keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
+}
++@-ms-keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
+}
+@-o-keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
+}
+@keyframes color_change_nick {
+ from { color: #FFD800; }
+ to { color: #38E4FF; }
+}
+ 
 /*deeb*/
 .id-5018901 span.un.clickable {
  -webkit-animation: color_change_toucan 1s infinite alternate;
