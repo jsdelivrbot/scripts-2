@@ -242,12 +242,13 @@ background: #c42e3b;
 	background: rgba(10, 10, 10, 0.8);
 }
 
+/*me*/
 .id-3741010 span.un.clickable {
- -webkit-animation: color_change_toucan 1s infinite alternate;
- -moz-animation: color_change_toucan 1s infinite alternate;
- -ms-animation: color_change_toucan 1s infinite alternate;
- -o-animation: color_change_toucan 1s infinite alternate;
- animation: color_change_toucan 1s infinite alternate;
+ -webkit-animation: color_change_nick 1s infinite alternate;
+ -moz-animation: color_change_nick 1s infinite alternate;
+ -ms-animation: color_change_nick 1s infinite alternate;
+ -o-animation: color_change_nick 1s infinite alternate;
+ animation: color_change_nick 1s infinite alternate;
 }
 
 @-webkit-keyframes color_change_toucan {
@@ -270,6 +271,22 @@ background: #c42e3b;
  from { color: #FF9438; }
  to { color: #aa74ff; }
 }
+
+.id-3822759 i.bdg {
+    width: 30px;
+    height: 30px;
+    background: url('https://dazzuh.ovh/plug/nickbadge.gif') !important;
+} 
+
+.id-3822759 span.un.clickable {
+ -webkit-animation: color_change_nick 1s infinite alternate;
+ -moz-animation: color_change_nick 1s infinite alternate;
+ -ms-animation: color_change_nick 1s infinite alternate;
+ -o-animation: color_change_nick 1s infinite alternate;
+ animation: color_change_nick 1s infinite alternate;
+ }
+ 
+/*deeb*/
 .id-5018901 span.un.clickable {
  -webkit-animation: color_change_toucan 1s infinite alternate;
  -moz-animation: color_change_toucan 1s infinite alternate;
