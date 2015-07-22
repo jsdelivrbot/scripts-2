@@ -102,7 +102,7 @@ API.on(API.CHAT_COMMAND,slotmachine)
 API.on(API.CHAT_COMMAND,kawaiipic) */
 
 function fiteuser(command) { //Function fite user kekeke
-	if (command.split(' ') [0] === '/fight' ) { //if the command is /fite do below
+	if (command.split(' ') [0] === '!fight' ) { //if the command is /fite do below
 	targetUser6 = command.slice(6,355); //Targeted user
 	var outcomes = [currentUsername  + " passes out before the fight starts.",targetUser6 + " gets stabbed and dies.",targetUser6 + " ascends to heaven.","Both get knocked out.",currentUsername + " runs at " + targetUser6 + ", but trips and hits head.",targetUser6 + " is unconscious.",currentUsername + " Swings at " + targetUser6 + ", but accidentally hits @donvoo",targetUser6 + " Wins!",currentUsername + " Wins!"];
 	var outcome = outcomes[Math.floor(Math.random()*outcomes.length)];
