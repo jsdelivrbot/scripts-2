@@ -1,14 +1,13 @@
 //Potato-Helper
 //Plug.dj Chat Utility Script. Fun and useful commands for chat.
 /*=====================================*/
-API.chatLog('Welcome to Potato Helper! If you are a potato this utility is for you! List of commands - /cmds');
-API.chatLog('|PH| Credits: PixelBreezeNC, Zaro38');
+API.sendChat('[Bot Mode Activated]');
 var currentUsername = '@' + API.getUser().username; //the @name of the person who runs the script
 var afkReason = 'I am AFK right now!'; //standard afk reason
 var isAFK = false; //you are standard not afk
 var respondRCS = false; //responder for RCS
 var cmdRun = true; //for cooldown function
-var MaxMeh = 25;
+var MaxMeh = 7;
 var MinMeh = 10;
 var AFKcooldown = true;
 
@@ -52,7 +51,7 @@ function AfkMessage(command) { //the function to change the afk message
 		alert('|PH| When you are no longer AFK please disable AFK mode by typing /back'); //Alerts user to turn off AFK mode
 	}
 	if (command.split(' ')[0] === '/back') {	//When you are back and no longer AFK must type /back
-	    API.chatLog('Welcome back! AFK mode has been turned off.');
+	    API.sendChat('AFK mode disabled.');
 		isAFK = false; //you are now no longer afk
 	}
 }
@@ -72,23 +71,23 @@ API.on(API.CHAT_COMMAND,rcsMsg)
 
 function listcmds(command) { //Function for listing cmds
 	if (command.split(' ') [0] === '/cmds') { //if the command is /cmds lists CMDS
-		API.chatLog('|PH| Available Commands For Potato Helper: https://github.com/PixelBreeze/Potato-Helper/blob/master/PotatoCommands.md - and more to come! Msg PixelBreezeNC for any suggestions.')
+		API.chatLog('Commands: https://goo.gl/cC0NF3')
  }
 }
 API.on(API.CHAT_COMMAND,listcmds)
 
 function slotmachine(command) { //Function Play slot machine with urself
-	if (command.split(' ') [0] === '/slots') { //activates slot machine when /slot in chat
+	if (command.split(' ') [0] === '!slots') { //activates slot machine when /slot in chat
 		var slotItem = [":cherries:",":pineapple:",":apple:",":gift:",":pear:",":banana:",":watermelon:"]; //Items listed in slotmachine
 		var slot1 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot1
 		var slot2 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot2
 		var slot3 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot3
-			API.chatLog(slot1 + " | " + slot2 + " | " + slot3); //Prints out result
+			API.sendChat(slot1 + " | " + slot2 + " | " + slot3); //Prints out result
 		if (slot1 === slot2){
-			API.chatLog("!!You Win!!"); //you win msg
+			API.sendChat("!!You Win!!"); //you win msg
 		}
 		else {
-			API.chatLog("Better Luck Next Time."); //you loose msg
+			API.sendChat("Better Luck Next Time."); //you loose msg
 	}
   }
 }
@@ -105,11 +104,11 @@ API.on(API.CHAT_COMMAND,slotmachine)
 API.on(API.CHAT_COMMAND,kawaiipic) */
 
 function fiteuser(command) { //Function fite user kekeke
-	if (command.split(' ') [0] === '/fite' ) { //if the command is /fite do below
+	if (command.split(' ') [0] === '/fight' ) { //if the command is /fite do below
 	targetUser6 = command.slice(6,355); //Targeted user
 	var outcomes = [currentUsername  + " passes out before the fight starts.",targetUser6 + " gets stabbed and dies.",targetUser6 + " ascends to heaven.","Both get knocked out.",currentUsername + " runs at " + targetUser6 + ", but trips and hits head.",targetUser6 + " is unconscious.",currentUsername + " Swings at " + targetUser6 + ", but accidentally hits @donvoo",targetUser6 + " Wins!",currentUsername + " Wins!"];
 	var outcome = outcomes[Math.floor(Math.random()*outcomes.length)];
-		API.sendChat(currentUsername + " fites " + targetUser6 + " - " + outcome);
+		API.sendChat(currentUsername + " fights " + targetUser6 + " - " + outcome);
 	}
 }
 API.on(API.CHAT_COMMAND,fiteuser)
@@ -117,13 +116,13 @@ API.on(API.CHAT_COMMAND,fiteuser)
 function mms(command) { //Meh mute shush function
 if (command.split(' ') [0] === '/mms' ) { //if the command is /mms do below
 	targetUser5 = command.slice(5,355); //Targeted user
-	API.sendChat(targetUser5 + " Please don't ask for skips. Meh and mute the song");
+	API.sendChat(targetUser5 + " Please don't ask for skips. Meh and mute the song!");
  	}
 }
 API.on(API.CHAT_COMMAND,mms)
 
 function mehrule(command) { //Meh mute shush function
-if (command.split(' ') [0] === '/mehrule' ) { //if the command is /mms do below
+if (command.split(' ') [0] === '/mehrules' ) { //if the command is /mms do below
 var UserCount = API.getUsers().length; //user count in room
 targetUser9 = ("[" + command.slice(9,355) + "]"); //Targeted user
 var MehCalc = Math.floor((UserCount - 100) / 10);
@@ -148,7 +147,7 @@ function GlobalCommands(data) {
 	switch (data.message.split(' ')[0]) {
 		case '!join':
 			if(API.getUser(data.uid).role === 0){ 
-			API.sendChat('[@' + username + "] This command doesn't exist here! To join the waitlist you must join it manually or use an auto-join script like - https://rcs.radiant.dj");
+			API.sendChat('[@' + username + "] This command doesn't exist here!");
 			break; }
 		case 'skip':
 			if(API.getUser(data.uid).role === 0){ 
