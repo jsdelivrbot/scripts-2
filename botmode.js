@@ -75,7 +75,7 @@ function listcmds(command) { //Function for listing cmds
 API.on(API.CHAT_COMMAND,listcmds)
 
 function slotmachine(command) { //Function Play slot machine with urself
-	if(data.message.indexOf('!slots') === 0){
+	if (command.split(' ') [0] === '/slots') {
 		var slotItem = [":cherries:",":pineapple:",":apple:",":gift:",":pear:",":banana:",":watermelon:"]; //Items listed in slotmachine
 		var slot1 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot1
 		var slot2 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot2
