@@ -5,8 +5,8 @@ var afkReason = 'I am AFK right now!'; //standard afk reason
 var isAFK = false; //you are standard not afk
 var respondRCS = false; //responder for RCS
 var cmdRun = true; //for cooldown function
-var MaxMeh = 8;
-var MinMeh = 5;
+var MaxMeh = 10;
+var MinMeh = 7;
 var AFKcooldown = true;
 
 function cooldown() { //Cooldown cmds for 5s
@@ -45,8 +45,8 @@ function AfkMessage(command) { //the function to change the afk message
     if (command.split(' ')[0] === '/afk') { //if the command is /afk
         isAFK = true; //you are now afk
         afkReason = command.slice(5,255); //set the afk reason
-//	API.sendChat('/me [AFK] ' + afkReason); //sends in chat announcement about AFK with set reason
-		alert('|PH| When you are no longer AFK please disable AFK mode by typing /back'); //Alerts user to turn off AFK mode
+	API.sendChat('/me [AFK] ' + afkReason); //sends in chat announcement about AFK with set reason
+		// alert('|PH| When you are no longer AFK please disable AFK mode by typing /back'); //Alerts user to turn off AFK mode
 	}
 	if (command.split(' ')[0] === '/back') {	//When you are back and no longer AFK must type /back
 	    API.sendChat('AFK mode disabled.');
@@ -75,7 +75,7 @@ function listcmds(command) { //Function for listing cmds
 API.on(API.CHAT_COMMAND,listcmds)
 
 function slotmachine(command) { //Function Play slot machine with urself
-	if (command.split(' ') [0] === '!slots') { //activates slot machine when /slot in chat
+	if (command.split(' ') [0] === '/slots') { //activates slot machine when /slot in chat
 		var slotItem = [":cherries:",":pineapple:",":apple:",":gift:",":pear:",":banana:",":watermelon:"]; //Items listed in slotmachine
 		var slot1 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot1
 		var slot2 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot2
@@ -114,7 +114,7 @@ API.on(API.CHAT_COMMAND,fiteuser)
 function mms(command) { //Meh mute shush function
 if (command.split(' ') [0] === '/mms' ) { //if the command is /mms do below
 	targetUser5 = command.slice(5,355); //Targeted user
-	API.sendChat(targetUser5 + " Please don't ask for skips. Meh and mute the song!");
+	API.sendChat(targetUser5 + " Please don't ask for skips. Mute the song!");
  	}
 }
 API.on(API.CHAT_COMMAND,mms)
@@ -126,14 +126,14 @@ targetUser9 = ("[" + command.slice(9,355) + "]"); //Targeted user
 var MehCalc = Math.floor((UserCount - 100) / 10);
 	if (UserCount > 350) { 
 	//	API.sendChat("Users currently in room - " + UserCount)
-	API.sendChat("There are " + UserCount + " Users in the room. " + targetUser9 + " there are " + MaxMeh + " Meh's needed to skip the current song. More Info Here - http://bit.ly/NC331R8");
+	API.sendChat("There are " + UserCount + " Users in the room. " + targetUser9 + " there are " + MaxMeh + " Meh's needed to skip the current song.");
 	}
 		if (350 > UserCount) { 
 			if (200 < UserCount){
-			API.sendChat("There are " + UserCount + " Users in the room. " + targetUser9 + " there are " + MehCalc + " Meh's needed to skip the current song. More Info Here - http://bit.ly/NC331R8");
+			API.sendChat("There are " + UserCount + " Users in the room. " + targetUser9 + " there are " + MehCalc + " Meh's needed to skip the current song.");
 		} }
 			if (UserCount < 200) {
-				API.sendChat("There are " + UserCount + " Users in the room. " + targetUser9 + " there are " + MinMeh + " Meh's needed to skip the current song. More Info Here - http://bit.ly/NC331R8");
+				API.sendChat("There are " + UserCount + " Users in the room. " + targetUser9 + " there are " + MinMeh + " Meh's needed to skip the current song.");
 			}
 			
  }
