@@ -27,7 +27,7 @@ function autoRespond(data) { //the function to respond
         if (message.split(currentUsername).length > 1) {//if you are mentioned (so if @yourname is in the message)
         	if (AFKcooldown === true) {
                  	
-		 API.sendChat('@' + fromUsername + ' [AFK] ' + afkReason + ' | I will respond when I get back!');//respond to who @mentioned you
+		 API.sendChat('@' + fromUsername + ' [AFK] ' + afkReason + ' - I will respond when I get back!');//respond to who @mentioned you
 		 AFKcooldown = false;
 		 setTimeout(function(){AFKcooldown = true},60000);
         }
@@ -45,7 +45,7 @@ function AfkMessage(command) { //the function to change the afk message
     if (command.split(' ')[0] === '/afk') { //if the command is /afk
         isAFK = true; //you are now afk
         afkReason = command.slice(5,255); //set the afk reason
-	API.sendChat('/me [AFK] ' + afkReason); //sends in chat announcement about AFK with set reason
+	API.sendChat('@ ' + afkReason); //sends in chat announcement about AFK with set reason
 		// alert('|PH| When you are no longer AFK please disable AFK mode by typing /back'); //Alerts user to turn off AFK mode
 	}
 	if (command.split(' ')[0] === '/back') {	//When you are back and no longer AFK must type /back
@@ -80,12 +80,12 @@ function slotmachine(command) { //Function Play slot machine with urself
 		var slot1 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot1
 		var slot2 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot2
 		var slot3 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot3
-			API.sendChat(slot1 + " | " + slot2 + " | " + slot3); //Prints out result
+			API.chatLog(slot1 + " | " + slot2 + " | " + slot3); //Prints out result
 		if (slot1 === slot2){
-			API.sendChat("!!You Win!!"); //you win msg
+			API.chatLog("!!You Win!!"); //you win msg
 		}
 		else {
-			API.sendChat("Better Luck Next Time."); //you loose msg
+			API.chatLog("Better Luck Next Time."); //you loose msg
 	}
   }
 }
@@ -102,7 +102,7 @@ API.on(API.CHAT_COMMAND,slotmachine)
 API.on(API.CHAT_COMMAND,kawaiipic) */
 
 function fiteuser(command) { //Function fite user kekeke
-	if (command.split(' ') [0] === '!fight' ) { //if the command is /fite do below
+	if (command.split(' ') [0] === '/fight' ) { //if the command is /fite do below
 	targetUser6 = command.slice(6,355); //Targeted user
 	var outcomes = [currentUsername  + " passes out before the fight starts.",targetUser6 + " gets stabbed and dies.",targetUser6 + " ascends to heaven.","Both get knocked out.",currentUsername + " runs at " + targetUser6 + ", but trips and hits head.",targetUser6 + " is unconscious.",currentUsername + " Swings at " + targetUser6 + ", but accidentally hits @donvoo",targetUser6 + " Wins!",currentUsername + " Wins!"];
 	var outcome = outcomes[Math.floor(Math.random()*outcomes.length)];
