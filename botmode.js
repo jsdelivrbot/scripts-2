@@ -45,7 +45,7 @@ function AfkMessage(command) { //the function to change the afk message
     if (command.split(' ')[0] === '/afk') { //if the command is /afk
         isAFK = true; //you are now afk
         afkReason = command.slice(5,255); //set the afk reason
-	API.sendChat('@ ' + afkReason); //sends in chat announcement about AFK with set reason
+	API.sendChat('[AFK] ' + afkReason); //sends in chat announcement about AFK with set reason
 		// alert('|PH| When you are no longer AFK please disable AFK mode by typing /back'); //Alerts user to turn off AFK mode
 	}
 	if (command.split(' ')[0] === '/back') {	//When you are back and no longer AFK must type /back
