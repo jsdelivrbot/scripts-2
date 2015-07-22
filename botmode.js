@@ -75,17 +75,17 @@ function listcmds(command) { //Function for listing cmds
 API.on(API.CHAT_COMMAND,listcmds)
 
 function slotmachine(command) { //Function Play slot machine with urself
-	if (command.split(' ') [0] === '/slots') { //activates slot machine when /slot in chat
+	if(data.message.indexOf('!slots') === 0){
 		var slotItem = [":cherries:",":pineapple:",":apple:",":gift:",":pear:",":banana:",":watermelon:"]; //Items listed in slotmachine
 		var slot1 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot1
 		var slot2 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot2
 		var slot3 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot3
-			API.chatLog(slot1 + " | " + slot2 + " | " + slot3); //Prints out result
+			API.sendChat(slot1 + " | " + slot2 + " | " + slot3); //Prints out result
 		if (slot1 === slot2){
-			API.chatLog("!!You Win!!"); //you win msg
+			API.sendChat("Winner!!");}, 5000); //you win msg
 		}
 		else {
-			API.chatLog("Better Luck Next Time."); //you loose msg
+			API.sendChat("Better Luck Next Time.");}, 5000); //you loose msg
 	}
   }
 }
