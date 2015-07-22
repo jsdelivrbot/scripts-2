@@ -1,5 +1,3 @@
-//Potato-Helper
-//Plug.dj Chat Utility Script. Fun and useful commands for chat.
 /*=====================================*/
 API.sendChat('[Bot Mode Activated]');
 var currentUsername = '@' + API.getUser().username; //the @name of the person who runs the script
@@ -7,8 +5,8 @@ var afkReason = 'I am AFK right now!'; //standard afk reason
 var isAFK = false; //you are standard not afk
 var respondRCS = false; //responder for RCS
 var cmdRun = true; //for cooldown function
-var MaxMeh = 7;
-var MinMeh = 10;
+var MaxMeh = 8;
+var MinMeh = 5;
 var AFKcooldown = true;
 
 function cooldown() { //Cooldown cmds for 5s
