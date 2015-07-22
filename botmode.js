@@ -80,12 +80,12 @@ function slotmachine(command) { //Function Play slot machine with urself
 		var slot1 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot1
 		var slot2 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot2
 		var slot3 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot3
-			API.sendChat(slot1 + " | " + slot2 + " | " + slot3); //Prints out result
+			API.chatLog(slot1 + " | " + slot2 + " | " + slot3); //Prints out result
 		if (slot1 === slot2){
-			setTimeout(function(){API.sendChat("Winner!!");}, 5000); //you win msg
+			setTimeout(function(){API.chatLog("Winner!!");}, 5000); //you win msg
 		}
 		else {
-			setTimeout(function(){API.sendChat("Better Luck Next Time.");}, 5000); //you loose msg
+			setTimeout(function(){API.chatLog("Better Luck Next Time.");}, 5000); //you loose msg
 	}
   }
 }
@@ -120,7 +120,7 @@ if (command.split(' ') [0] === '/mms' ) { //if the command is /mms do below
 API.on(API.CHAT_COMMAND,mms)
 
 function mehrule(command) { //Meh mute shush function
-if (command.split(' ') [0] === '/mehrules' ) { //if the command is /mms do below
+if (command.split(' ') [0] === '/stats' ) { //if the command is /mms do below
 var UserCount = API.getUsers().length; //user count in room
 targetUser9 = ("[" + command.slice(9,355) + "]"); //Targeted user
 var MehCalc = Math.floor((UserCount - 100) / 10);
