@@ -82,10 +82,10 @@ function slotmachine(command) { //Function Play slot machine with urself
 		var slot3 = slotItem[Math.floor(Math.random()*slotItem.length)]; //Selects slot3
 			API.sendChat(slot1 + " | " + slot2 + " | " + slot3); //Prints out result
 		if (slot1 === slot2){
-			API.sendChat("Winner!!");}, 5000); //you win msg
+			setTimeout(function(){API.sendChat("Winner!!");}, 5000); //you win msg
 		}
 		else {
-			API.sendChat("Better Luck Next Time.");}, 5000); //you loose msg
+			setTimeout(function(){API.sendChat("Better Luck Next Time.");}, 5000); //you loose msg
 	}
   }
 }
