@@ -11,7 +11,7 @@ var AFKcooldown = true;
 
 function cooldown() { //Cooldown cmds for 5s
  cmdRun = false;
-  setTimeout(function(){cmdRun = true},5000); //timeout cmd - sets after 5000ms cmdRun to true
+  setTimeout(function(){cmdRun = true},3000); //timeout cmd - sets after 5000ms cmdRun to true
  }
  
  function mehrulecalc() { //Calculates the needed mehs for a skip
@@ -45,11 +45,11 @@ function AfkMessage(command) { //the function to change the afk message
     if (command.split(' ')[0] === '/afk') { //if the command is /afk
         isAFK = true; //you are now afk
         afkReason = command.slice(5,255); //set the afk reason
-	API.sendChat('[AFK] ' + afkReason); //sends in chat announcement about AFK with set reason
+	API.chatLog('[AFK] ' + afkReason); //sends in chat announcement about AFK with set reason
 		// alert('|PH| When you are no longer AFK please disable AFK mode by typing /back'); //Alerts user to turn off AFK mode
 	}
 	if (command.split(' ')[0] === '/back') {	//When you are back and no longer AFK must type /back
-	    API.sendChat('AFK mode disabled.');
+	    API.chatLog('AFK mode disabled.');
 		isAFK = false; //you are now no longer afk
 	}
 }
