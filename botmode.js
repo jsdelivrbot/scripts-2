@@ -1,5 +1,4 @@
-/*=====================================*/
-API.sendChat('[Bot Mode Activated]');
+API.chatLog('[Bot Mode Activated]');
 var currentUsername = '@' + API.getUser().username; //the @name of the person who runs the script
 var afkReason = 'I am AFK right now!'; //standard afk reason
 var isAFK = false; //you are standard not afk
