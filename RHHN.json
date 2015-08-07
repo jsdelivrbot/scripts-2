@@ -1,7 +1,7 @@
 {
     "author": "King Chase",
     "colors": {
-        "background": "https://goo.gl/XZzREb",
+        "background": "",
         "chat": {
             "ambassador": "#84B423",
              "bouncer": "#1394d6",
@@ -97,7 +97,7 @@
         }
     },
     "images": {
-        "background": "https://goo.gl/XZzREb",
+        "background": "",
         "booth": "",
         "icons": {
             "bouncer": "http://i.imgur.com/Axqvila.png",
