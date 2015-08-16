@@ -390,41 +390,11 @@
 	font-weight: bold;
 	color: #FFF;
 }
-.pop-menu.grab, .pop-menu.grab .bar {
-	border-radius: 20px 20px 0 0;
-	background: transparent;
-}
-.pop-menu.grab .bar {
-	background: linear-gradient(hsla(260,50%,50%,0.8), hsla(260,50%,30%,0.8));
-}
-.pop-menu.grab .bar-divider {
-	background: linear-gradient(hsla(0,0%,90%,0.8), hsla(0,0%,60%,0.8));
-}
-.pop-menu.grab .menu ul {
-	background: hsla(260,10%,7%,0.8);
-}
-.pop-menu.grab .menu ul i + span {
-	font-weight: bold;
-}
-.pop-menu.grab .menu ul li:hover {
-	background: linear-gradient(hsla(260,50%,50%,0.2), hsla(260,50%,30%,0.2));;
-}
-.pop-menu.grab .menu ul .create:hover {
-	background: linear-gradient(hsl(260,40%,50%), hsl(260,40%,30%));
-}
-.pop-menu.grab .menu::-webkit-scrollbar {
-	background: hsl(260,10%,20%) !important;
-	box-shadow: inset 0 0 10px #000;
-	width: 10px;
-}
-.pop-menu.grab .menu::-webkit-scrollbar-thumb {
-	background: linear-gradient(to right, hsl(260,40%,60%), hsl(260,40%,40%));
-	box-shadow: inset 0 0 5px hsla(0,0%,100%,0.3);
-}
 #woot {
 	border-radius: 30px 0 0 30px;
 	background: linear-gradient(135deg, hsla(0,0%,50%,0.3), hsla(0,0%,30%,0.3)) !important;
 	box-shadow: inset 0 0 10px hsl(0,0%,40%) !important;
+	background: url('http://i.imgur.com/5eU6OHQ.png');
 }
 #woot.selected, #woot-rs .title {
 	background: linear-gradient(135deg, hsla(90,80%,50%,0.8), hsla(90,80%,30%,0.8)) !important;
@@ -433,6 +403,7 @@
 #grab {
 	background: linear-gradient(hsla(0,0%,50%,0.3), hsla(0,0%,30%,0.3)) !important;
 	box-shadow: inset 0 0 10px hsl(0,0%,40%) !important;
+	background: url('http://i.imgur.com/9DCOayJ.png');
 }
 #grab.selected, #grab-rs .title {
 	background: linear-gradient(hsla(270,70%,50%,0.8), hsla(265,70%,30%,0.8)) !important;
@@ -443,6 +414,7 @@
 	box-shadow: inset 0 0 10px hsl(0,0%,40%) !important;
 	border-radius: 0 30px 30px 0;
 	margin-right: 0 !important;
+	background: url('http://i.imgur.com/3uSXauE.png');
 }
 #meh.selected, #meh-rs .title {
 	background: linear-gradient(225deg, hsla(5,80%,50%,0.8), hsla(0,80%,40%,0.8)) !important;
@@ -972,15 +944,6 @@
 }
 #dialog-user-role .button.cancel span {
 	color: hsl(15,80%,50%);
-}
-#woot i {
-  background: url('http://i.imgur.com/5eU6OHQ.png'); 
-}
-#meh i {
-  background: url('http://i.imgur.com/3uSXauE.png');
-}
-#grab i {
-  background: url('http://i.imgur.com/9DCOayJ.png');
 }
 [data-cid^="3741010-"] .msg .from .un {
     position: relative;
