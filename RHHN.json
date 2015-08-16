@@ -17,7 +17,7 @@
     "css": {
         "font": [
         ],
-        "import": ["https://rawgit.com/WiBla/Script/master/ressources/blue.css"],
+        "import": ["https://rawgit.com/Narutko/ChilloutMusic-CZ/master/Style.css"],
         "rule": {
             "#chat .mention": {
                 "border": "1px solid #ac76ff",
