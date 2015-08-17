@@ -109,8 +109,13 @@
         "playback-container": ""
     },
     "rules": {
-        "allowAutorespond": "false",
-        "allowAutowoot": "true",
-        "allowAutojoin": "false"
+        "allowAutorespond": false,
+        "allowAutowoot": true,
+        "allowAutojoin": false,
+        "allowAutograb": true,
+        "allowSmartVote": true,
+        "allowEmotes": true,
+        "allowShowingMehs": true,
+        "forceSmartVote": true
     }
 }
