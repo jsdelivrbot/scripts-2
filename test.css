@@ -954,7 +954,13 @@
     background-position: 2px center;
     background-size: 15px auto
 }
-.experience .xp .bar .progress {
-  background: rgba(16, 255, 0, 0.64);
+[data-cid^="4778795-"] .msg .from .un {
+    position: relative;
+    left:-5px;
+    padding-left:21px;
+    background-image: url(http://i.imgur.com/KP6zPcq.gif);
+    background-repeat: no-repeat;
+    background-position: 2px center;
+    background-size: 15px auto
 }
 
