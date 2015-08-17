@@ -954,4 +954,7 @@
     background-position: 2px center;
     background-size: 15px auto
 }
+.experience .xp .bar .progress {
+  background: rgba(16, 255, 0, 0.64);
+}
 
