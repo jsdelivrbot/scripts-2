@@ -4,11 +4,11 @@
         "background": "",
         "chat": {
             "ambassador": "",
-             "bouncer": "",
-             "cohost": "",
-             "residentdj": "",
-             "manager": "",
-             "host": "",
+             "bouncer": "#01e1FF",
+             "cohost": "#FF3558",
+             "residentdj": "#89BE6C",
+             "manager": "#0191FF",
+             "host": "#FF3558",
              "message": ""
         },
         "footer": "",
