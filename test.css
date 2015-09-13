@@ -36,12 +36,6 @@
  height: 235px;
  overflow-y: hidden;
 }
-.icon {
- background-image: url('http://i.imgur.com/TUOb7Ph.png');
-}
-#room-bar .icon-room {
- background: url(http://i.imgur.com/vYsAN16.png);
-}
 .experience .xp .bar .progress {
  background: #FF3558;
  border-radius: 1px 2pc;
@@ -311,92 +305,6 @@ body {
 #user-friends .search,
 #filter-bar {
  border: 2px solid #FF3558;
-}
- 
-/*  HOST */
- 
-#user-panel:not(.is-none) .user > .icon-chat-host + .name,#user-lists .user > .icon-chat-host + .name,.message.from-host > .from,.emote.from-host > .from,.mention.from-host > .from {
-    color: #FF3558 !important;
-}
- 
-.icon-chat-host ~ .text > .name,.icon-chat-host ~ .from,.icon-chat-host ~ span {
-    color: #FF3558 !important;
-}
- 
-#user-lists .group.host ~ .user {
-    color: #FF3558 !important;
-}
- 
-.icon-chat-host, .message.from-host > .icon,.emote.from-host > .icon, .mention.from-host > .icon {             
-    background-image: url('http://i.imgur.com/S86mGbO.png') !important;        
-    background-position: center;               
-}
- 
-/*  CO-HOST */
- 
-#chat-messages:not(.is-none) .user > .icon-chat-cohost + .name,#user-lists .user > .icon-chat-cohost + .name,.message.from-cohost > .from,.emote.from-cohost > .from,.mention.from-cohost > .from {
-    color: #FF3558 !important;
-}
- 
-.icon-chat-cohost ~ .text > .name,.icon-chat-cohost ~ .from,.icon-chat-cohost ~ span {
-    color: #FF3558 !important;
-}
- 
-.icon-chat-cohost, .message.from-cohost > .icon,.emote.from-cohost > .icon, .mention.from-cohost > .icon {             
-    background-image: url('http://i.imgur.com/S86mGbO.png') !important;        
-    background-position: center;               
-}
- 
-/*  Manager */
- 
-.icon-chat-manager ~ .text > .name,.icon-chat-manager ~ .from,.icon-chat-manager ~ span {
-    color: #0191FF  !important;
-}
- 
-#user-panel:not(.is-none) .user > .icon-chat-manager + .name,#user-lists .user > .icon-chat-manager + .name,.message.from-manager > .from,.emote.from-manager > .from,.mention.from-manager > .from {
-    color: #0191FF !important;
-}
- 
-#user-lists .group.manager ~ .user {
-    color: #0191FF !important;
-}
-.icon-chat-manager, .message.from-manager > .icon,.emote.from-manager > .icon, .mention.from-manager > .icon {         
-    background-image: url('http://i.imgur.com/BLUumpN.png') !important;        
-    background-position: center;
-}
- 
-/*  Bouncer */
- 
-#user-panel:not(.is-none) .user > .icon-chat-bouncer + .name,#user-lists .user > .icon-chat-bouncer + .name,.message.from-bouncer > .from,.emote.from-bouncer > .from,.mention.from-bouncer > .from {
-    color: #01e1FF !important;
-}
- 
-.icon-chat-bouncer,.message.from-bouncer > .icon,.emote.from-bouncer > .icon,.mention.from-bouncer > .icon {
-    background-image: url("http://i.imgur.com/FLd64pr.png") !important;
-    background-position: 0 0;
-}
- 
-.icon-chat-bouncer ~ .text > .name,.icon-chat-bouncer ~ .from,.icon-chat-bouncer ~ span {
-    color: #01e1FF !important;
-}
- 
-#user-lists .group.bouncer ~ .user {
-    color: #01e1FF !important;
-}
- 
-/* RDJ */
- 
-#user-panel:not(.is-none) .user > .icon-chat-dj + .name,#user-lists .user > .icon-chat-dj + .name,.message.from-residentdj > .from,.emote.from-residentdj > .from,.mention.from-residentdj > .from {
-    color: #89BE6C !important;
-}
- 
-.icon-chat-dj,.message.from-residentdj > .icon,.emote.from-residentdj > .icon,.mention.from-residentdj > .icon {
-    background-image: url("http://i.imgur.com/rTvidsL.png") !important;
-    background-position: 0 0;
-}
- 
-.icon-chat-dj ~ .text > .name,.icon-chat-dj ~ .from,.icon-chat-dj ~ span {
-    color: #89BE6C !important;
 }
 
 #search-menu .menu ul  i, #search-menu-icon {
