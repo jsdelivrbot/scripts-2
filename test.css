@@ -23,6 +23,113 @@
             "residentdj": "http://i.imgur.com/YPEJMkf.png" 
 }*/
 /*--[PLUG]--*/
+.icon {
+ background-image: url('http://i.imgur.com/TUOb7Ph.png');
+}
+#chat .message:nth-child(2n+1)
+#chat .mention:nth-child(2n+1)
+#chat .skip:nth-child(2n+1)
+#chat .moderation:nth-child(2n+1)
+#chat .emote:nth-child(2n+1)
+#chat .update:nth-child(2n+1)
+#chat .welcome:nth-child(2n+1) {
+ background-color: rgba(17 19 23 0.32);
+ -webkit-animation: fadein 0.25s;
+ -moz-animation: fadein 0.25s;
+ -ms-animation: fadein 0.25s;
+ -o-animation: fadein 0.25s;
+ animation: fadein 0.25s;
+ animation: fadein 0.25s;
+ background-color: #111317;
+ border-radius: 0px;
+ background-color: rgba(17 19 23 0.5);
+}
+#chat #chat-input {
+ background: rgba(80 80 80 0.25);
+}
+#chat .emote
+#chat .mention
+#chat .message
+#chat .moderation
+#chat .skip
+#chat .system
+#chat .update
+#chat .welcome {
+ -webkit-animation: fadein 0.25s;
+ -moz-animation: fadein 0.25s;
+ -ms-animation: fadein 0.25s;
+ -o-animation: fadein 0.25s;
+ animation: fadein 0.25s;
+}
+#chat .message:hover
+#chat .emote:hover
+#chat .update:hover {
+ -moz-transition: 100ms linear 50ms;
+ -o-transition: 100ms linear 50ms;
+ -webkit-transition: 100ms linear 50ms;
+ border-left: #FFFFFF 1px solid;
+ padding-left: 1px;
+ text-decoration: none;
+ transition: 100ms linear 50ms;
+}
+#chat .moderation:hover {
+ -moz-transition: 100ms linear 50ms;
+ -o-transition: 100ms linear 50ms;
+ -webkit-transition: 100ms linear 50ms;
+ border-left: #FF7676 1px solid;
+ padding-left: 1px;
+ text-decoration: none;
+ transition: 100ms linear 50ms;
+}
+#chat .message:nth-child(2n+1)
+#chat .mention:nth-child(2n+1)
+#chat .skip:nth-child(2n+1)
+#chat .moderation:nth-child(2n+1)
+#chat .emote:nth-child(2n+1)
+#chat .update:nth-child(2n+1)
+#chat .welcome:nth-child(2n+1) {
+ background-color: rgba(17 19 23 1.0);
+ -webkit-animation: fadein 0.25s;
+ -moz-animation: fadein 0.25s;
+ -ms-animation: fadein 0.25s;
+ -o-animation: fadein 0.25s;
+ animation: fadein 0.25s;
+}
+@keyframes fadein {
+ from {
+ opacity: 0;
+}
+to {
+ opacity: 1;
+}
+@-moz-keyframes fadein {
+ from {
+ opacity: 0;
+}
+to {
+ opacity: 1;
+}
+@-webkit-keyframes fadein {
+ from {
+ opacity: 0;
+}
+to {
+ opacity: 1;
+}
+@-ms-keyframes fadein {
+ from {
+ opacity: 0;}
+ to {
+ opacity: 1;
+}
+@-o-keyframes fadein {
+ from {
+ opacity: 0;
+}
+to {
+ opacity: 1;
+}
+/*end*/
 #room-settings a:hover, #chat a:hover {
 	color: hsl(200,100%,55%) !important;
 	text-shadow: 0 0 5px;
