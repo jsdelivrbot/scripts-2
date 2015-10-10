@@ -127,10 +127,10 @@ if (typeof trackbot !== "undefined") {
 						<div class="activity-row">\
 							<div class="text"><p><a href="#" class="username">[FCS] </a>'+msg+'</p></div>\
 							<div class="meta-info">\
-								<span class="username">Chase </span>\
+								<span class="username">WiBla </span>\
 								<i class="icon-dot"></i>\
 								<span class="timeinfo">\
-									<time class="timeago" datetime="undefined" title="Creator\'s website"><a target="_blank"href="null">null/a></time>\
+									<time class="timeago" datetime="undefined" title="Creator\'s website"><a target="_blank"href="http://wibla.free.fr/FCS/">http://wibla.free.fr</a></time>\
 								</span>\
 							</div>\
 						</div>\
