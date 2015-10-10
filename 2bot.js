@@ -100,23 +100,7 @@ if (typeof trackbot !== "undefined") {
 					},
 				});
 			}
-		},
-		"chatLog": function(msg, type) {
-			if (typeof type === "undefined" || typeof msg !== "string") return;
-			switch(type) {
-				case "info":
-					msg = '<img class="emoji" src="https://mediadubtrackfm.s3.amazonaws.com/assets/emoji/images/emoji/information_source.png" title=":information_source:" alt=":information_source:" align="absmiddle"></img> ' + msg;
-				break;
-				case "warn":
-					msg = '<img class="emoji" src="https://mediadubtrackfm.s3.amazonaws.com/assets/emoji/images/emoji/warning.png" title=":warning:" alt=":warning:" align="absmiddle"></img> ' + msg;
-				break;
-				case "error":
-					msg = '<img class="emoji" src="https://mediadubtrackfm.s3.amazonaws.com/assets/emoji/images/emoji/bangbang.png" title=":bangbang:" alt=":bangbang:" align="absmiddle"></img> ' + msg;
-				break;
-				case "broadcast":
-					msg = "" + msg;
-				break;
-			}
+		}
 			$("#chat .chat-container .chat-main").append($(
 				'<li class="fcs-'+type+' user-55ffc26f1564a403003f527e">\
 					<div class="stream-item-content">\
