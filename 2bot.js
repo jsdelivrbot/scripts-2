@@ -87,7 +87,7 @@ if (typeof trackbot !== "undefined") {
 				}
 			}
 		},
-	if (!localStorage.getItem("trackbot")) {
+	if (localStorage.getItem("trackbot")) {
 		localStorage.setItem("trackbot", JSON.stringify(trackbot.defaultSettings));
 	} else {
 		// si LS.length != defaultSettings.length
