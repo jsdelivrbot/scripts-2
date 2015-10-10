@@ -117,7 +117,7 @@ if (typeof trackbot !== "undefined") {
 					msg = "" + msg;
 				break;
 			}
-			/*$("#chat .chat-container .chat-main").append($(
+			$("#chat .chat-container .chat-main").append($(
 				'<li class="fcs-'+type+' user-55ffc26f1564a403003f527e">\
 					<div class="stream-item-content">\
 						<div class="chatDelete" onclick="$(this).closest(\'li\').remove();"><span class="icon-close"></span></div>\
@@ -127,17 +127,17 @@ if (typeof trackbot !== "undefined") {
 						<div class="activity-row">\
 							<div class="text"><p><a href="#" class="username">[FCS] </a>'+msg+'</p></div>\
 							<div class="meta-info">\
-								<span class="username">WiBla </span>\
+								<span class="username">Chase </span>\
 								<i class="icon-dot"></i>\
 								<span class="timeinfo">\
-									<time class="timeago" datetime="undefined" title="Creator\'s website"><a target="_blank"href="http://wibla.free.fr/FCS/">http://wibla.free.fr</a></time>\
+									<time class="timeago" datetime="undefined" title="Creator\'s website"><a target="_blank"href="null">null/a></time>\
 								</span>\
 							</div>\
 						</div>\
 					</div>\
 				</li>'));
 		}
-	};*/
+	};
 	if (!localStorage.getItem("trackbot")) {
 		localStorage.setItem("trackbot", JSON.stringify(trackbot.defaultSettings));
 	} else {
