@@ -1134,7 +1134,7 @@ var sweetbot = {
         },
         status: {
             f: function (e, t) {
-                var n = "EDT ChatBot " + sweetbot.version + " | AFK Remover: ";
+                var n = "ChaseBot " + sweetbot.version + " | AFK Remover: ";
                 n += sweetbot.settings.a.afkRemoval ? ' Enabled | AFKs Removed: ' : ' Disabled | AFK Removed: '
                 n += sweetbot.stats.afk + " | AFK Limit: " + sweetbot.settings.a.afkLimit + " | ForceWoot: ";
                 n += sweetbot.settings.a.forceWoot ? ' Enabled' : ' Disabled';
@@ -1145,7 +1145,7 @@ var sweetbot = {
         },
         sessionstats: {
             f: function (e, t) {
-                var n = "MÃƒÂºsicas: " + sweetbot.stats.songCounter + " | Woots: " + sweetbot.stats.woots + " | Mehs: " + sweetbot.stats.mehs + " | Grabs: " + sweetbot.stats.grabs + " | Loterias finalizadas " + sweetbot.stats.lot;
+                var n = "Last Play: " + sweetbot.stats.songCounter + " | Woots: " + sweetbot.stats.woots + " | Mehs: " + sweetbot.stats.mehs + " | Grabs: " + sweetbot.stats.grabs + " | Loterias finalizadas " + sweetbot.stats.lot;
                 sweetbot.sendMsg("[" + t.un + "] " + n)
             },
             r: 2
@@ -1178,7 +1178,7 @@ var sweetbot = {
                 if (isNaN(n)) sweetbot.sendMsg("Error. (NaN)");
                 else if (Date.now() - sweetbot.stats.launchTime < 1e3 * 60 * n) {
                     for (i in sweetbot.userData) if (sweetbot.userData[i].chatted)++r;
-                    sweetbot.sendMsg("[" + t.un + "] " + r + " User were active in chat since when EDT ChatBot started.")
+                    sweetbot.sendMsg("[" + t.un + "] " + r + " User were active in chat since botstarted.")
                 } else {
                     for (i in sweetbot.userData) if (Date.now() - sweetbot.userData[i].afk.time < 1e3 * 60 * n && sweetbot.userData[i].chatted)++r;
                     sweetbot.sendMsg("[" + t.un + "] " + r + " User were active in chat since the last " + n + " minutes.")
@@ -1304,7 +1304,7 @@ var sweetbot = {
         },
         theme: {
             f: function (e, t) {
-                var n = " Any kind of good EDM! Qualquer tipo de música eletrônica boa! ";
+                var n = "Anything HipHop/Rap! ";
                 for (var r = 1; r < e.length; r++) n += e[r] + " ";
                 sweetbot.sendMsg("[" + t.un + "] " + n)
             },
@@ -1334,13 +1334,13 @@ var sweetbot = {
         },
      yt: {
             f: function (e, t) {
-                sweetbot.sendMsg('[' + t.un + '] Subscribe at our Channel !  http://bit.ly/EDT-Youtube ')
+                // sweetbot.sendMsg('[' + t.un + '] N/A ')
             },
             r: 1
         },
      blacklist: {
             f: function (e, t) {
-                sweetbot.sendMsg('[' + t.un + '] Blacklist songs / Músicas banidas : ')
+                sweetbot.sendMsg('[' + t.un + '] Blacklist songs: ')
             },
             r: 1
         },
@@ -1354,8 +1354,8 @@ var sweetbot = {
         },
         commands: {
             f: function (e, t) {
-                if (API.getUser(t.uid).role > 1) var n = "EDT ChatBot Commands: http://bit.ly/EDT-Commands";
-                else var n = "EDT ChatBot Commands: http://bit.ly/EDT-Commands  ";
+                if (API.getUser(t.uid).role > 1) var n = "Bot Commands: Coming soon!";
+                else var n = "Bot Commands: Coming soon!  ";
                 for (var r = 1; r < e.length; r++) n += e[r] + " ";
                 sweetbot.sendMsg("[" + t.un + "] " + n)
             },
@@ -1363,13 +1363,13 @@ var sweetbot = {
         },
         ping: {
             f: function (e, t) {
-                sweetbot.sendMsg("[" + t.un + "] Pong!")
+                sweetbot.sendMsg("[" + t.un + "] Pong bitch!")
             },
             r: 1
         },
          pong: {
             f: function (e, t) {
-                sweetbot.sendMsg("[" + t.un + "] Ping!")
+                sweetbot.sendMsg("[" + t.un + "] Ping bitch!")
             },
             r: 1
         },
@@ -1387,7 +1387,7 @@ var sweetbot = {
         },
         changelog: {
             f: function (e, t) {
-                var n = "EDT ChatBot changelog:";
+                var n = "Bot changelog:";
                 for (var r = 1; r < e.length; r++) n += e[r] + " ";
                 sweetbot.sendMsg("[" + t.un + "] " + n)
             },
@@ -1395,7 +1395,7 @@ var sweetbot = {
         },
         site: {
             f: function (e, t) {
-                sweetbot.sendMsg("[" + t.un + "] Visit our site and stay on top of news! http://bit.ly/EDT-Blog ")
+              //  sweetbot.sendMsg("[" + t.un + "] N/A ")
             },
             r: 1
         },
@@ -1431,7 +1431,7 @@ var sweetbot = {
         },
     edtwoot: {
             f: function (e, t) {
-                sweetbot.sendMsg("[" + t.un + "] We Recommend IgorPlugWoot! https://github.com/9Igorce/IgorPlugWoot")
+                sweetbot.sendMsg("[" + t.un + "] This room uses PlugCubed: https://plugcubed.net/")
             },
             r: 0
         },
@@ -1449,7 +1449,7 @@ var sweetbot = {
         },
     fb: {
             f: function (e, t) {
-                var n = " Join at our Facebook Group! http://bit.ly/EDT-Group ";
+                var n = " N/A ";
                 for (var r = 1; r < e.length; r++) n += e[r] + " ";
                 sweetbot.sendMsg("[" + t.un + "] " + n)
             },
@@ -1471,9 +1471,9 @@ var sweetbot = {
         msg: {
             f: function (e, t) {
                 var n = API.getUser(sweetbot.getUserByName(e[1].substr(1)));
-                if (!n) sweetbot.sendMsg("[" + t.un + "] Usuario not Found!");
+                if (!n) sweetbot.sendMsg("[" + t.un + "] User not Found!");
                 else if (sweetbot.userData[n.id].inbox.msg.length) sweetbot.sendMsg("[" + t.un + "] ");
-                else if (Date.now() - sweetbot.userData[n.id].afk.time < 1e3 * 60 * 10) sweetbot.sendMsg("[" + t.un + "] Esse usuario nao está tanto tempo AFK!");
+                else if (Date.now() - sweetbot.userData[n.id].afk.time < 1e3 * 60 * 10) sweetbot.sendMsg("[" + t.un + "] AFK!");
                 else {
                     sweetbot.userData[n.id].inbox.msg = e.slice(2).join(" ");
                     sweetbot.userData[n.id].inbox.un = t.un;
@@ -1510,19 +1510,19 @@ var sweetbot = {
                         sweetbot.vars.lotWinners.length = 0;
                         ++sweetbot.stats.lot;
                         if (API.getWaitListPosition(t.uid) != undefined) {
-                            API.moderateMoveDJ(t.uid, 5)
+                            API.moderateMoveDJ(t.uid, 1)
                         } else if (API.getWaitList().length < 50) {
                             API.moderateAddDJ(t.uid);
                             setTimeout(function () {
-                                API.moderateMoveDJ(t.uid, 5)
+                                API.moderateMoveDJ(t.uid, 1)
                             }, 1500)
                         } else {
                             API.moderateLockWaitList(true);
                             sweetbot.addToWL.push({
                                 id: t.uid,
-                                pos: 5
+                                pos: 1
                             });
-                            sweetbot.sendMsg("[" + t.un + "] Moving the lottery winner to the position 5. Queue: " + sweetbot.addToWL.length)
+                            sweetbot.sendMsg("[" + t.un + "] Moving the lottery winner to the position 1. Queue: " + sweetbot.addToWL.length)
                         }
                     }
                     sweetbot.lastWinner = t.un;
@@ -1532,7 +1532,7 @@ var sweetbot = {
         },
         lotwinner: {
             f: function(e, t) {
-                sweetbot.sendMsg('[' + t.un + '] The last lottery winner was: @' + sweetbot.lastWinner + ' !');
+                sweetbot.sendMsg('[' + t.un + '] The last lottery winner was: @' + sweetbot.lastWinner + '!');
             },
             r: 2
         },
@@ -1685,7 +1685,7 @@ var sweetbot = {
         },       
         op: {
             f: function(e, t){
-                sweetbot.sendMsg('[' + t.un + '] Overplayed songs / Músicas OP:  ');
+                // sweetbot.sendMsg('[' + t.un + '] Overplayed songs:  ');
             },
             r: 0
         },
