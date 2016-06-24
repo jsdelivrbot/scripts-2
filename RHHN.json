@@ -39,7 +39,7 @@
 		  "font-weight":"900"
 		  },
 		  "#room-host": {
-		  "color":"#00CCFF",
+		  "color":"",
 		  "font-weight":"bold"
 		  },
 		  
