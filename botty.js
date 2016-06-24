@@ -1,6 +1,6 @@
 if (sweetbot) sweetbot.shutdown();
 var sweetbot = {
-	admins: [3455675],
+	admins: [3741010],
     lotWinner: null,
     settings: {
         a: {
@@ -585,8 +585,8 @@ var sweetbot = {
         },
         startlottery: {
             f: function(e, t) {
-                sweetbot.sendMsg('[' + t.un + '] Lottery will start in 5 minutes!');
-                setTimeout(sweetbot.boostLottery, 300000);
+                sweetbot.sendMsg('[' + t.un + '] Lottery will start in 30 seconds!');
+                setTimeout(sweetbot.boostLottery, 30000);
             },
             r: 3
         },
