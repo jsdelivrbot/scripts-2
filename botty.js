@@ -117,7 +117,7 @@ var sweetbot = {
         sweetbot.eventChat({ message: stripLink(a.message), un: a.un, uid: a.uid, timestamp: a.timestamp, cid: a.cid, type: a.type }) 
     },
     startup: function () {
-	    if(API.getUser().role >= 3) {
+	    if(API.getUser().role >= 1) {
         this.proxy = {
             eventJoin: $.proxy(this.eventJoin, this),
             eventLeave: $.proxy(this.eventLeave, this),
