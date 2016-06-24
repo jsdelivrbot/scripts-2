@@ -8,7 +8,7 @@
              "cohost": "#8b35ff",
              "residentdj": "#ffffff",
              "manager": "#0191ff",
-             "host": "#ff7835",
+             "host": "#8b35ff",
              "message": ""
         },
         "footer": "",
@@ -108,7 +108,7 @@
         "icons": {
             "bouncer": "http://i.imgur.com/zN9ESWf.png",
              "cohost": "http://i.imgur.com/bwE8dJa.png",
-             "host": "http://i.imgur.com/ROgJTto.png",
+             "host": "http://i.imgur.com/bwE8dJa.png",
              "manager": "http://i.imgur.com/UmSnjJo.png",
              "residentdj": "http://i.imgur.com/Ixji7FC.png"
         },
