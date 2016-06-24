@@ -73,10 +73,13 @@
                 "background": "url('http://i.imgur.com/Z4KGhdW.gif') !important"
             },
             ".cm[data-cid^=\"4537457\"] .bdg": {
-                "background": "url('http://i.imgur.com/ZzAEPGo.jpg') !important"
+                "background": "url('http://i.imgur.com/70DPpvo.gif') !important"
             },
             ".cm[data-cid^=\"5018901\"] .bdg": {
                 "background": "url('http://i.imgur.com/I21blt2.gif') !important"
+            },
+            ".cm[data-cid^=\"5910561\"] .bdg": {
+                "background": "url('http://i.imgur.com/WLpdVlK.png') !important"
             },
             ".cm[data-cid^=\"5154342\"] .bdg": {
                 "background": "url('http://i.imgur.com/E3H5lMU.gif') !important"
