@@ -5,10 +5,10 @@
         "chat": {
             "ambassador": "",
              "bouncer": "#40e300",
-             "cohost": "#8b35ff",
+             "cohost": "",
              "residentdj": "#ffffff",
              "manager": "#0191ff",
-             "host": "#8b35ff",
+             "host": "",
              "message": ""
         },
         "footer": "",
@@ -107,8 +107,8 @@
         "booth": "",
         "icons": {
             "bouncer": "http://i.imgur.com/zN9ESWf.png",
-             "cohost": "http://i.imgur.com/bwE8dJa.png",
-             "host": "http://i.imgur.com/bwE8dJa.png",
+             "cohost": "",
+             "host": "",
              "manager": "http://i.imgur.com/UmSnjJo.png",
              "residentdj": "http://i.imgur.com/Ixji7FC.png"
         },
