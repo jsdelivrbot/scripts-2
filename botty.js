@@ -2142,7 +2142,7 @@ var sweetbot = {
             sweetbot.vars.lotWinners.push(r.id);
             sweetbot.vars.lotWinner = r.id;
             sweetbot.timeouts.lotSelect = setTimeout(sweetbot.boostLottery, 1e3 * 120);
-            API.sendChat("@" + r.username + ' You won the lottery! Before two minutes, type !lottery to be moved to position 5. If not, will be raffled another User.');
+            API.sendChat("@" + r.username + ' You won the lottery! Before two minutes, type !lottery to be moved to position 1. If not, your position will be raffled to another user!');
         } else sweetbot.sendMsg("Unfortunately, nobody was allowed to win the lottery! (Or something bad happened!) Will be drawn a new winner, so be active in chat!")
     },
     newUser: function (e) {
