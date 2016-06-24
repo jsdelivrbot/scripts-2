@@ -2324,7 +2324,7 @@ var sweetbot = {
 			}
 		}
 	},
-    motd: ["Make sure the music you will play has not been played! (You can go to the historic played songs)", " Join our group on facebook! http://bit.ly/EDT-Group ", " Be Welcome to EDT! Help new users and enjoy! <3 ", " If you have disconnected yourself and lost your place in line, you can use the !dc to be added to his former position.", " If you are with lag, try typing /cap 1 in the chat, reduces the number of avatars to 1 /cap 200 makes return to normal.", " Be active in chat for a chance to win the position 5 in the lottery! ", " Use the command !eta to know the approximate time to get your turn to be the DJ! ", "If you have any questions, do not be shy to ask the staff! we are here to help you! ", 'Não sabe como votar e entrar na fila automaticamente ? cheque esse tutorial!'],
+    motd: [],
     arrays: {
         ruleSkip: {},
         links: ["https://plug.dj/terms", "https://plug.dj/privacy", "https://plug.dj/about", "https://blog.plug.dj", "https://support.plug.dj"],
