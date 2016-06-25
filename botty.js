@@ -596,7 +596,7 @@ var sweetbot = {
                     if (sweetbot.getUserByName(t.message.substr(7))){
                         sweetbot.vars.duel.push(t.uid);
                         sweetbot.vars.duel.push(sweetbot.getUserByName(t.message.substr(7)));
-                        sweetbot.sendMsg('@' + t.message.substr(7) + ', ' + t.un + '  called you for x1! Before two minutes type !accept to accept x1. WARNING the loser will be muted for 2 minutes!');
+                        sweetbot.sendMsg('@' + t.message.substr(7) + ', ' + t.un + '  wants to duel! You have two minutes type !accept to accept the duel. WARNING the loser will be muted for 2 minutes!');
                         setTimeout(function(){
                             sweetbot.vars.duel = [];
                         }, 120000);
@@ -609,13 +609,13 @@ var sweetbot = {
         accept: {
             f: function (e, t) {
                 if (t.uid === sweetbot.vars.duel[1]) {
-                    sweetbot.sendMsg(API.getUser(sweetbot.vars.duel[0]).username +' and ' + API.getUser(sweetbot.vars.duel[1]).username + ' Started the x1!');
+                    sweetbot.sendMsg(API.getUser(sweetbot.vars.duel[0]).username +' and ' + API.getUser(sweetbot.vars.duel[1]).username + ' accepted the duel!');
                     var win = Math.round(Math.random());
                     win === 0 ? lose = 1 : lose = 0;
                     var winner = sweetbot.vars.duel[win];
                     var loser = sweetbot.vars.duel[lose];
                     setTimeout(function(){
-                        sweetbot.sendMsg(API.getUser(winner).username + ' won the x1! This means it will  ' + API.getUser(loser).username + ' be muted for 2 minutes! are you going to cry?');
+                        sweetbot.sendMsg(API.getUser(winner).username + ' won the fight! @' + API.getUser(loser).username + ' is muted for 2 minutes! are you going to cry?');
                         sweetbot.vars.duelReady = false;
                         sweetbot.userData[loser].muted = true;
                         setTimeout(function(){sweetbot.userData[loser].muted = false;}, 120000);
