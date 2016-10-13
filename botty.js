@@ -410,7 +410,7 @@ var sweetbot = {
         }
         var skipOnExceed;
         if (e.media.duration > 420 && sweetbot.settings.b.timeGuard){
-			if (API.getDJ().language === 'pt') API.sendChat("@"+API.getDJ().username+" Essa música excede o tempo limite.");
+			if (API.getDJ().language === 'pt') API.sendChat("@"+API.getDJ().username+" This song exceeds the max length!");
             else API.sendChat("@"+API.getDJ().username+" This song exceeds the max length!");
                 API.moderateForceSkip();
         };
@@ -747,10 +747,10 @@ var sweetbot = {
                         else if (i < 1 || i > 50) sweetbot.sendMsg("[" + t.un + "] Error. (Position should be between 1 to 50)");
                         else if (n.id == API.getDJ().id) sweetbot.sendMsg("[" + t.un + "] User is currently playing!");
                         else if (r > -1 && r != undefined) {
-                            sweetbot.sendMsg("[" + t.un + " Useu move]");
+                            sweetbot.sendMsg("[" + t.un + " Used move]");
                             API.moderateMoveDJ(n.id, i)
                         } else if (API.getWaitList().length < 50) {
-                            sweetbot.sendMsg("[" + t.un + " Usou move]");
+                            sweetbot.sendMsg("[" + t.un + " Used move]");
                             API.moderateAddDJ(n.id);
                             setTimeout(function () {
                                 API.moderateMoveDJ(n.id, i)
