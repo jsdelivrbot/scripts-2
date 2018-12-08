@@ -1,6 +1,6 @@
 var scripts =
-    ["https://rawgit.com/Varietyy/scripts/master/name.js",
-    "https://rawgit.com/Varietyy/scripts/master/chat.js"];
+    ["https://cdn.jsdelivr.net/gh/Varietyy/scripts/name.js",
+    "https://cdn.jsdelivr.net/gh/Varietyy/scripts/chat.js"];
  
 function load(script)
 {

@@ -535,7 +535,7 @@ var sweetbot = {
                 sweetbot.saveData();
                 sweetbot.shutdown();
                 setTimeout(function () {
-                    $.getScript("https://cdn.rawgit.com/Varietyy/scripts/master/botty.js")
+                    $.getScript("https://cdn.jsdelivr.net/gh/Varietyy/scripts/botty.js")
                 }, 2e3)
             },
             r: 3

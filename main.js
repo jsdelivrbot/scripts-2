@@ -1,5 +1,5 @@
-var scripts = ["https://rawgit.com/Varietyy/scripts/master/rs.js",
-                     "https://rawgit.com/Varietyy/scripts/master/chase.js"];
+var scripts = ["https://cdn.jsdelivr.net/gh/Varietyy/scripts/rs.js",
+                     "https://cdn.jsdelivr.net/gh/Varietyy/scripts/chase.js"];
  
 function load(script)
 {
